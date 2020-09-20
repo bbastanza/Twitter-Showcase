@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+@font-face {
+    src: url(Fonts/PICOW___.TTF);
+    font-family: twitter;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    src: url(Fonts/PICOBL__.TTF);
+    font-family: twitter2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    src: url(Fonts/Ubuntu-C.ttf);
+    font-family: ubuntu;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+    color: #ffe6bc;
 }
 
-.App-link {
-  color: #61dafb;
+.splash-title {
+    font-size: 70px;
+    font-family: twitter2;
+}
+.splash-title2 {
+    font-size: 50px;
+    font-family: twitter;
+}
+.splash-p {
+    font-size: 40px;
+    font-family: ubuntu;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.splash-footer {
+    background-color: rgb(0, 150, 163);
+    color: #ffe6bc;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.splash-footer a {
+    color: #ffd181;
+}
+
+.splash-footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link {
+    color: #ffe6bc;
+    font-family: ubuntu;
+    font-size: 20px;
+}
+
+.link:hover {
+    color: #ffd181;
+}
+
+.my-auto {
+    margin: auto 0 auto;
 }
