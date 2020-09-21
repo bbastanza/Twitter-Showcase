@@ -36,6 +36,7 @@
 .splash-footer {
     background-color: rgb(0, 150, 163);
     color: #ffe6bc;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -60,6 +61,21 @@
     color: #ffd181;
 }
 
-.my-auto {
-    margin: auto 0 auto;
+.tweet {
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    width: 60vw;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4d4d4d;
+}
+
+.tweet h4 {
+    font-weight: bold;
+}
+
+.username {
+    color: rgba(75, 155, 192, 1);
 }

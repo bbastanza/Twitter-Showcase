@@ -1,13 +1,20 @@
 import React from "react";
-import SplashScreen from "../SplashComponents/SplashScreen";
 import Search from "../MainPageComponents/Search";
 import Showcase from "../MainPageComponents/Showcase";
+import SplashScreen from "../MainPageComponents/SplashScreen";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 
 export default function NavBar() {
     return (
         <HashRouter>
-            <div className="navbar navbar-expand-lg navbar-fixed" style={{ backgroundColor: "#262626" }}>
+            <nav className="navbar navbar-expand-lg navbar-fixed-top" style={{ backgroundColor: "#262626" }}>
+                <NavLink
+                    to="/Welcom"
+                    className="splash-title2"
+                    style={{ textDecoration: "none", color: "rgba(0, 185, 168, 1)" }}
+                >
+                    T
+                </NavLink>
                 <button
                     className="navbar-toggler navbar-dark link"
                     data-toggle="collapse"
@@ -18,7 +25,7 @@ export default function NavBar() {
                 <div id="nav-bar-collapse" className="collapse navbar-collapse">
                     <ul className="navbar-nav ml-auto">
                         <li name="welcome" className="navbar-item">
-                            <NavLink to="/" className="link nav-link">
+                            <NavLink to="/Welcom" className="link nav-link">
                                 Welcome
                             </NavLink>
                         </li>
@@ -34,9 +41,9 @@ export default function NavBar() {
                         </li>
                     </ul>
                 </div>
-            </div>
+            </nav>
             <div className="content">
-                <Route exact path="/" component={SplashScreen} />
+                <Route exact path="/Welcom" component={SplashScreen} />
                 <Route exact path="/Search" component={Search} />
                 <Route exact path="/Showcase" component={Showcase} />
             </div>

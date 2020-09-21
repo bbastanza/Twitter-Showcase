@@ -6,7 +6,9 @@ import "./App.css";
 function App() {
     return (
         <div>
-            <NavBar />
+            <div style={{ marginBottom: 60 }}>
+                <NavBar />
+            </div>
             <Footer />
         </div>
     );
