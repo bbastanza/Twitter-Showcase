@@ -1,17 +1,18 @@
 import React from "react";
 import Search from "../MainPageComponents/Search";
-import Showcase from "../MainPageComponents/Showcase";
+import Showcase from "../MainPageComponents/ShowcaseOverview";
 import SplashScreen from "../MainPageComponents/SplashScreen";
+import ShowCaseSingle from "./../MainPageComponents/ShowCaseSingle";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 
 export default function NavBar() {
     return (
         <HashRouter>
-            <nav className="navbar navbar-expand-lg navbar-fixed-top" style={{ backgroundColor: "#262626" }}>
+            <div className="navbar navbar-expand-lg" style={{ backgroundColor: "#262626" }}>
                 <NavLink
-                    to="/Welcom"
+                    to="/"
                     className="splash-title2"
-                    style={{ textDecoration: "none", color: "rgba(0, 185, 168, 1)" }}
+                    style={{ textDecoration: "none", color: "rgba(0, 150, 163, 1)" }}
                 >
                     T
                 </NavLink>
@@ -25,7 +26,7 @@ export default function NavBar() {
                 <div id="nav-bar-collapse" className="collapse navbar-collapse">
                     <ul className="navbar-nav ml-auto">
                         <li name="welcome" className="navbar-item">
-                            <NavLink to="/Welcom" className="link nav-link">
+                            <NavLink to="/" className="link nav-link">
                                 Welcome
                             </NavLink>
                         </li>
@@ -41,11 +42,12 @@ export default function NavBar() {
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </div>
             <div className="content">
-                <Route exact path="/Welcom" component={SplashScreen} />
+                <Route exact path="/" component={SplashScreen} />
                 <Route exact path="/Search" component={Search} />
                 <Route exact path="/Showcase" component={Showcase} />
+                <Route exact path="/:handle" component={props => <ShowCaseSingle {...props} />} />
             </div>
         </HashRouter>
     );

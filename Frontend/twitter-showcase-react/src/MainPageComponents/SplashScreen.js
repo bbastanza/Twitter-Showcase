@@ -7,7 +7,7 @@ import { Button } from "reactstrap";
 export default function SplashScreen() {
     return (
         <div className="App-header">
-            <div className="row" style={{ margin: 60, justifyContent: "space-between", textAlign: "center" }}>
+            <div className="row" style={{ justifyContent: "space-between", textAlign: "center" }}>
                 <div className="col-lg-6 col-md-12">
                     <img src={LargeLogo} alt="Twitter" />
                 </div>

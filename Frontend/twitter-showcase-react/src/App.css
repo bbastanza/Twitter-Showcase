@@ -18,6 +18,8 @@
     display: flex;
     justify-content: center;
     color: #ffe6bc;
+    width: 100vw;
+    margin: 40px 0 40px 0;
 }
 
 .splash-title {
@@ -39,7 +41,7 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
 }
 
 .splash-footer a {
@@ -47,7 +49,7 @@
 }
 
 .splash-footer a:hover {
-    color: #ffffff;
+    color: #ffae52;
     text-decoration: none;
 }
 
@@ -67,15 +69,38 @@
     width: 60vw;
     padding: 10px;
     margin: 20px;
+    box-shadow: 2px -2px 2px rgba(220, 247, 255, 0.1), 3px 3px 2px rgba(220, 247, 255, 0.2),
+        2px 3px 4px rgba(75, 155, 192, 1);
     border-radius: 7px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #4d4d4d;
+    color: #313131;
 }
-
 .tweet h4 {
     font-weight: bold;
 }
 
+.showcase-image {
+    padding: 5vw;
+}
+
+.showcase-image a {
+    color: #ffe6bc;
+    text-decoration: none;
+}
+
+.showcase-image a:hover {
+    color: #ffd181;
+    text-decoration: none;
+}
+
+.tweet p {
+    color: #4e5f5d;
+}
+
 .username {
     color: rgba(75, 155, 192, 1);
+}
+
+.searchbar {
+    box-shadow: 3px 3px 2px rgba(0, 56, 78, 0.8), 2px 3px 4px rgb(40, 85, 105);
 }

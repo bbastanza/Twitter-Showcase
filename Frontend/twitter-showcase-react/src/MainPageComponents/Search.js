@@ -13,25 +13,26 @@ export default function Search() {
     }
 
     return (
-        <div style={{ textAlign: "center", justifyContent: "left" }} className="row">
-            <div className="col-lg-5 col-md-12 row" style={{ padding: "100px 0 0 100px ", justifyContent: "center" }}>
+        <div style={{ textAlign: "center", justifyContent: "left", width: "100vw" }} className="row">
+            <div className="col-lg-5 col-md-12 row" style={{ padding: "80px 0 0 100px ", justifyContent: "center" }}>
                 <form onSubmit={pressedSubmit}>
                     <input
+                        className="searchbar"
                         style={{ textAlign: "center", width: "30vw" }}
                         onChange={e => setTextBoxValue(e.target.value)}
                         type="text"
                         placeholder="Enter Person or Tweet"
                         value={textBoxValue}
                     />
-                    <button className="btn btn-info link" style={{ color: "#ffe6bc", padding: "5px 20px" }}>
+                    <button
+                        className="btn btn-info link searchbar"
+                        style={{ color: "#ffe6bc", padding: "5px 20px", margin: 5 }}
+                    >
                         Search
                     </button>
                 </form>
             </div>
             <div className="col-lg-7 col-md-12" style={{ marginTop: 60 }}>
-                <Tweet />
-                <Tweet />
-                <Tweet />
                 <Tweet />
                 <Tweet />
             </div>

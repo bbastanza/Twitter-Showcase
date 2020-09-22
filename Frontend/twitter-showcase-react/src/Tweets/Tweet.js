@@ -18,7 +18,7 @@ export default function Tweet() {
                 <h5 className="col-lg-2 username">@stanzu_10</h5>
                 <img
                     src={TwitterThumbnail}
-                    style={{ maxWidth: 40, maxHeight: 40, paddingLeft: 10, paddingBottom: 10 }}
+                    style={{ maxWidth: 40, maxHeight: 40, paddingLeft: 10, paddingBottom: 10, float: "right" }}
                     alt="thumbnail"
                 ></img>
             </div>
