@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6dcaaf20-c32c-4add-9f7d-9b5777aa6f9e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/.idea/.idea.twitter-showcase-server/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/.idea/.idea.twitter-showcase-server/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/App.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Data/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Data/WeatherForecastService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Pages/Counter.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Pages/Error.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Pages/FetchData.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Pages/Index.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Pages/_Host.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Shared/LoginDisplay.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Shared/MainLayout.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Shared/NavMenu.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Shared/SurveyPrompt.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/Startup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/_Imports.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.AzureAD.UI.Views.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.AzureAD.UI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/twitter-showcase-server" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/twitter-showcase-server.Views.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/twitter-showcase-server.Views.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/twitter-showcase-server.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/twitter-showcase-server.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/twitter-showcase-server.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/twitter-showcase-server.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/bin/Debug/netcoreapp3.1/twitter-showcase-server.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/Razor/App.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/Razor/Pages/Counter.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/Razor/Pages/Error.cshtml.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/Razor/Pages/FetchData.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/Razor/Pages/Index.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/Razor/Pages/_Host.cshtml.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/Razor/Shared/LoginDisplay.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/Razor/Shared/MainLayout.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/Razor/Shared/NavMenu.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/Razor/Shared/SurveyPrompt.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/Razor/_Imports.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/RazorDeclaration/App.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Counter.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/FetchData.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Index.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/RazorDeclaration/Shared/LoginDisplay.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/RazorDeclaration/Shared/MainLayout.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/RazorDeclaration/Shared/NavMenu.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/RazorDeclaration/Shared/SurveyPrompt.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/RazorDeclaration/_Imports.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/RazorDeclaration/twitter-showcase-server.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/RazorDeclaration/twitter-showcase-server.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/staticwebassets/twitter-showcase-server.StaticWebAssets.Manifest.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/staticwebassets/twitter-showcase-server.StaticWebAssets.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.RazorAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.RazorAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.RazorComponent.input.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.RazorCoreGenerate.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.RazorTargetAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.RazorTargetAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.TagHelpers.input.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.TagHelpers.output.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.Views.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.Views.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/Debug/netcoreapp3.1/twitter-showcase-server.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/twitter-showcase-server.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/twitter-showcase-server.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/obj/twitter-showcase-server.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/twitter-showcase-server.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/wwwroot/css/bootstrap/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/wwwroot/css/bootstrap/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/wwwroot/css/open-iconic/FONT-LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/wwwroot/css/open-iconic/ICON-LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/wwwroot/css/open-iconic/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/wwwroot/css/open-iconic/font/fonts/open-iconic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/wwwroot/css/open-iconic/font/fonts/open-iconic.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/wwwroot/css/open-iconic/font/fonts/open-iconic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/wwwroot/css/open-iconic/font/fonts/open-iconic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/wwwroot/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/twitter-showcase-server/twitter-showcase-server/wwwroot/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/FixedComponents/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/FixedComponents/NavBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/Fonts/PICOBL__.TTF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/Fonts/PICOW___.TTF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/Fonts/Ubuntu-C.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/Images/Twitter-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/Images/Working-With-Text-Solutions.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/Images/sample-cheetah.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/Images/tweet-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/Images/twitter_thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/MainPageComponents/IndividualShowcase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/MainPageComponents/Search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/MainPageComponents/ShowcaseOverview.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/MainPageComponents/SplashScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/Tweets/Tweet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/Tweets/mockdata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/twitter-showcase-react/src/setupTests.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1hyXm1JrCimogU9G7LYlFKLoNWd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.twitter-showcase: IIS Express">
+    <configuration name="twitter-showcase: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/twitter-showcase/twitter-showcase.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="twitter_showcase" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="twitter-showcase: twitter_showcase" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/twitter-showcase/twitter-showcase.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="twitter_showcase" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6dcaaf20-c32c-4add-9f7d-9b5777aa6f9e" name="Default Changelist" comment="" />
+      <created>1600984464622</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600984464622</updated>
+      <workItem from="1600984469116" duration="959000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state width="914" height="265" key="GridCell.Tab.0.bottom" timestamp="1600985428116">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1080/1.1080.1920.1080@0.0.1920.1080" timestamp="1600985428116" />
+    <state width="914" height="265" key="GridCell.Tab.0.center" timestamp="1600985428116">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="265" key="GridCell.Tab.0.center/0.0.1920.1080/1.1080.1920.1080@0.0.1920.1080" timestamp="1600985428116" />
+    <state width="914" height="265" key="GridCell.Tab.0.left" timestamp="1600985428116">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="265" key="GridCell.Tab.0.left/0.0.1920.1080/1.1080.1920.1080@0.0.1920.1080" timestamp="1600985428116" />
+    <state width="914" height="265" key="GridCell.Tab.0.right" timestamp="1600985428116">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="265" key="GridCell.Tab.0.right/0.0.1920.1080/1.1080.1920.1080@0.0.1920.1080" timestamp="1600985428116" />
+    <state x="0" y="155" key="SettingsEditor" timestamp="1600985284819">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="0" y="155" key="SettingsEditor/0.0.1920.1080/1.1080.1920.1080@0.0.1920.1080" timestamp="1600985284819" />
+  </component>
+</project>
