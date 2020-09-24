@@ -9,11 +9,7 @@ export default function NavBar() {
     return (
         <HashRouter>
             <div className="navbar navbar-expand-lg" style={{ backgroundColor: "#262626" }}>
-                <NavLink
-                    to="/"
-                    className="splash-title2"
-                    style={{ textDecoration: "none", color: "rgba(0, 150, 163, 1)" }}
-                >
+                <NavLink to="/" className="splash-title2 brand">
                     T
                 </NavLink>
                 <button

@@ -1,14 +1,12 @@
 import React from "react";
 import TwitterThumbnail from "./../Images/twitter_thumbnail.png";
-import tweetBg from "./../Images/tweet-bg.jpg";
+import tweetBg from "./../Images/tweet-bg.png";
 
 export default function Tweet({ tweetData, resultNumber }) {
     console.log(tweetData.statuses[resultNumber]);
     const backgroundImage = {
         backgroundImage: `url(${tweetBg})`,
     };
-    if (tweetData.statuses[resultNumber].user.profile_use_background_image)
-        backgroundImage.backgroundImage = `url(${tweetData.statuses[0].user.profile_background_image_url_https})`;
 
     const sentFrom =
         tweetData.statuses[0].source ===
@@ -21,7 +19,7 @@ export default function Tweet({ tweetData, resultNumber }) {
             <div className="row">
                 <img
                     src={tweetData.statuses[resultNumber].user.profile_image_url_https}
-                    style={{ paddingLeft: 10 }}
+                    style={{ paddingLeft: 10, borderRadius: "50%" }}
                     alt="thumbnail"
                 ></img>
                 <h4 className="col-lg-4">{tweetData.statuses[resultNumber].user.name}</h4>

@@ -44,6 +44,16 @@
     width: 100vw;
 }
 
+.brand {
+    color: rgb(0, 255, 242);
+    text-decoration: none;
+}
+
+.brand:hover {
+    color: rgba(0, 255, 170, 0.9);
+    text-decoration: none;
+}
+
 .splash-footer a {
     color: #ffd181;
 }
@@ -102,7 +112,7 @@
 }
 
 .username {
-    color: rgb(50, 83, 102);
+    color: rgba(65, 74, 77, 0.8);
 }
 
 .searchbar {

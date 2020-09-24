@@ -26,10 +26,7 @@ export default function Search() {
                         placeholder="Enter Person or Tweet"
                         value={textBoxValue}
                     />
-                    <button
-                        className="btn btn-info link searchbar"
-                        style={{ color: "#ffe6bc", padding: "5px 20px", margin: 5 }}
-                    >
+                    <button className="btn btn-info link searchbar" style={{ padding: "5px 20px", margin: 5 }}>
                         Search
                     </button>
                 </form>
@@ -40,6 +37,11 @@ export default function Search() {
                 <Tweet tweetData={tweetData} resultNumber={2} />
                 <Tweet tweetData={tweetData} resultNumber={3} />
                 <Tweet tweetData={tweetData} resultNumber={4} />
+                <Tweet tweetData={tweetData} resultNumber={5} />
+                <Tweet tweetData={tweetData} resultNumber={6} />
+                <Tweet tweetData={tweetData} resultNumber={7} />
+                <Tweet tweetData={tweetData} resultNumber={8} />
+                <Tweet tweetData={tweetData} resultNumber={9} />
             </div>
         </div>
     );
