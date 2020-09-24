@@ -1,43 +1,53 @@
 import React from "react";
-import Thumbnail from "./../Images/s-l64.jpg";
 import TwitterThumbnail from "./../Images/twitter_thumbnail.png";
+import tweetBg from "./../Images/tweet-bg.jpg";
 
-export default function Tweet() {
-    let tweet =
-        "Here's a text of one hundered and twenty characters. Another thirty characters and I will be there. I am going to put one more sentence in to see where I am . I am trying to replicate the absolute limit to how many characters can be caputred in a single tweet.";
-    let likeCount = 27;
-    let commentCount = 8;
-    let retweetCount = 19;
+export default function Tweet({ tweetData, resultNumber }) {
+    console.log(tweetData.statuses[resultNumber]);
+    const backgroundImage = {
+        backgroundImage: `url(${tweetBg})`,
+    };
+    if (tweetData.statuses[resultNumber].user.profile_use_background_image)
+        backgroundImage.backgroundImage = `url(${tweetData.statuses[0].user.profile_background_image_url_https})`;
+
+    const sentFrom =
+        tweetData.statuses[0].source ===
+        '<a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>'
+            ? "Sent from iPhone"
+            : "Sent from Android";
 
     return (
-        <div className="tweet col-12">
+        <div className="tweet col-12" style={backgroundImage}>
             <div className="row">
-                <img src={Thumbnail} style={{ paddingLeft: 10 }} alt="thumbnail"></img>
-                <h4 className="col-lg-8">Brian Bastanza</h4>
+                <img
+                    src={tweetData.statuses[resultNumber].user.profile_image_url_https}
+                    style={{ paddingLeft: 10 }}
+                    alt="thumbnail"
+                ></img>
+                <h4 className="col-lg-4">{tweetData.statuses[resultNumber].user.name}</h4>
+                <h5 className="col-lg-4 username">@{tweetData.statuses[resultNumber].user.screen_name}</h5>
+                <h6 className="col-lg-2">{tweetData.statuses[resultNumber].created_at.substring(4, 16)}</h6>
 
-                <h5 className="col-lg-2 username">@stanzu_10</h5>
                 <img
                     src={TwitterThumbnail}
-                    style={{ maxWidth: 40, maxHeight: 40, paddingLeft: 10, paddingBottom: 10, float: "right" }}
+                    style={{ maxWidth: 50, maxHeight: 50, paddingLeft: 10, paddingBottom: 10, float: "right" }}
                     alt="thumbnail"
                 ></img>
             </div>
             <div className="tweet-text" style={{ padding: 10 }}>
-                <p>{tweet}</p>
+                <blockquote style={{ marginLeft: 80 }}>{tweetData.statuses[resultNumber].text}</blockquote>
             </div>
             <div>
                 <div className="row">
                     <div className="row col-8">
                         {" "}
                         <span role="img" aria-label="like" className="col-2">
-                            💗 {likeCount}
-                        </span>
-                        <span role="img" aria-label="comment" className="col-2">
-                            🗨️ {commentCount}
+                            💗 {tweetData.statuses[resultNumber].favorite_count}
                         </span>
                         <span role="img" aria-label="retweet" className="col-2">
-                            🔄 {retweetCount}
+                            🔄 {tweetData.statuses[resultNumber].retweet_count}
                         </span>
+                        <h6>{sentFrom}</h6>
                         <div className="col-6"></div>
                     </div>
                 </div>

@@ -97,8 +97,12 @@
     color: #4e5f5d;
 }
 
+.tweet-text {
+    font-weight: bold;
+}
+
 .username {
-    color: rgba(75, 155, 192, 1);
+    color: rgb(50, 83, 102);
 }
 
 .searchbar {

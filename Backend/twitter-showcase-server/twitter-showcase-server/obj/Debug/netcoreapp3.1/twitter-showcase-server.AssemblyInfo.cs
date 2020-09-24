@@ -10,6 +10,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-twitter_showcase_server-8FE07369-24A6-4327-BD9A-D68996B423EA")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("twitter-showcase-server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

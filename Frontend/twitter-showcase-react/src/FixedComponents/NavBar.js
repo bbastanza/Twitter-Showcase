@@ -2,8 +2,8 @@ import React from "react";
 import Search from "../MainPageComponents/Search";
 import Showcase from "../MainPageComponents/ShowcaseOverview";
 import SplashScreen from "../MainPageComponents/SplashScreen";
-import ShowCaseSingle from "./../MainPageComponents/ShowCaseSingle";
 import { Route, NavLink, HashRouter } from "react-router-dom";
+import IndividualShowcase from "../MainPageComponents/IndividualShowcase";
 
 export default function NavBar() {
     return (
@@ -47,7 +47,7 @@ export default function NavBar() {
                 <Route exact path="/" component={SplashScreen} />
                 <Route exact path="/Search" component={Search} />
                 <Route exact path="/Showcase" component={Showcase} />
-                <Route exact path="/:handle" component={props => <ShowCaseSingle {...props} />} />
+                <Route exact path="/:handle" component={props => <IndividualShowcase {...props} />} />
             </div>
         </HashRouter>
     );

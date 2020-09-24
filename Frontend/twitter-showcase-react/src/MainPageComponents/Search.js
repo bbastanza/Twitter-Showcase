@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Tweet from "./../Tweets/Tweet";
+import mockDataJSON from "./../Tweets/mockdata.json";
 
 export default function Search() {
     const [textBoxValue, setTextBoxValue] = useState("");
+    const [tweetData, setTweetData] = useState(mockDataJSON);
 
     function pressedSubmit(e) {
         e.preventDefault();
@@ -33,8 +35,11 @@ export default function Search() {
                 </form>
             </div>
             <div className="col-lg-7 col-md-12" style={{ marginTop: 60 }}>
-                <Tweet />
-                <Tweet />
+                <Tweet tweetData={tweetData} resultNumber={0} />
+                <Tweet tweetData={tweetData} resultNumber={1} />
+                <Tweet tweetData={tweetData} resultNumber={2} />
+                <Tweet tweetData={tweetData} resultNumber={3} />
+                <Tweet tweetData={tweetData} resultNumber={4} />
             </div>
         </div>
     );
