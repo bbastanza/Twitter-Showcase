@@ -3,7 +3,6 @@ import TwitterThumbnail from "./../Images/twitter_thumbnail.png";
 import tweetBg from "./../Images/tweet-bg.png";
 
 export default function Tweet({ tweetData, resultNumber }) {
-    console.log(tweetData.statuses[resultNumber]);
     const backgroundImage = {
         backgroundImage: `url(${tweetBg})`,
     };

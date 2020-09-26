@@ -10,12 +10,12 @@ export default function ShowcaseOverview() {
                 style={{
                     color: "#ffe6bc",
                     marginTop: 60,
-
+                    justifyContent: "space-evenly",
                     textAlign: "center",
                     width: "100vw",
                 }}
             >
-                <div className="col-lg-2 col-md-12 showcase-image">
+                <div className="col-lg-2 col-md-6 showcase-image">
                     <NavLink
                         to={{
                             pathname: "/Cheetah1",
@@ -24,11 +24,11 @@ export default function ShowcaseOverview() {
                             },
                         }}
                     >
-                        <h1>Cheetah1</h1>
+                        <h1 className="individual-h2">Cheetah1</h1>
                         <img src={Cheetah} alt="cheetah" />
                     </NavLink>
                 </div>
-                <div className="col-lg-3 col-md-12  showcase-image">
+                <div className="col-lg-2 col-md-6  showcase-image">
                     <NavLink
                         to={{
                             pathname: "/Cheetah2",
@@ -37,11 +37,11 @@ export default function ShowcaseOverview() {
                             },
                         }}
                     >
-                        <h1>Cheetah2</h1>
+                        <h1 className="individual-h2">Cheetah2</h1>
                         <img src={Cheetah} alt="cheetah" />
                     </NavLink>
                 </div>
-                <div className="col-lg-2 col-md-12  showcase-image">
+                <div className="col-lg-2 col-md-6  showcase-image">
                     <NavLink
                         to={{
                             pathname: "/Cheetah3",
@@ -50,12 +50,12 @@ export default function ShowcaseOverview() {
                             },
                         }}
                     >
-                        <h1>Cheetah3</h1>
+                        <h1 className="individual-h2">Cheetah3</h1>
                         <img src={Cheetah} alt="cheetah" />
                     </NavLink>
                 </div>
 
-                <div className="col-lg-3 col-md-12  showcase-image">
+                <div className="col-lg-2 col-md-6  showcase-image">
                     <NavLink
                         to={{
                             pathname: "/Cheetah4",
@@ -64,11 +64,11 @@ export default function ShowcaseOverview() {
                             },
                         }}
                     >
-                        <h1>Cheetah4</h1>
+                        <h1 className="individual-h2">Cheetah4</h1>
                         <img src={Cheetah} alt="cheetah" />
                     </NavLink>
                 </div>
-                <div className="col-lg-2 col-md-12  showcase-image">
+                <div className="col-lg-2 col-md-6  showcase-image">
                     <NavLink
                         to={{
                             pathname: "/Cheetah5",
@@ -77,7 +77,7 @@ export default function ShowcaseOverview() {
                             },
                         }}
                     >
-                        <h1>Cheetah5</h1>
+                        <h1 className="individual-h2">Cheetah5</h1>
                         <img src={Cheetah} alt="cheetah" />
                     </NavLink>
                 </div>

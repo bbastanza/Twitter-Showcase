@@ -93,14 +93,26 @@
     padding: 5vw;
 }
 
+.showcase-image img {
+    border-radius: 50%;
+}
+
 .showcase-image a {
     color: #ffe6bc;
     text-decoration: none;
+    font-family: ubuntu;
 }
 
 .showcase-image a:hover {
     color: #ffd181;
     text-decoration: none;
+}
+
+.individual-h2 {
+    color: #ffe6bc;
+    font-family: ubuntu;
+    background-color: rgba(65, 74, 77, 0.8);
+    border-radius: 20px;
 }
 
 .tweet p {

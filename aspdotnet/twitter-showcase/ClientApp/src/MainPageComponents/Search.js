@@ -4,10 +4,12 @@ import mockDataJSON from "./../Tweets/mockdata.json";
 
 export default function Search() {
     const [textBoxValue, setTextBoxValue] = useState("");
+    const [banner, setBanner] = useState("");
     const [tweetData, setTweetData] = useState(mockDataJSON);
 
     function pressedSubmit(e) {
         e.preventDefault();
+        setBanner(textBoxValue);
         if (textBoxValue !== "") {
             console.log(`${textBoxValue} sent to API`);
             setTextBoxValue("");
@@ -29,6 +31,9 @@ export default function Search() {
                     <button className="btn btn-info link searchbar" style={{ padding: "5px 20px", margin: 5 }}>
                         Search
                     </button>
+                    <h1 className="col-6 individual-h2" style={{ margin: "30px auto" }}>
+                        {banner}
+                    </h1>
                 </form>
             </div>
             <div className="col-lg-7 col-md-12" style={{ marginTop: 60 }}>
