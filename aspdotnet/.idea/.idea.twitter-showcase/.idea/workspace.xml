@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6dcaaf20-c32c-4add-9f7d-9b5777aa6f9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.twitter-showcase/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.twitter-showcase/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.twitter-showcase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.twitter-showcase/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/MainPageComponents/IndividualShowcase.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/MainPageComponents/IndividualShowcase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/MainPageComponents/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/MainPageComponents/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/MainPageComponents/ShowcaseOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/MainPageComponents/ShowcaseOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/Tweets/Tweet.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/Tweets/Tweet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-showcase/twitter-showcase.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-showcase/twitter-showcase.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-showcase/ClientApp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-showcase/ClientApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-showcase/Services/JSONTweetService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-showcase/Tweet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-showcase/Models/Tweet.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -24,6 +49,10 @@
       <list>
         <option value="$PROJECT_DIR$/twitter-showcase/Tweet.cs" />
         <option value="$PROJECT_DIR$/twitter-showcase/Services/JSONTweetService.cs" />
+        <option value="$PROJECT_DIR$/twitter-showcase/Controllers/TweetController.http" />
+        <option value="$PROJECT_DIR$/twitter-showcase/Models/Tweet.cs" />
+        <option value="$PROJECT_DIR$/twitter-showcase/Controllers/TweetController.cs" />
+        <option value="$PROJECT_DIR$/twitter-showcase/Controllers/TweetsController.cs" />
       </list>
     </option>
   </component>
@@ -86,6 +115,7 @@
       <workItem from="1600987829891" duration="620000" />
       <workItem from="1601056390754" duration="5609000" />
       <workItem from="1601071093191" duration="52000" />
+      <workItem from="1601154655392" duration="2466000" />
     </task>
     <servers />
   </component>
@@ -94,22 +124,37 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1874" height="265" key="GridCell.Tab.0.bottom" timestamp="1601071043020">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1860" height="279" key="GridCell.Tab.0.bottom" timestamp="1601157139923">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601157139923" />
     <state width="1874" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1080/1.1080.1920.1080@0.0.1920.1080" timestamp="1601071043020" />
-    <state width="1874" height="265" key="GridCell.Tab.0.center" timestamp="1601071043019">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1860" height="279" key="GridCell.Tab.0.center" timestamp="1601157139922">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601157139922" />
     <state width="1874" height="265" key="GridCell.Tab.0.center/0.0.1920.1080/1.1080.1920.1080@0.0.1920.1080" timestamp="1601071043019" />
-    <state width="1874" height="265" key="GridCell.Tab.0.left" timestamp="1601071043019">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1860" height="279" key="GridCell.Tab.0.left" timestamp="1601157139922">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601157139922" />
     <state width="1874" height="265" key="GridCell.Tab.0.left/0.0.1920.1080/1.1080.1920.1080@0.0.1920.1080" timestamp="1601071043019" />
-    <state width="1874" height="265" key="GridCell.Tab.0.right" timestamp="1601071043019">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1860" height="279" key="GridCell.Tab.0.right" timestamp="1601157139923">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601157139923" />
     <state width="1874" height="265" key="GridCell.Tab.0.right/0.0.1920.1080/1.1080.1920.1080@0.0.1920.1080" timestamp="1601071043019" />
     <state x="0" y="155" key="SettingsEditor" timestamp="1600985284819">
       <screen x="0" y="0" width="1920" height="1080" />
