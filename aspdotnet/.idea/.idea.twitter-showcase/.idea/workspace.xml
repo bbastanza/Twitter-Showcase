@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dcaaf20-c32c-4add-9f7d-9b5777aa6f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/FixedComponents/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/FixedComponents/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/Images/tweet-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/MainPageComponents/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/MainPageComponents/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/Tweets/Tweet.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-showcase/ClientApp/src/Tweets/Tweet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.twitter-showcase/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.twitter-showcase/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.twitter-showcase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.twitter-showcase/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +22,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.twitter-showcase: IIS Express">
@@ -70,6 +67,7 @@
       <updated>1600984464622</updated>
       <workItem from="1600984469116" duration="959000" />
       <workItem from="1600987829891" duration="620000" />
+      <workItem from="1601088895894" duration="218000" />
     </task>
     <servers />
   </component>
@@ -95,9 +93,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="265" key="GridCell.Tab.0.right/0.0.1920.1080/1.1080.1920.1080@0.0.1920.1080" timestamp="1600990068975" />
-    <state x="0" y="155" key="SettingsEditor" timestamp="1600985284819">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="0" y="149" key="SettingsEditor" timestamp="1601088992450">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="0" y="149" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601088992450" />
     <state x="0" y="155" key="SettingsEditor/0.0.1920.1080/1.1080.1920.1080@0.0.1920.1080" timestamp="1600985284819" />
   </component>
 </project>
