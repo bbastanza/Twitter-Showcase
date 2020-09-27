@@ -7,7 +7,7 @@ namespace twitter_showcase
     public class Tweet
     {
         [JsonPropertyName("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         [JsonPropertyName("source")]
         public string Source { get; set; }
         [JsonPropertyName("user.profile_image_url_https")]
