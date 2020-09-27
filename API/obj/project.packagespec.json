@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Stanzu\\RiderProjects\\twitter-asp.net.core\\API\\API.csproj",
+    "projectUniqueName": "C:\\git\\twitter-asp.net.core\\API\\API.csproj",
     "projectName": "API",
-    "projectPath": "C:\\Users\\Stanzu\\RiderProjects\\twitter-asp.net.core\\API\\API.csproj",
-    "outputPath": "C:\\Users\\Stanzu\\RiderProjects\\twitter-asp.net.core\\API\\obj\\",
+    "projectPath": "C:\\git\\twitter-asp.net.core\\API\\API.csproj",
+    "outputPath": "C:\\git\\twitter-asp.net.core\\API\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
@@ -15,11 +15,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {
-          "C:\\Users\\Stanzu\\RiderProjects\\twitter-asp.net.core\\Core\\Core.csproj": {
-            "projectPath": "C:\\Users\\Stanzu\\RiderProjects\\twitter-asp.net.core\\Core\\Core.csproj"
-          }
-        }
+        "projectReferences": {}
       }
     },
     "warningProperties": {

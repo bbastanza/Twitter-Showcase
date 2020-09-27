@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sd/s5ktnSfLczoTKj+vb2R8fCQgeb8lSlfm5c02YprV8IZgXQ/0Uc01RHMHrq7b+LjNZREyvY5GnzeeOq4Q7lg==",
+  "dgSpecHash": "gupZ5lbMiAdlPslAIXNw8Jrkax5j9z//uzRwt+/iMa2wmqAqPNf9josp/MJaRNQ7CRbSEegKoyyZtCVbNKyF6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Stanzu\\RiderProjects\\twitter-asp.net.core\\API\\API.csproj",
+  "projectFilePath": "C:\\git\\twitter-asp.net.core\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Stanzu\\.nuget\\packages\\microsoft.aspnetcore.nodeservices\\3.1.4\\microsoft.aspnetcore.nodeservices.3.1.4.nupkg.sha512",
     "C:\\Users\\Stanzu\\.nuget\\packages\\microsoft.aspnetcore.spaservices\\3.1.4\\microsoft.aspnetcore.spaservices.3.1.4.nupkg.sha512",

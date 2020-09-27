@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
+using API.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace twitter_showcase.Controllers
@@ -13,11 +14,11 @@ namespace twitter_showcase.Controllers
         // pattern: "{controller}/{action=Index}/{id?}");
 
 
-        private List<Tweet> _tweets = new List<Tweet>();
+        private List<Tweet> _tweets;
 
         public TweetsController()
         {
-
+            _tweets = JsonTweetsService.GetTweets();
         }
 
 

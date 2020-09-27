@@ -236,16 +236,6 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
-      },
-      "Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Core.dll": {}
-        }
       }
     }
   },
@@ -559,16 +549,10 @@
         "newtonsoft.json.12.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
       ]
-    },
-    "Core/1.0.0": {
-      "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Core >= 1.0.0",
       "Microsoft.AspNetCore.SpaServices.Extensions >= 3.1.4"
     ]
   },
@@ -578,11 +562,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stanzu\\RiderProjects\\twitter-asp.net.core\\API\\API.csproj",
+      "projectUniqueName": "C:\\git\\twitter-asp.net.core\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Stanzu\\RiderProjects\\twitter-asp.net.core\\API\\API.csproj",
+      "projectPath": "C:\\git\\twitter-asp.net.core\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Stanzu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stanzu\\RiderProjects\\twitter-asp.net.core\\API\\obj\\",
+      "outputPath": "C:\\git\\twitter-asp.net.core\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Stanzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -597,11 +581,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {
-            "C:\\Users\\Stanzu\\RiderProjects\\twitter-asp.net.core\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\Stanzu\\RiderProjects\\twitter-asp.net.core\\Core\\Core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
