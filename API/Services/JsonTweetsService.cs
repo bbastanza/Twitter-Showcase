@@ -23,7 +23,14 @@ namespace API.Services
 
         public static List<Tweet> GetTweets()
         {
-            using var jsonFileReader = File.OpenText(@"C:\git\twitter-asp.net.core\API\Data\mockdata.json");
+            
+            // Windows
+            // using var jsonFileReader = File.OpenText(@"C:\git\twitter-asp.net.core\API\Data\mockdata.json");
+            
+            // Linux
+            using var jsonFileReader = File.OpenText(@"/home/stanzu10/Development/git/twitter-showcase/API/Data/mockdata.json");
+            
+            
             return JsonSerializer.Deserialize<List<Tweet>>(jsonFileReader.ReadToEnd(),
                 new JsonSerializerOptions
                 {
