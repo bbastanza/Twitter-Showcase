@@ -17,6 +17,7 @@ export default function Search() {
     }
 
     return (
+        
         <div style={{ textAlign: "center", justifyContent: "left", width: "100vw" }} className="row">
             <div className="col-lg-5 col-md-12 row" style={{ padding: "80px 0 0 100px ", justifyContent: "center" }}>
                 <form onSubmit={pressedSubmit}>

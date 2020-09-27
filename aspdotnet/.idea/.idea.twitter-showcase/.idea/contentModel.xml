@@ -109,7 +109,6 @@
             </e>
             <e p="serviceWorker.js" t="Include" />
             <e p="Tweets" t="Include">
-              <e p="mockdata.json" t="Include" />
               <e p="Tweet.js" t="Include" />
             </e>
           </e>
@@ -117,6 +116,9 @@
         <e p="Controllers" t="Include">
           <e p="TweetsController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
+        </e>
+        <e p="Data" t="Include">
+          <e p="mockdata.json" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="Tweet.cs" t="Include" />
@@ -137,6 +139,9 @@
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="JsonFileTweetService.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="twitter-showcase.csproj" t="IncludeRecursive" />

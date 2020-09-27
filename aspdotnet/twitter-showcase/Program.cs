@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using twitter_showcase.Services;
 
 namespace twitter_showcase
 {
@@ -14,7 +15,9 @@ namespace twitter_showcase
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+            
         }
+
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
