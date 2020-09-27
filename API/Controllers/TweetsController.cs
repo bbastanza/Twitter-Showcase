@@ -1,11 +1,13 @@
 ﻿using System.Collections.Generic;
-using System.Dynamic;
 using System.Linq;
 using API.Services;
 using Microsoft.AspNetCore.Mvc;
+using twitter_showcase;
 
-namespace twitter_showcase.Controllers
+namespace API.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class TweetsController : Controller
     {
 
@@ -20,9 +22,7 @@ namespace twitter_showcase.Controllers
         {
             _tweets = JsonTweetsService.GetTweets();
         }
-
-
-
+        
         // GET
         public List<Tweet> Get()
         {
@@ -30,9 +30,9 @@ namespace twitter_showcase.Controllers
         }
 
         // get/id
-        public Tweet GetID(int id)
-        {
-            return _tweets.FirstOrDefault(x => x.Id == id);
-        }
+        // public Tweet GetID(int id)
+        // {
+        //     return _tweets.FirstOrDefault(x => x.Id == id);
+        // }
     }
 }
