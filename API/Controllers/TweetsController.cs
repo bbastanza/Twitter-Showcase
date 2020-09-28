@@ -20,6 +20,7 @@ namespace API.Controllers
 
         public TweetsController()
         {
+        
             _tweets = JsonTweetsService.GetTweets();
         }
         
