@@ -1,31 +1,39 @@
 import React from "react";
 import TwitterThumbnail from "./../Images/twitter_thumbnail.png";
 import tweetBg from "./../Images/tweet-bg.png";
+import verifiedImage from "./../Images/verified.png"
 
 export default function Tweet({ tweetData }) {
     const backgroundImage = {
         backgroundImage: `url(${tweetBg})`,
     };
 
-    const sentFrom =
-        tweetData.source ===
-        '<a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>'
-            ? "Sent from iPhone"
-            : "Sent from Android";
+    const verified = tweetData.user.verified ? <img src={verifiedImage} alt="verified" style={{height: 20, width: 20}}></img> : ""
+
+    let sentFrom
+    switch(tweetData.source){
+        case "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>":
+            sentFrom = "Sent from iPhone"
+            break;
+        case "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>":
+            sentFrom = "Sent from Web App"
+            break;
+        default:
+            sentFrom = "Sent from Android"
+            break;
+    }
 
     return (
         <div className="tweet col-12" style={backgroundImage}>
             <div className="row">
-                {/* <img
+                <img
                     src={tweetData.user.profile_image_url_https}
                     style={{ paddingLeft: 10, borderRadius: "50%" }}
                     alt="thumbnail"
-                ></img> */}
+                ></img>
 
-                {/* <h4 className="col-lg-4">{tweetData.user.name}</h4> */}
-                <h4 className="col-lg-4"></h4>
-                <h5 className="col-lg-4 username"></h5>
-                {/* <h5 className="col-lg-4 username">@{tweetData.user.screen_name}</h5> */}
+                <h4 className="col-lg-4">{tweetData.user.name} {verified}</h4>
+                <h5 className="col-lg-4 username">@{tweetData.user.screen_name}</h5>
                 <h6 className="col-lg-2">{tweetData.created_at.substring(4, 16)}</h6>
 
                 <img
@@ -47,7 +55,7 @@ export default function Tweet({ tweetData }) {
                         <span role="img" aria-label="retweet" className="col-2">
                             🔄 {tweetData.retweet_count}
                         </span>
-                        <h6>{sentFrom}</h6>
+                        <h6 className="username">{sentFrom}</h6>
                         <div className="col-6"></div>
                     </div>
                 </div>

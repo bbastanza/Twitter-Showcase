@@ -66,6 +66,8 @@ namespace API
                     spa.UseReactDevelopmentServer("start");
                 }
             });
+            ApiHelper.InitializeClient();
+            
         }
     }
 }

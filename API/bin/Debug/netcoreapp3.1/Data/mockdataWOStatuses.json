@@ -1,5 +1,4 @@
-{
-    "statuses": [
+[
         {
             "created_at": "Sun Sep 27 03:31:42 +0000 2020",
             "id": 1310059512670240768,
@@ -693,15 +692,4 @@
             "possibly_sensitive": false,
             "lang": "en"
         }
-    ],
-    "search_metadata": {
-        "completed_in": 0.029,
-        "max_id": 0,
-        "max_id_str": "0",
-        "next_results": "?max_id=1310036163072327679&q=joerogan&count=5&include_entities=1&result_type=popular",
-        "query": "joerogan",
-        "count": 5,
-        "since_id": 0,
-        "since_id_str": "0"
-    }
-}
+    ]

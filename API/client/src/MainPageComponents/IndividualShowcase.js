@@ -33,11 +33,14 @@ export default function IndividualShowcase(props) {
                             </NavLink>
                         </Button>
                     </div>
+                    <div className="col-12 link">
+                        <Button color="info" size="lg" >
+                            Regenerate
+                        </Button>
+                    </div>
                 </div>
                 <div className="col-lg-7 col-md-12" style={{ marginTop: 60 }}>
-                    <Tweet tweetData={tweetData} resultNumber={13} />
-                    <Tweet tweetData={tweetData} resultNumber={12} />
-                    <Tweet tweetData={tweetData} resultNumber={14} />
+
                 </div>
             </div>
         );

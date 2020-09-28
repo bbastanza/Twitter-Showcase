@@ -1,240 +1,26 @@
- [
+{
+    "statuses": [
         {
-            "created_at": "Thu Sep 24 01:40:18 +0000 2020",
-            "id": 1308944316036001792,
-            "id_str": "1308944316036001792",
-            "text": "1. So, I checked out this @joerogan dude to find out if there was some substance behind the buzz. Dude thinks it's… https://t.co/2TAXarZkjH",
+            "created_at": "Sun Sep 27 03:31:42 +0000 2020",
+            "id": 1310059512670240768,
+            "id_str": "1310059512670240768",
+            "text": "Let them quit. Plenty of people outta work who would love that job and support a comedians right to free speech.… https://t.co/W2IdYiVEaw",
             "truncated": true,
             "entities": {
                 "hashtags": [],
                 "symbols": [],
-                "user_mentions": [
-                    {
-                        "screen_name": "joerogan",
-                        "name": "Joe Rogan",
-                        "id": 18208354,
-                        "id_str": "18208354",
-                        "indices": [26, 35]
-                    }
-                ],
+                "user_mentions": [],
                 "urls": [
                     {
-                        "url": "https://t.co/2TAXarZkjH",
-                        "expanded_url": "https://twitter.com/i/web/status/1308944316036001792",
+                        "url": "https://t.co/W2IdYiVEaw",
+                        "expanded_url": "https://twitter.com/i/web/status/1310059512670240768",
                         "display_url": "twitter.com/i/web/status/1…",
-                        "indices": [116, 139]
+                        "indices": [
+                            114,
+                            137
+                        ]
                     }
                 ]
-            },
-            "metadata": {
-                "result_type": "popular",
-                "iso_language_code": "en"
-            },
-            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
-            "in_reply_to_status_id": null,
-            "in_reply_to_status_id_str": null,
-            "in_reply_to_user_id": null,
-            "in_reply_to_user_id_str": null,
-            "in_reply_to_screen_name": null,
-            "user": {
-                "id": 764187379,
-                "id_str": "764187379",
-                "name": "Rachel \"The Doc\" Bitecofer 📈🔭🍌",
-                "screen_name": "RachelBitecofer",
-                "location": "Virginia ",
-                "description": "@ProjectLincoln Senior Adviser, @ElectionWsphr, Ph.D., General in Army of the Decent \nJust Like My Country, I'm Young(ish), Hungry, & Scrappy",
-                "url": "https://t.co/RCki2CGhvw",
-                "entities": {
-                    "url": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/RCki2CGhvw",
-                                "expanded_url": "https://oldbull.tv/tew/",
-                                "display_url": "oldbull.tv/tew/",
-                                "indices": [0, 23]
-                            }
-                        ]
-                    },
-                    "description": {
-                        "urls": []
-                    }
-                },
-                "protected": false,
-                "followers_count": 114380,
-                "friends_count": 2873,
-                "listed_count": 1331,
-                "created_at": "Fri Aug 17 18:11:47 +0000 2012",
-                "favourites_count": 18603,
-                "utc_offset": null,
-                "time_zone": null,
-                "geo_enabled": true,
-                "verified": true,
-                "statuses_count": 36303,
-                "lang": null,
-                "contributors_enabled": false,
-                "is_translator": false,
-                "is_translation_enabled": false,
-                "profile_background_color": "C0DEED",
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_tile": false,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/1262178619700510720/Y3eUT9Ov_normal.jpg",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1262178619700510720/Y3eUT9Ov_normal.jpg",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/764187379/1591874996",
-                "profile_link_color": "1DA1F2",
-                "profile_sidebar_border_color": "C0DEED",
-                "profile_sidebar_fill_color": "DDEEF6",
-                "profile_text_color": "333333",
-                "profile_use_background_image": true,
-                "has_extended_profile": true,
-                "default_profile": true,
-                "default_profile_image": false,
-                "following": null,
-                "follow_request_sent": null,
-                "notifications": null,
-                "translator_type": "none"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": false,
-            "retweet_count": 86,
-            "favorite_count": 950,
-            "favorited": false,
-            "retweeted": false,
-            "lang": "en"
-        },
-        {
-            "created_at": "Thu Sep 24 13:27:08 +0000 2020",
-            "id": 1309122194891575301,
-            "id_str": "1309122194891575301",
-            "text": "Happy to report the post-fight interviews for #UFC253 will be in the Octagon! Wherever @joerogan is, I can assure y… https://t.co/0Ez6EtjQkT",
-            "truncated": true,
-            "entities": {
-                "hashtags": [
-                    {
-                        "text": "UFC253",
-                        "indices": [46, 53]
-                    }
-                ],
-                "symbols": [],
-                "user_mentions": [
-                    {
-                        "screen_name": "joerogan",
-                        "name": "Joe Rogan",
-                        "id": 18208354,
-                        "id_str": "18208354",
-                        "indices": [87, 96]
-                    }
-                ],
-                "urls": [
-                    {
-                        "url": "https://t.co/0Ez6EtjQkT",
-                        "expanded_url": "https://twitter.com/i/web/status/1309122194891575301",
-                        "display_url": "twitter.com/i/web/status/1…",
-                        "indices": [117, 140]
-                    }
-                ]
-            },
-            "metadata": {
-                "result_type": "popular",
-                "iso_language_code": "en"
-            },
-            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
-            "in_reply_to_status_id": null,
-            "in_reply_to_status_id_str": null,
-            "in_reply_to_user_id": null,
-            "in_reply_to_user_id_str": null,
-            "in_reply_to_screen_name": null,
-            "user": {
-                "id": 39776268,
-                "id_str": "39776268",
-                "name": "Jon Anik",
-                "screen_name": "Jon_Anik",
-                "location": "South Florida via Boston, MA",
-                "description": "UFC commentator/lead play-by-play voice on PPV, ESPN, & ESPN+. Identical twin. @AnikFlorianPod",
-                "url": "https://t.co/nJGikd4kfT",
-                "entities": {
-                    "url": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/nJGikd4kfT",
-                                "expanded_url": "http://instagram.com/jon_anik",
-                                "display_url": "instagram.com/jon_anik",
-                                "indices": [0, 23]
-                            }
-                        ]
-                    },
-                    "description": {
-                        "urls": []
-                    }
-                },
-                "protected": false,
-                "followers_count": 221015,
-                "friends_count": 2167,
-                "listed_count": 1972,
-                "created_at": "Wed May 13 15:48:27 +0000 2009",
-                "favourites_count": 938,
-                "utc_offset": null,
-                "time_zone": null,
-                "geo_enabled": false,
-                "verified": true,
-                "statuses_count": 45799,
-                "lang": null,
-                "contributors_enabled": false,
-                "is_translator": false,
-                "is_translation_enabled": false,
-                "profile_background_color": "1A1B1F",
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif",
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif",
-                "profile_background_tile": false,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/1637685241/Anik_normal.jpg",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1637685241/Anik_normal.jpg",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/39776268/1471700385",
-                "profile_link_color": "2FC2EF",
-                "profile_sidebar_border_color": "FFFFFF",
-                "profile_sidebar_fill_color": "252429",
-                "profile_text_color": "666666",
-                "profile_use_background_image": false,
-                "has_extended_profile": true,
-                "default_profile": false,
-                "default_profile_image": false,
-                "following": null,
-                "follow_request_sent": null,
-                "notifications": null,
-                "translator_type": "none"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": false,
-            "retweet_count": 89,
-            "favorite_count": 1312,
-            "favorited": false,
-            "retweeted": false,
-            "lang": "en"
-        },
-        {
-            "created_at": "Wed Sep 23 11:00:05 +0000 2020",
-            "id": 1308722803118612481,
-            "id_str": "1308722803118612481",
-            "text": "I once smoked a blunt with 150 hits of the strongest DMT @joerogan thinks he knows about the download lol",
-            "truncated": false,
-            "entities": {
-                "hashtags": [],
-                "symbols": [],
-                "user_mentions": [
-                    {
-                        "screen_name": "joerogan",
-                        "name": "Joe Rogan",
-                        "id": 18208354,
-                        "id_str": "18208354",
-                        "indices": [57, 66]
-                    }
-                ],
-                "urls": []
             },
             "metadata": {
                 "result_type": "popular",
@@ -247,21 +33,24 @@
             "in_reply_to_user_id_str": null,
             "in_reply_to_screen_name": null,
             "user": {
-                "id": 610908029,
-                "id_str": "610908029",
-                "name": "Diego Sanchez UFC",
-                "screen_name": "DiegoSanchezUFC",
-                "location": "Albuquerque New Mexico",
-                "description": "I’m that guy! and my MAGIC is real",
-                "url": "https://t.co/kEpVhjKSsg",
+                "id": 123151931,
+                "id_str": "123151931",
+                "name": "Elon Gold",
+                "screen_name": "ElonGold",
+                "location": "LA, CA",
+                "description": "My Netflix special Chosen and Taken now avail on iTunes! Also- Host of \"The Dad Show\"",
+                "url": "http://t.co/Qn2werglH3",
                 "entities": {
                     "url": {
                         "urls": [
                             {
-                                "url": "https://t.co/kEpVhjKSsg",
-                                "expanded_url": "http://Diegosanchezofficialonlyfans.com",
-                                "display_url": "Diegosanchezofficialonlyfans.com",
-                                "indices": [0, 23]
+                                "url": "http://t.co/Qn2werglH3",
+                                "expanded_url": "http://www.elongold.com",
+                                "display_url": "elongold.com",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
                             }
                         ]
                     },
@@ -270,16 +59,238 @@
                     }
                 },
                 "protected": false,
-                "followers_count": 113292,
-                "friends_count": 3707,
-                "listed_count": 615,
-                "created_at": "Sun Jun 17 15:48:01 +0000 2012",
-                "favourites_count": 2128,
+                "followers_count": 5639,
+                "friends_count": 506,
+                "listed_count": 73,
+                "created_at": "Mon Mar 15 05:00:13 +0000 2010",
+                "favourites_count": 13335,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 3314,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1290907762700869635/PZSYHBz0_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1290907762700869635/PZSYHBz0_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/123151931/1469464412",
+                "profile_link_color": "0084B4",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": true,
+            "quoted_status_id": 1309607417840361474,
+            "quoted_status_id_str": "1309607417840361474",
+            "quoted_status": {
+                "created_at": "Fri Sep 25 21:35:14 +0000 2020",
+                "id": 1309607417840361474,
+                "id_str": "1309607417840361474",
+                "text": "Spotify Employees Are Now Allegedly Planning A Full Blown Strike If The Company Refuses To Censor Joe Rogan's Conte… https://t.co/VHyFAuavpp",
+                "truncated": true,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [
+                        {
+                            "url": "https://t.co/VHyFAuavpp",
+                            "expanded_url": "https://twitter.com/i/web/status/1309607417840361474",
+                            "display_url": "twitter.com/i/web/status/1…",
+                            "indices": [
+                                117,
+                                140
+                            ]
+                        }
+                    ]
+                },
+                "metadata": {
+                    "result_type": "popular",
+                    "iso_language_code": "en"
+                },
+                "source": "<a href=\"https://buffer.com\" rel=\"nofollow\">Buffer</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 22637974,
+                    "id_str": "22637974",
+                    "name": "Barstool Sports",
+                    "screen_name": "barstoolsports",
+                    "location": "America",
+                    "description": "Viva La Stool - Download the Barstool Sports app https://t.co/sxfRMbcsSw",
+                    "url": "https://t.co/67MD8gf64M",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/67MD8gf64M",
+                                    "expanded_url": "http://www.barstoolsports.com",
+                                    "display_url": "barstoolsports.com",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/sxfRMbcsSw",
+                                    "expanded_url": "https://www.barstoolsports.com/download",
+                                    "display_url": "barstoolsports.com/download",
+                                    "indices": [
+                                        49,
+                                        72
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 2563006,
+                    "friends_count": 753,
+                    "listed_count": 4616,
+                    "created_at": "Tue Mar 03 16:01:13 +0000 2009",
+                    "favourites_count": 4532,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": true,
+                    "verified": true,
+                    "statuses_count": 64809,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "C0DEED",
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_tile": true,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1222128514624892935/zC0ABl3m_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1222128514624892935/zC0ABl3m_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/22637974/1570797907",
+                    "profile_link_color": "0084B4",
+                    "profile_sidebar_border_color": "FFFFFF",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": false,
+                    "default_profile": false,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none"
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 1577,
+                "favorite_count": 10566,
+                "favorited": false,
+                "retweeted": false,
+                "possibly_sensitive": false,
+                "lang": "en"
+            },
+            "retweet_count": 585,
+            "favorite_count": 3658,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Mon Sep 28 14:29:26 +0000 2020",
+            "id": 1310587425027010560,
+            "id_str": "1310587425027010560",
+            "text": "Since 1982 Banned Books Week at the end of September has brought awareness to the history of censorship. What are y… https://t.co/HlsSTFflOH",
+            "truncated": true,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/HlsSTFflOH",
+                        "expanded_url": "https://twitter.com/i/web/status/1310587425027010560",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 895854672400883713,
+                "id_str": "895854672400883713",
+                "name": "Jack Carr",
+                "screen_name": "JackCarrUSA",
+                "location": "Park City, UT",
+                "description": "New York Times Bestselling Author of The Terminal List, True Believer, and Savage Son • Outdoorsman • Navy SEAL Sniper • Connoisseur of Sharp Objects",
+                "url": "https://t.co/n9ha7FbErG",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/n9ha7FbErG",
+                                "expanded_url": "http://www.officialjackcarr.com",
+                                "display_url": "officialjackcarr.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 23329,
+                "friends_count": 719,
+                "listed_count": 99,
+                "created_at": "Fri Aug 11 03:49:32 +0000 2017",
+                "favourites_count": 40697,
                 "utc_offset": null,
                 "time_zone": null,
                 "geo_enabled": true,
                 "verified": true,
-                "statuses_count": 10505,
+                "statuses_count": 16232,
                 "lang": null,
                 "contributors_enabled": false,
                 "is_translator": false,
@@ -287,645 +298,16 @@
                 "profile_background_color": "000000",
                 "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
                 "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_tile": true,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/1309018517115633664/quZCd6uZ_normal.jpg",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1309018517115633664/quZCd6uZ_normal.jpg",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/610908029/1436455757",
-                "profile_link_color": "990000",
-                "profile_sidebar_border_color": "C0DEED",
-                "profile_sidebar_fill_color": "DDEEF6",
-                "profile_text_color": "333333",
-                "profile_use_background_image": true,
-                "has_extended_profile": false,
-                "default_profile": false,
-                "default_profile_image": false,
-                "following": null,
-                "follow_request_sent": null,
-                "notifications": null,
-                "translator_type": "none"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": false,
-            "retweet_count": 161,
-            "favorite_count": 1690,
-            "favorited": false,
-            "retweeted": false,
-            "lang": "en"
-        },
-        {
-            "created_at": "Tue Sep 22 20:51:10 +0000 2020",
-            "id": 1308509165959016448,
-            "id_str": "1308509165959016448",
-            "text": "Hey babe @joerogan let me know!! I’ll come in fully loaded too https://t.co/t1VPeKrqIh",
-            "truncated": false,
-            "entities": {
-                "hashtags": [],
-                "symbols": [],
-                "user_mentions": [
-                    {
-                        "screen_name": "joerogan",
-                        "name": "Joe Rogan",
-                        "id": 18208354,
-                        "id_str": "18208354",
-                        "indices": [9, 18]
-                    }
-                ],
-                "urls": [],
-                "media": [
-                    {
-                        "id": 1308509054872903680,
-                        "id_str": "1308509054872903680",
-                        "indices": [63, 86],
-                        "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1308509054872903680/pu/img/nPSxVjYSZve-2rVX.jpg",
-                        "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1308509054872903680/pu/img/nPSxVjYSZve-2rVX.jpg",
-                        "url": "https://t.co/t1VPeKrqIh",
-                        "display_url": "pic.twitter.com/t1VPeKrqIh",
-                        "expanded_url": "https://twitter.com/chrisdcomedy/status/1308509165959016448/video/1",
-                        "type": "photo",
-                        "sizes": {
-                            "large": {
-                                "w": 720,
-                                "h": 900,
-                                "resize": "fit"
-                            },
-                            "thumb": {
-                                "w": 150,
-                                "h": 150,
-                                "resize": "crop"
-                            },
-                            "small": {
-                                "w": 544,
-                                "h": 680,
-                                "resize": "fit"
-                            },
-                            "medium": {
-                                "w": 720,
-                                "h": 900,
-                                "resize": "fit"
-                            }
-                        }
-                    }
-                ]
-            },
-            "extended_entities": {
-                "media": [
-                    {
-                        "id": 1308509054872903680,
-                        "id_str": "1308509054872903680",
-                        "indices": [63, 86],
-                        "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1308509054872903680/pu/img/nPSxVjYSZve-2rVX.jpg",
-                        "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1308509054872903680/pu/img/nPSxVjYSZve-2rVX.jpg",
-                        "url": "https://t.co/t1VPeKrqIh",
-                        "display_url": "pic.twitter.com/t1VPeKrqIh",
-                        "expanded_url": "https://twitter.com/chrisdcomedy/status/1308509165959016448/video/1",
-                        "type": "video",
-                        "sizes": {
-                            "large": {
-                                "w": 720,
-                                "h": 900,
-                                "resize": "fit"
-                            },
-                            "thumb": {
-                                "w": 150,
-                                "h": 150,
-                                "resize": "crop"
-                            },
-                            "small": {
-                                "w": 544,
-                                "h": 680,
-                                "resize": "fit"
-                            },
-                            "medium": {
-                                "w": 720,
-                                "h": 900,
-                                "resize": "fit"
-                            }
-                        },
-                        "video_info": {
-                            "aspect_ratio": [4, 5],
-                            "duration_millis": 47783,
-                            "variants": [
-                                {
-                                    "bitrate": 2176000,
-                                    "content_type": "video/mp4",
-                                    "url": "https://video.twimg.com/ext_tw_video/1308509054872903680/pu/vid/720x900/o2UIBSRN-uFyfjOT.mp4?tag=10"
-                                },
-                                {
-                                    "bitrate": 632000,
-                                    "content_type": "video/mp4",
-                                    "url": "https://video.twimg.com/ext_tw_video/1308509054872903680/pu/vid/320x400/TWys4Hi2GRFbaAzk.mp4?tag=10"
-                                },
-                                {
-                                    "content_type": "application/x-mpegURL",
-                                    "url": "https://video.twimg.com/ext_tw_video/1308509054872903680/pu/pl/-29KI4Ul1eMnYNu8.m3u8?tag=10"
-                                },
-                                {
-                                    "bitrate": 832000,
-                                    "content_type": "video/mp4",
-                                    "url": "https://video.twimg.com/ext_tw_video/1308509054872903680/pu/vid/360x450/QPv3_JmcwNk44s4-.mp4?tag=10"
-                                }
-                            ]
-                        },
-                        "additional_media_info": {
-                            "monetizable": false
-                        }
-                    }
-                ]
-            },
-            "metadata": {
-                "result_type": "popular",
-                "iso_language_code": "en"
-            },
-            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-            "in_reply_to_status_id": null,
-            "in_reply_to_status_id_str": null,
-            "in_reply_to_user_id": null,
-            "in_reply_to_user_id_str": null,
-            "in_reply_to_screen_name": null,
-            "user": {
-                "id": 186594295,
-                "id_str": "186594295",
-                "name": "Chris Distefano",
-                "screen_name": "chrisdcomedy",
-                "location": "Brooklyn, NY",
-                "description": "Blanquito Papito.......Netflix. Comedy Central. Bay Ridge Boys! History Hyenas! Cutie wit a Smoothie! @historyhyenas",
-                "url": "https://t.co/lTKonnpnMe",
-                "entities": {
-                    "url": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/lTKonnpnMe",
-                                "expanded_url": "http://chrisdcomedy.com",
-                                "display_url": "chrisdcomedy.com",
-                                "indices": [0, 23]
-                            }
-                        ]
-                    },
-                    "description": {
-                        "urls": []
-                    }
-                },
-                "protected": false,
-                "followers_count": 131927,
-                "friends_count": 1501,
-                "listed_count": 368,
-                "created_at": "Fri Sep 03 21:47:15 +0000 2010",
-                "favourites_count": 37122,
-                "utc_offset": null,
-                "time_zone": null,
-                "geo_enabled": true,
-                "verified": true,
-                "statuses_count": 19851,
-                "lang": null,
-                "contributors_enabled": false,
-                "is_translator": false,
-                "is_translation_enabled": false,
-                "profile_background_color": "C0DEED",
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
                 "profile_background_tile": false,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/970484315376308225/8EEr-9l2_normal.jpg",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/970484315376308225/8EEr-9l2_normal.jpg",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/186594295/1456352004",
-                "profile_link_color": "1DA1F2",
-                "profile_sidebar_border_color": "C0DEED",
-                "profile_sidebar_fill_color": "DDEEF6",
-                "profile_text_color": "333333",
-                "profile_use_background_image": true,
-                "has_extended_profile": false,
-                "default_profile": true,
-                "default_profile_image": false,
-                "following": null,
-                "follow_request_sent": null,
-                "notifications": null,
-                "translator_type": "none"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": false,
-            "retweet_count": 189,
-            "favorite_count": 1863,
-            "favorited": false,
-            "retweeted": false,
-            "possibly_sensitive": false,
-            "lang": "en"
-        },
-        {
-            "created_at": "Thu Sep 24 18:12:14 +0000 2020",
-            "id": 1309193943171637249,
-            "id_str": "1309193943171637249",
-            "text": "A hilarious ride in the Texas podcast spaceship with one of my favorite people to talk to, the brilliant and hilari… https://t.co/nF1BvAEiDp",
-            "truncated": true,
-            "entities": {
-                "hashtags": [],
-                "symbols": [],
-                "user_mentions": [],
-                "urls": [
-                    {
-                        "url": "https://t.co/nF1BvAEiDp",
-                        "expanded_url": "https://twitter.com/i/web/status/1309193943171637249",
-                        "display_url": "twitter.com/i/web/status/1…",
-                        "indices": [117, 140]
-                    }
-                ]
-            },
-            "metadata": {
-                "result_type": "popular",
-                "iso_language_code": "en"
-            },
-            "source": "<a href=\"http://instagram.com\" rel=\"nofollow\">Instagram</a>",
-            "in_reply_to_status_id": null,
-            "in_reply_to_status_id_str": null,
-            "in_reply_to_user_id": null,
-            "in_reply_to_user_id_str": null,
-            "in_reply_to_screen_name": null,
-            "user": {
-                "id": 18208354,
-                "id_str": "18208354",
-                "name": "Joe Rogan",
-                "screen_name": "joerogan",
-                "location": "",
-                "description": "Stand up comic/mixed martial arts fanatic/psychedelic adventurer Host of The Joe Rogan Experience #FreakParty https://t.co/caBUmcvqBY",
-                "url": "https://t.co/UoPqZeUr22",
-                "entities": {
-                    "url": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/UoPqZeUr22",
-                                "expanded_url": "http://www.joerogan.net",
-                                "display_url": "joerogan.net",
-                                "indices": [0, 23]
-                            }
-                        ]
-                    },
-                    "description": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/caBUmcvqBY",
-                                "expanded_url": "http://www.facebook.com/JOEROGAN",
-                                "display_url": "facebook.com/JOEROGAN",
-                                "indices": [110, 133]
-                            }
-                        ]
-                    }
-                },
-                "protected": false,
-                "followers_count": 6647261,
-                "friends_count": 3880,
-                "listed_count": 21167,
-                "created_at": "Thu Dec 18 04:01:47 +0000 2008",
-                "favourites_count": 833,
-                "utc_offset": null,
-                "time_zone": null,
-                "geo_enabled": false,
-                "verified": true,
-                "statuses_count": 45599,
-                "lang": null,
-                "contributors_enabled": false,
-                "is_translator": false,
-                "is_translation_enabled": true,
-                "profile_background_color": "022330",
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_tile": true,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/552307347851210752/vrXDcTFC_normal.jpeg",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/552307347851210752/vrXDcTFC_normal.jpeg",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/18208354/1536958228",
-                "profile_link_color": "0084B4",
-                "profile_sidebar_border_color": "FFFFFF",
-                "profile_sidebar_fill_color": "C0DFEC",
-                "profile_text_color": "333333",
-                "profile_use_background_image": true,
-                "has_extended_profile": false,
-                "default_profile": false,
-                "default_profile_image": false,
-                "following": null,
-                "follow_request_sent": null,
-                "notifications": null,
-                "translator_type": "none"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": false,
-            "retweet_count": 28,
-            "favorite_count": 279,
-            "favorited": false,
-            "retweeted": false,
-            "possibly_sensitive": false,
-            "lang": "en"
-        },
-        {
-            "created_at": "Tue Sep 15 23:46:50 +0000 2020",
-            "id": 1306016659631734786,
-            "id_str": "1306016659631734786",
-            "text": "Why isn’t anyone in media asking Joe Biden if he will do the @joerogan debate with @realDonaldTrump? Americans woul… https://t.co/CzIuZG2xBq",
-            "truncated": true,
-            "entities": {
-                "hashtags": [],
-                "symbols": [],
-                "user_mentions": [
-                    {
-                        "screen_name": "joerogan",
-                        "name": "Joe Rogan",
-                        "id": 18208354,
-                        "id_str": "18208354",
-                        "indices": [61, 70]
-                    },
-                    {
-                        "screen_name": "realDonaldTrump",
-                        "name": "Donald J. Trump",
-                        "id": 25073877,
-                        "id_str": "25073877",
-                        "indices": [83, 99]
-                    }
-                ],
-                "urls": [
-                    {
-                        "url": "https://t.co/CzIuZG2xBq",
-                        "expanded_url": "https://twitter.com/i/web/status/1306016659631734786",
-                        "display_url": "twitter.com/i/web/status/1…",
-                        "indices": [117, 140]
-                    }
-                ]
-            },
-            "metadata": {
-                "result_type": "popular",
-                "iso_language_code": "en"
-            },
-            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-            "in_reply_to_status_id": null,
-            "in_reply_to_status_id_str": null,
-            "in_reply_to_user_id": null,
-            "in_reply_to_user_id_str": null,
-            "in_reply_to_screen_name": null,
-            "user": {
-                "id": 39344374,
-                "id_str": "39344374",
-                "name": "Donald Trump Jr.",
-                "screen_name": "DonaldJTrumpJr",
-                "location": "",
-                "description": "EVP of Development & Acquisitions The @Trump Organization, Father, Outdoorsman, In a past life Boardroom Advisor on The Apprentice",
-                "url": "https://t.co/mqxNHnqCbK",
-                "entities": {
-                    "url": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/mqxNHnqCbK",
-                                "expanded_url": "http://DonJr.com",
-                                "display_url": "DonJr.com",
-                                "indices": [0, 23]
-                            }
-                        ]
-                    },
-                    "description": {
-                        "urls": []
-                    }
-                },
-                "protected": false,
-                "followers_count": 5663593,
-                "friends_count": 1483,
-                "listed_count": 13551,
-                "created_at": "Mon May 11 21:18:33 +0000 2009",
-                "favourites_count": 18189,
-                "utc_offset": null,
-                "time_zone": null,
-                "geo_enabled": false,
-                "verified": true,
-                "statuses_count": 37995,
-                "lang": null,
-                "contributors_enabled": false,
-                "is_translator": false,
-                "is_translation_enabled": false,
-                "profile_background_color": "C0DEED",
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_tile": true,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/766652495858896897/LjrJJB9a_normal.jpg",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/766652495858896897/LjrJJB9a_normal.jpg",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/39344374/1598660870",
-                "profile_link_color": "15317E",
-                "profile_sidebar_border_color": "C0DEED",
-                "profile_sidebar_fill_color": "DDEEF6",
-                "profile_text_color": "333333",
-                "profile_use_background_image": true,
-                "has_extended_profile": false,
-                "default_profile": false,
-                "default_profile_image": false,
-                "following": null,
-                "follow_request_sent": null,
-                "notifications": null,
-                "translator_type": "none"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": false,
-            "retweet_count": 13039,
-            "favorite_count": 54448,
-            "favorited": false,
-            "retweeted": false,
-            "lang": "en"
-        },
-        {
-            "created_at": "Wed Sep 23 17:10:59 +0000 2020",
-            "id": 1308816142111248385,
-            "id_str": "1308816142111248385",
-            "text": "As a conservative church guy, I guess I don't have a huge amount in common with @joerogan and @DouglasKMurray. But… https://t.co/0GSmwUvWqa",
-            "truncated": true,
-            "entities": {
-                "hashtags": [],
-                "symbols": [],
-                "user_mentions": [
-                    {
-                        "screen_name": "joerogan",
-                        "name": "Joe Rogan",
-                        "id": 18208354,
-                        "id_str": "18208354",
-                        "indices": [80, 89]
-                    },
-                    {
-                        "screen_name": "DouglasKMurray",
-                        "name": "Douglas Murray",
-                        "id": 419520517,
-                        "id_str": "419520517",
-                        "indices": [94, 109]
-                    }
-                ],
-                "urls": [
-                    {
-                        "url": "https://t.co/0GSmwUvWqa",
-                        "expanded_url": "https://twitter.com/i/web/status/1308816142111248385",
-                        "display_url": "twitter.com/i/web/status/1…",
-                        "indices": [116, 139]
-                    }
-                ]
-            },
-            "metadata": {
-                "result_type": "popular",
-                "iso_language_code": "en"
-            },
-            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
-            "in_reply_to_status_id": null,
-            "in_reply_to_status_id_str": null,
-            "in_reply_to_user_id": null,
-            "in_reply_to_user_id_str": null,
-            "in_reply_to_screen_name": null,
-            "user": {
-                "id": 257145200,
-                "id_str": "257145200",
-                "name": "Rod Dreher",
-                "screen_name": "roddreher",
-                "location": "Baton Rouge, La., USA",
-                "description": "Conservative, Orthodox Christian, Southerner, Europhile, Ignatian (Reilly), eclecticist. Author of 'The Benedict Option'; new book, 'Live Not By Lies' (9/29/20)",
-                "url": "https://t.co/jyoCCosalq",
-                "entities": {
-                    "url": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/jyoCCosalq",
-                                "expanded_url": "https://www.penguinrandomhouse.com/books/622436/live-not-by-lies-by-rod-dreher/?ref=PRH90953FB481&ai",
-                                "display_url": "penguinrandomhouse.com/books/622436/l…",
-                                "indices": [0, 23]
-                            }
-                        ]
-                    },
-                    "description": {
-                        "urls": []
-                    }
-                },
-                "protected": false,
-                "followers_count": 59861,
-                "friends_count": 357,
-                "listed_count": 1124,
-                "created_at": "Thu Feb 24 20:49:03 +0000 2011",
-                "favourites_count": 1026,
-                "utc_offset": null,
-                "time_zone": null,
-                "geo_enabled": false,
-                "verified": true,
-                "statuses_count": 27603,
-                "lang": null,
-                "contributors_enabled": false,
-                "is_translator": false,
-                "is_translation_enabled": false,
-                "profile_background_color": "9AE4E8",
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme16/bg.gif",
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme16/bg.gif",
-                "profile_background_tile": false,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/1254141586734223361/f83lpOBP_normal.jpg",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1254141586734223361/f83lpOBP_normal.jpg",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/257145200/1592350285",
-                "profile_link_color": "0084B4",
-                "profile_sidebar_border_color": "BDDCAD",
-                "profile_sidebar_fill_color": "DDFFCC",
-                "profile_text_color": "333333",
-                "profile_use_background_image": true,
-                "has_extended_profile": true,
-                "default_profile": false,
-                "default_profile_image": false,
-                "following": null,
-                "follow_request_sent": null,
-                "notifications": null,
-                "translator_type": "none"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": false,
-            "retweet_count": 32,
-            "favorite_count": 155,
-            "favorited": false,
-            "retweeted": false,
-            "possibly_sensitive": false,
-            "lang": "en"
-        },
-        {
-            "created_at": "Tue Sep 22 17:26:31 +0000 2020",
-            "id": 1308457662082887682,
-            "id_str": "1308457662082887682",
-            "text": "Really substantive and insightful conversation between @joerogan and @Snowden. Check it out if you have some time this week. Stay free.",
-            "truncated": false,
-            "entities": {
-                "hashtags": [],
-                "symbols": [],
-                "user_mentions": [
-                    {
-                        "screen_name": "joerogan",
-                        "name": "Joe Rogan",
-                        "id": 18208354,
-                        "id_str": "18208354",
-                        "indices": [55, 64]
-                    },
-                    {
-                        "screen_name": "Snowden",
-                        "name": "Edward Snowden",
-                        "id": 2916305152,
-                        "id_str": "2916305152",
-                        "indices": [69, 77]
-                    }
-                ],
-                "urls": []
-            },
-            "metadata": {
-                "result_type": "popular",
-                "iso_language_code": "en"
-            },
-            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-            "in_reply_to_status_id": null,
-            "in_reply_to_status_id_str": null,
-            "in_reply_to_user_id": null,
-            "in_reply_to_user_id_str": null,
-            "in_reply_to_screen_name": null,
-            "user": {
-                "id": 233842454,
-                "id_str": "233842454",
-                "name": "Justin Amash",
-                "screen_name": "justinamash",
-                "location": "Michigan",
-                "description": "I defend #liberty • Libertarian • “Laws must be general, equal, and certain.” —F.A. Hayek",
-                "url": null,
-                "entities": {
-                    "description": {
-                        "urls": []
-                    }
-                },
-                "protected": false,
-                "followers_count": 459896,
-                "friends_count": 5996,
-                "listed_count": 4505,
-                "created_at": "Tue Jan 04 07:09:11 +0000 2011",
-                "favourites_count": 497,
-                "utc_offset": null,
-                "time_zone": null,
-                "geo_enabled": false,
-                "verified": true,
-                "statuses_count": 17787,
-                "lang": null,
-                "contributors_enabled": false,
-                "is_translator": false,
-                "is_translation_enabled": false,
-                "profile_background_color": "1A1B1F",
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif",
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif",
-                "profile_background_tile": false,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/1187952053269815296/-zEWdbBz_normal.jpg",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1187952053269815296/-zEWdbBz_normal.jpg",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/233842454/1599885942",
-                "profile_link_color": "2FC2EF",
-                "profile_sidebar_border_color": "EEEEEE",
-                "profile_sidebar_fill_color": "FFFFFF",
-                "profile_text_color": "333333",
+                "profile_image_url": "http://pbs.twimg.com/profile_images/931626989462601730/FXd2_kxZ_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/931626989462601730/FXd2_kxZ_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/895854672400883713/1588000920",
+                "profile_link_color": "5B573A",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "000000",
+                "profile_text_color": "000000",
                 "profile_use_background_image": false,
-                "has_extended_profile": true,
+                "has_extended_profile": false,
                 "default_profile": false,
                 "default_profile_image": false,
                 "following": null,
@@ -938,42 +320,42 @@
             "place": null,
             "contributors": null,
             "is_quote_status": false,
-            "retweet_count": 231,
-            "favorite_count": 1994,
+            "retweet_count": 17,
+            "favorite_count": 147,
             "favorited": false,
             "retweeted": false,
+            "possibly_sensitive": false,
             "lang": "en"
         },
         {
-            "created_at": "Wed Sep 16 20:27:23 +0000 2020",
-            "id": 1306328853208600577,
-            "id_str": "1306328853208600577",
-            "text": "Is @JoeBiden gonna debate @realDonaldTrump w/ @joerogan as the moderator or what? Who is holding this up?",
+            "created_at": "Sun Sep 27 02:41:33 +0000 2020",
+            "id": 1310046892911403008,
+            "id_str": "1310046892911403008",
+            "text": "SO nice to see @Jon_Anik inside the octagon doing interviews after the fights!\nCongrats to @meanhakeemko on the big win!",
             "truncated": false,
             "entities": {
                 "hashtags": [],
                 "symbols": [],
                 "user_mentions": [
                     {
-                        "screen_name": "JoeBiden",
-                        "name": "Joe Biden",
-                        "id": 939091,
-                        "id_str": "939091",
-                        "indices": [3, 12]
+                        "screen_name": "Jon_Anik",
+                        "name": "Jon Anik",
+                        "id": 39776268,
+                        "id_str": "39776268",
+                        "indices": [
+                            15,
+                            24
+                        ]
                     },
                     {
-                        "screen_name": "realDonaldTrump",
-                        "name": "Donald J. Trump",
-                        "id": 25073877,
-                        "id_str": "25073877",
-                        "indices": [26, 42]
-                    },
-                    {
-                        "screen_name": "joerogan",
-                        "name": "Joe Rogan",
-                        "id": 18208354,
-                        "id_str": "18208354",
-                        "indices": [46, 55]
+                        "screen_name": "meanhakeemko",
+                        "name": "Mean Hakeem",
+                        "id": 2996278680,
+                        "id_str": "2996278680",
+                        "indices": [
+                            91,
+                            104
+                        ]
                     }
                 ],
                 "urls": []
@@ -983,975 +365,6 @@
                 "iso_language_code": "en"
             },
             "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-            "in_reply_to_status_id": null,
-            "in_reply_to_status_id_str": null,
-            "in_reply_to_user_id": null,
-            "in_reply_to_user_id_str": null,
-            "in_reply_to_screen_name": null,
-            "user": {
-                "id": 17955081,
-                "id_str": "17955081",
-                "name": "Theo Von",
-                "screen_name": "TheoVon",
-                "location": "Louisiana and Los Angeles",
-                "description": "Your second cousin\n🎟 Cedar Rapids, Iowa\n🎟 Oceanport, New Jersey (with Trevor Wallace)",
-                "url": "https://t.co/8Zrv5Mw0Ts",
-                "entities": {
-                    "url": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/8Zrv5Mw0Ts",
-                                "expanded_url": "http://theovon.com/tour",
-                                "display_url": "theovon.com/tour",
-                                "indices": [0, 23]
-                            }
-                        ]
-                    },
-                    "description": {
-                        "urls": []
-                    }
-                },
-                "protected": false,
-                "followers_count": 349237,
-                "friends_count": 26881,
-                "listed_count": 744,
-                "created_at": "Mon Dec 08 03:39:57 +0000 2008",
-                "favourites_count": 11280,
-                "utc_offset": null,
-                "time_zone": null,
-                "geo_enabled": true,
-                "verified": true,
-                "statuses_count": 9923,
-                "lang": null,
-                "contributors_enabled": false,
-                "is_translator": false,
-                "is_translation_enabled": false,
-                "profile_background_color": "C0DEED",
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_tile": false,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/1106992295780352001/sov3Mgph_normal.png",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1106992295780352001/sov3Mgph_normal.png",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/17955081/1599017692",
-                "profile_link_color": "1B95E0",
-                "profile_sidebar_border_color": "FFFFFF",
-                "profile_sidebar_fill_color": "DDFFCC",
-                "profile_text_color": "333333",
-                "profile_use_background_image": true,
-                "has_extended_profile": false,
-                "default_profile": false,
-                "default_profile_image": false,
-                "following": null,
-                "follow_request_sent": null,
-                "notifications": null,
-                "translator_type": "none"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": false,
-            "retweet_count": 3084,
-            "favorite_count": 24726,
-            "favorited": false,
-            "retweeted": false,
-            "lang": "en"
-        },
-        {
-            "created_at": "Tue Sep 22 20:28:25 +0000 2020",
-            "id": 1308503441300365313,
-            "id_str": "1308503441300365313",
-            "text": "@joerogan let me know babe https://t.co/a2KAVO52nw",
-            "truncated": false,
-            "entities": {
-                "hashtags": [],
-                "symbols": [],
-                "user_mentions": [
-                    {
-                        "screen_name": "joerogan",
-                        "name": "Joe Rogan",
-                        "id": 18208354,
-                        "id_str": "18208354",
-                        "indices": [0, 9]
-                    }
-                ],
-                "urls": [],
-                "media": [
-                    {
-                        "id": 1308503296760451072,
-                        "id_str": "1308503296760451072",
-                        "indices": [27, 50],
-                        "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1308503296760451072/pu/img/5su7NLXe-Yy2HqQC.jpg",
-                        "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1308503296760451072/pu/img/5su7NLXe-Yy2HqQC.jpg",
-                        "url": "https://t.co/a2KAVO52nw",
-                        "display_url": "pic.twitter.com/a2KAVO52nw",
-                        "expanded_url": "https://twitter.com/chrisdcomedy/status/1308503441300365313/video/1",
-                        "type": "photo",
-                        "sizes": {
-                            "large": {
-                                "w": 720,
-                                "h": 900,
-                                "resize": "fit"
-                            },
-                            "thumb": {
-                                "w": 150,
-                                "h": 150,
-                                "resize": "crop"
-                            },
-                            "small": {
-                                "w": 544,
-                                "h": 680,
-                                "resize": "fit"
-                            },
-                            "medium": {
-                                "w": 720,
-                                "h": 900,
-                                "resize": "fit"
-                            }
-                        }
-                    }
-                ]
-            },
-            "extended_entities": {
-                "media": [
-                    {
-                        "id": 1308503296760451072,
-                        "id_str": "1308503296760451072",
-                        "indices": [27, 50],
-                        "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1308503296760451072/pu/img/5su7NLXe-Yy2HqQC.jpg",
-                        "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1308503296760451072/pu/img/5su7NLXe-Yy2HqQC.jpg",
-                        "url": "https://t.co/a2KAVO52nw",
-                        "display_url": "pic.twitter.com/a2KAVO52nw",
-                        "expanded_url": "https://twitter.com/chrisdcomedy/status/1308503441300365313/video/1",
-                        "type": "video",
-                        "sizes": {
-                            "large": {
-                                "w": 720,
-                                "h": 900,
-                                "resize": "fit"
-                            },
-                            "thumb": {
-                                "w": 150,
-                                "h": 150,
-                                "resize": "crop"
-                            },
-                            "small": {
-                                "w": 544,
-                                "h": 680,
-                                "resize": "fit"
-                            },
-                            "medium": {
-                                "w": 720,
-                                "h": 900,
-                                "resize": "fit"
-                            }
-                        },
-                        "video_info": {
-                            "aspect_ratio": [4, 5],
-                            "duration_millis": 47783,
-                            "variants": [
-                                {
-                                    "bitrate": 632000,
-                                    "content_type": "video/mp4",
-                                    "url": "https://video.twimg.com/ext_tw_video/1308503296760451072/pu/vid/320x400/nPEbofMKePM1sN6Q.mp4?tag=10"
-                                },
-                                {
-                                    "content_type": "application/x-mpegURL",
-                                    "url": "https://video.twimg.com/ext_tw_video/1308503296760451072/pu/pl/yS7sIewK6RkDo4xT.m3u8?tag=10"
-                                },
-                                {
-                                    "bitrate": 2176000,
-                                    "content_type": "video/mp4",
-                                    "url": "https://video.twimg.com/ext_tw_video/1308503296760451072/pu/vid/720x900/gJu0B49NYbBDpejl.mp4?tag=10"
-                                },
-                                {
-                                    "bitrate": 832000,
-                                    "content_type": "video/mp4",
-                                    "url": "https://video.twimg.com/ext_tw_video/1308503296760451072/pu/vid/360x450/6PaND5r_joO6kCgf.mp4?tag=10"
-                                }
-                            ]
-                        },
-                        "additional_media_info": {
-                            "monetizable": false
-                        }
-                    }
-                ]
-            },
-            "metadata": {
-                "result_type": "popular",
-                "iso_language_code": "en"
-            },
-            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-            "in_reply_to_status_id": null,
-            "in_reply_to_status_id_str": null,
-            "in_reply_to_user_id": 18208354,
-            "in_reply_to_user_id_str": "18208354",
-            "in_reply_to_screen_name": "joerogan",
-            "user": {
-                "id": 186594295,
-                "id_str": "186594295",
-                "name": "Chris Distefano",
-                "screen_name": "chrisdcomedy",
-                "location": "Brooklyn, NY",
-                "description": "Blanquito Papito.......Netflix. Comedy Central. Bay Ridge Boys! History Hyenas! Cutie wit a Smoothie! @historyhyenas",
-                "url": "https://t.co/lTKonnpnMe",
-                "entities": {
-                    "url": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/lTKonnpnMe",
-                                "expanded_url": "http://chrisdcomedy.com",
-                                "display_url": "chrisdcomedy.com",
-                                "indices": [0, 23]
-                            }
-                        ]
-                    },
-                    "description": {
-                        "urls": []
-                    }
-                },
-                "protected": false,
-                "followers_count": 131927,
-                "friends_count": 1501,
-                "listed_count": 368,
-                "created_at": "Fri Sep 03 21:47:15 +0000 2010",
-                "favourites_count": 37122,
-                "utc_offset": null,
-                "time_zone": null,
-                "geo_enabled": true,
-                "verified": true,
-                "statuses_count": 19851,
-                "lang": null,
-                "contributors_enabled": false,
-                "is_translator": false,
-                "is_translation_enabled": false,
-                "profile_background_color": "C0DEED",
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_tile": false,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/970484315376308225/8EEr-9l2_normal.jpg",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/970484315376308225/8EEr-9l2_normal.jpg",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/186594295/1456352004",
-                "profile_link_color": "1DA1F2",
-                "profile_sidebar_border_color": "C0DEED",
-                "profile_sidebar_fill_color": "DDEEF6",
-                "profile_text_color": "333333",
-                "profile_use_background_image": true,
-                "has_extended_profile": false,
-                "default_profile": true,
-                "default_profile_image": false,
-                "following": null,
-                "follow_request_sent": null,
-                "notifications": null,
-                "translator_type": "none"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": false,
-            "retweet_count": 51,
-            "favorite_count": 469,
-            "favorited": false,
-            "retweeted": false,
-            "possibly_sensitive": false,
-            "lang": "en"
-        },
-        {
-            "created_at": "Sat Sep 19 14:02:01 +0000 2020",
-            "id": 1307319035353337858,
-            "id_str": "1307319035353337858",
-            "text": "A number of listeners to the @joerogan podcast have asked about the Joan Rivers / Darcus Howe exchange I mentioned.… https://t.co/Qpw4OKuekW",
-            "truncated": true,
-            "entities": {
-                "hashtags": [],
-                "symbols": [],
-                "user_mentions": [
-                    {
-                        "screen_name": "joerogan",
-                        "name": "Joe Rogan",
-                        "id": 18208354,
-                        "id_str": "18208354",
-                        "indices": [29, 38]
-                    }
-                ],
-                "urls": [
-                    {
-                        "url": "https://t.co/Qpw4OKuekW",
-                        "expanded_url": "https://twitter.com/i/web/status/1307319035353337858",
-                        "display_url": "twitter.com/i/web/status/1…",
-                        "indices": [117, 140]
-                    }
-                ]
-            },
-            "metadata": {
-                "result_type": "popular",
-                "iso_language_code": "en"
-            },
-            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
-            "in_reply_to_status_id": null,
-            "in_reply_to_status_id_str": null,
-            "in_reply_to_user_id": null,
-            "in_reply_to_user_id_str": null,
-            "in_reply_to_screen_name": null,
-            "user": {
-                "id": 419520517,
-                "id_str": "419520517",
-                "name": "Douglas Murray",
-                "screen_name": "DouglasKMurray",
-                "location": "London, England",
-                "description": "Bestselling author of six books, including 'The Madness of Crowds' and 'The Strange Death of Europe'. Associate Editor @ The Spectator",
-                "url": "https://t.co/L2A2WT5ASm",
-                "entities": {
-                    "url": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/L2A2WT5ASm",
-                                "expanded_url": "https://douglasmurray.net",
-                                "display_url": "douglasmurray.net",
-                                "indices": [0, 23]
-                            }
-                        ]
-                    },
-                    "description": {
-                        "urls": []
-                    }
-                },
-                "protected": false,
-                "followers_count": 291246,
-                "friends_count": 657,
-                "listed_count": 1782,
-                "created_at": "Wed Nov 23 13:08:11 +0000 2011",
-                "favourites_count": 7,
-                "utc_offset": null,
-                "time_zone": null,
-                "geo_enabled": false,
-                "verified": true,
-                "statuses_count": 5046,
-                "lang": null,
-                "contributors_enabled": false,
-                "is_translator": false,
-                "is_translation_enabled": false,
-                "profile_background_color": "EBEBEB",
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme7/bg.gif",
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme7/bg.gif",
-                "profile_background_tile": false,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/1172945537340968961/YMBWhgoA_normal.jpg",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1172945537340968961/YMBWhgoA_normal.jpg",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/419520517/1599074847",
-                "profile_link_color": "990000",
-                "profile_sidebar_border_color": "DFDFDF",
-                "profile_sidebar_fill_color": "F3F3F3",
-                "profile_text_color": "333333",
-                "profile_use_background_image": true,
-                "has_extended_profile": true,
-                "default_profile": false,
-                "default_profile_image": false,
-                "following": null,
-                "follow_request_sent": null,
-                "notifications": null,
-                "translator_type": "none"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": false,
-            "retweet_count": 723,
-            "favorite_count": 3332,
-            "favorited": false,
-            "retweeted": false,
-            "possibly_sensitive": false,
-            "lang": "en"
-        },
-        {
-            "created_at": "Thu Sep 17 19:28:09 +0000 2020",
-            "id": 1306676334962376707,
-            "id_str": "1306676334962376707",
-            "text": "Watch: @joerogan on Julian Assange: \"He exposed horrific crimes - things that US citizens are deeply opposed to\"… https://t.co/dNn6BzxrWH",
-            "truncated": true,
-            "entities": {
-                "hashtags": [],
-                "symbols": [],
-                "user_mentions": [
-                    {
-                        "screen_name": "joerogan",
-                        "name": "Joe Rogan",
-                        "id": 18208354,
-                        "id_str": "18208354",
-                        "indices": [7, 16]
-                    }
-                ],
-                "urls": [
-                    {
-                        "url": "https://t.co/dNn6BzxrWH",
-                        "expanded_url": "https://twitter.com/i/web/status/1306676334962376707",
-                        "display_url": "twitter.com/i/web/status/1…",
-                        "indices": [114, 137]
-                    }
-                ]
-            },
-            "metadata": {
-                "result_type": "popular",
-                "iso_language_code": "en"
-            },
-            "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
-            "in_reply_to_status_id": null,
-            "in_reply_to_status_id_str": null,
-            "in_reply_to_user_id": null,
-            "in_reply_to_user_id_str": null,
-            "in_reply_to_screen_name": null,
-            "user": {
-                "id": 16589206,
-                "id_str": "16589206",
-                "name": "WikiLeaks",
-                "screen_name": "wikileaks",
-                "location": "Everywhere",
-                "description": "Securely submit leaks: https://t.co/676V6mG02v\nPGP: A04C 5E09 ED02 B328 03EB 6116 93ED 732E\nShop: @WikiLeaksShop\nDefend: https://t.co/vjSZXJDoI2",
-                "url": "https://t.co/maw0wih6t6",
-                "entities": {
-                    "url": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/maw0wih6t6",
-                                "expanded_url": "https://wikileaks.org",
-                                "display_url": "wikileaks.org",
-                                "indices": [0, 23]
-                            }
-                        ]
-                    },
-                    "description": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/676V6mG02v",
-                                "expanded_url": "https://wikileaks.org/#submit",
-                                "display_url": "wikileaks.org/#submit",
-                                "indices": [23, 46]
-                            },
-                            {
-                                "url": "https://t.co/vjSZXJDoI2",
-                                "expanded_url": "https://defend.wikileaks.org",
-                                "display_url": "defend.wikileaks.org",
-                                "indices": [121, 144]
-                            }
-                        ]
-                    }
-                },
-                "protected": false,
-                "followers_count": 5612622,
-                "friends_count": 7576,
-                "listed_count": 51222,
-                "created_at": "Sat Oct 04 06:41:05 +0000 2008",
-                "favourites_count": 1135,
-                "utc_offset": null,
-                "time_zone": null,
-                "geo_enabled": false,
-                "verified": true,
-                "statuses_count": 53777,
-                "lang": null,
-                "contributors_enabled": false,
-                "is_translator": false,
-                "is_translation_enabled": true,
-                "profile_background_color": "9AE4E8",
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-                "profile_background_tile": true,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/512138307870785536/Fe00yVS2_normal.png",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/512138307870785536/Fe00yVS2_normal.png",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/16589206/1402313050",
-                "profile_link_color": "0084B4",
-                "profile_sidebar_border_color": "BDDCAD",
-                "profile_sidebar_fill_color": "DDFFCC",
-                "profile_text_color": "333333",
-                "profile_use_background_image": true,
-                "has_extended_profile": false,
-                "default_profile": false,
-                "default_profile_image": false,
-                "following": null,
-                "follow_request_sent": null,
-                "notifications": null,
-                "translator_type": "none"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": false,
-            "retweet_count": 2207,
-            "favorite_count": 4750,
-            "favorited": false,
-            "retweeted": false,
-            "possibly_sensitive": false,
-            "lang": "en"
-        },
-        {
-            "created_at": "Fri Sep 18 20:02:34 +0000 2020",
-            "id": 1307047384560566283,
-            "id_str": "1307047384560566283",
-            "text": "@joerogan https://t.co/Xyo7sxkahg",
-            "truncated": false,
-            "entities": {
-                "hashtags": [],
-                "symbols": [],
-                "user_mentions": [
-                    {
-                        "screen_name": "joerogan",
-                        "name": "Joe Rogan",
-                        "id": 18208354,
-                        "id_str": "18208354",
-                        "indices": [0, 9]
-                    }
-                ],
-                "urls": [
-                    {
-                        "url": "https://t.co/Xyo7sxkahg",
-                        "expanded_url": "https://twitter.com/MrAndyNgo/status/1304602426821849090",
-                        "display_url": "twitter.com/MrAndyNgo/stat…",
-                        "indices": [10, 33]
-                    }
-                ]
-            },
-            "metadata": {
-                "iso_language_code": "und",
-                "result_type": "popular"
-            },
-            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
-            "in_reply_to_status_id": 1307046650238693376,
-            "in_reply_to_status_id_str": "1307046650238693376",
-            "in_reply_to_user_id": 2835451658,
-            "in_reply_to_user_id_str": "2835451658",
-            "in_reply_to_screen_name": "MrAndyNgo",
-            "user": {
-                "id": 2835451658,
-                "id_str": "2835451658",
-                "name": "Andy Ngô",
-                "screen_name": "MrAndyNgo",
-                "location": "",
-                "description": "Editor-at-large - @TPostMillennial. \"Unmasked\" now available for pre-order: https://t.co/nHDpgWNnvX",
-                "url": "https://t.co/jPwMbP8CBz",
-                "entities": {
-                    "url": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/jPwMbP8CBz",
-                                "expanded_url": "https://ngo.locals.com/",
-                                "display_url": "ngo.locals.com",
-                                "indices": [0, 23]
-                            }
-                        ]
-                    },
-                    "description": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/nHDpgWNnvX",
-                                "expanded_url": "https://www.amazon.com/Unmasked-Antifas-Radical-Destroy-Democracy/dp/154605958X",
-                                "display_url": "amazon.com/Unmasked-Antif…",
-                                "indices": [76, 99]
-                            }
-                        ]
-                    }
-                },
-                "protected": false,
-                "followers_count": 724080,
-                "friends_count": 745,
-                "listed_count": 3261,
-                "created_at": "Mon Sep 29 05:58:06 +0000 2014",
-                "favourites_count": 45321,
-                "utc_offset": null,
-                "time_zone": null,
-                "geo_enabled": true,
-                "verified": true,
-                "statuses_count": 16800,
-                "lang": null,
-                "contributors_enabled": false,
-                "is_translator": false,
-                "is_translation_enabled": false,
-                "profile_background_color": "EBEBEB",
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme7/bg.gif",
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme7/bg.gif",
-                "profile_background_tile": false,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/1265070746931302401/2w71OcJP_normal.jpg",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1265070746931302401/2w71OcJP_normal.jpg",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/2835451658/1590863799",
-                "profile_link_color": "AF7D5D",
-                "profile_sidebar_border_color": "000000",
-                "profile_sidebar_fill_color": "000000",
-                "profile_text_color": "000000",
-                "profile_use_background_image": true,
-                "has_extended_profile": true,
-                "default_profile": false,
-                "default_profile_image": false,
-                "following": null,
-                "follow_request_sent": null,
-                "notifications": null,
-                "translator_type": "none"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": true,
-            "quoted_status_id": 1304602426821849090,
-            "quoted_status_id_str": "1304602426821849090",
-            "quoted_status": {
-                "created_at": "Sat Sep 12 02:07:11 +0000 2020",
-                "id": 1304602426821849090,
-                "id_str": "1304602426821849090",
-                "text": "Ngo exclusive: Jett Thomas, 36, has been arrested in Portland &amp; charged w/1st-degree felony arson, felony unlawful… https://t.co/Fwh1yoQWhV",
-                "truncated": true,
-                "entities": {
-                    "hashtags": [],
-                    "symbols": [],
-                    "user_mentions": [],
-                    "urls": [
-                        {
-                            "url": "https://t.co/Fwh1yoQWhV",
-                            "expanded_url": "https://twitter.com/i/web/status/1304602426821849090",
-                            "display_url": "twitter.com/i/web/status/1…",
-                            "indices": [120, 143]
-                        }
-                    ]
-                },
-                "metadata": {
-                    "iso_language_code": "und",
-                    "result_type": "popular"
-                },
-                "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
-                "in_reply_to_status_id": null,
-                "in_reply_to_status_id_str": null,
-                "in_reply_to_user_id": null,
-                "in_reply_to_user_id_str": null,
-                "in_reply_to_screen_name": null,
-                "user": {
-                    "id": 2835451658,
-                    "id_str": "2835451658",
-                    "name": "Andy Ngô",
-                    "screen_name": "MrAndyNgo",
-                    "location": "",
-                    "description": "Editor-at-large - @TPostMillennial. \"Unmasked\" now available for pre-order: https://t.co/nHDpgWNnvX",
-                    "url": "https://t.co/jPwMbP8CBz",
-                    "entities": {
-                        "url": {
-                            "urls": [
-                                {
-                                    "url": "https://t.co/jPwMbP8CBz",
-                                    "expanded_url": "https://ngo.locals.com/",
-                                    "display_url": "ngo.locals.com",
-                                    "indices": [0, 23]
-                                }
-                            ]
-                        },
-                        "description": {
-                            "urls": [
-                                {
-                                    "url": "https://t.co/nHDpgWNnvX",
-                                    "expanded_url": "https://www.amazon.com/Unmasked-Antifas-Radical-Destroy-Democracy/dp/154605958X",
-                                    "display_url": "amazon.com/Unmasked-Antif…",
-                                    "indices": [76, 99]
-                                }
-                            ]
-                        }
-                    },
-                    "protected": false,
-                    "followers_count": 724080,
-                    "friends_count": 745,
-                    "listed_count": 3261,
-                    "created_at": "Mon Sep 29 05:58:06 +0000 2014",
-                    "favourites_count": 45321,
-                    "utc_offset": null,
-                    "time_zone": null,
-                    "geo_enabled": true,
-                    "verified": true,
-                    "statuses_count": 16800,
-                    "lang": null,
-                    "contributors_enabled": false,
-                    "is_translator": false,
-                    "is_translation_enabled": false,
-                    "profile_background_color": "EBEBEB",
-                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme7/bg.gif",
-                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme7/bg.gif",
-                    "profile_background_tile": false,
-                    "profile_image_url": "http://pbs.twimg.com/profile_images/1265070746931302401/2w71OcJP_normal.jpg",
-                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1265070746931302401/2w71OcJP_normal.jpg",
-                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/2835451658/1590863799",
-                    "profile_link_color": "AF7D5D",
-                    "profile_sidebar_border_color": "000000",
-                    "profile_sidebar_fill_color": "000000",
-                    "profile_text_color": "000000",
-                    "profile_use_background_image": true,
-                    "has_extended_profile": true,
-                    "default_profile": false,
-                    "default_profile_image": false,
-                    "following": null,
-                    "follow_request_sent": null,
-                    "notifications": null,
-                    "translator_type": "none"
-                },
-                "geo": null,
-                "coordinates": null,
-                "place": null,
-                "contributors": null,
-                "is_quote_status": false,
-                "retweet_count": 4339,
-                "favorite_count": 6747,
-                "favorited": false,
-                "retweeted": false,
-                "possibly_sensitive": false,
-                "lang": "en"
-            },
-            "retweet_count": 1841,
-            "favorite_count": 8969,
-            "favorited": false,
-            "retweeted": false,
-            "possibly_sensitive": false,
-            "lang": "und"
-        },
-        {
-            "created_at": "Fri Sep 18 19:59:39 +0000 2020",
-            "id": 1307046650238693376,
-            "id_str": "1307046650238693376",
-            "text": "@joerogan https://t.co/0ZLD2SYfpV",
-            "truncated": false,
-            "entities": {
-                "hashtags": [],
-                "symbols": [],
-                "user_mentions": [
-                    {
-                        "screen_name": "joerogan",
-                        "name": "Joe Rogan",
-                        "id": 18208354,
-                        "id_str": "18208354",
-                        "indices": [0, 9]
-                    }
-                ],
-                "urls": [
-                    {
-                        "url": "https://t.co/0ZLD2SYfpV",
-                        "expanded_url": "https://twitter.com/MrAndyNgo/status/1305390932448092160",
-                        "display_url": "twitter.com/MrAndyNgo/stat…",
-                        "indices": [10, 33]
-                    }
-                ]
-            },
-            "metadata": {
-                "iso_language_code": "und",
-                "result_type": "popular"
-            },
-            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
-            "in_reply_to_status_id": 1307020061215993856,
-            "in_reply_to_status_id_str": "1307020061215993856",
-            "in_reply_to_user_id": 18208354,
-            "in_reply_to_user_id_str": "18208354",
-            "in_reply_to_screen_name": "joerogan",
-            "user": {
-                "id": 2835451658,
-                "id_str": "2835451658",
-                "name": "Andy Ngô",
-                "screen_name": "MrAndyNgo",
-                "location": "",
-                "description": "Editor-at-large - @TPostMillennial. \"Unmasked\" now available for pre-order: https://t.co/nHDpgWNnvX",
-                "url": "https://t.co/jPwMbP8CBz",
-                "entities": {
-                    "url": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/jPwMbP8CBz",
-                                "expanded_url": "https://ngo.locals.com/",
-                                "display_url": "ngo.locals.com",
-                                "indices": [0, 23]
-                            }
-                        ]
-                    },
-                    "description": {
-                        "urls": [
-                            {
-                                "url": "https://t.co/nHDpgWNnvX",
-                                "expanded_url": "https://www.amazon.com/Unmasked-Antifas-Radical-Destroy-Democracy/dp/154605958X",
-                                "display_url": "amazon.com/Unmasked-Antif…",
-                                "indices": [76, 99]
-                            }
-                        ]
-                    }
-                },
-                "protected": false,
-                "followers_count": 724080,
-                "friends_count": 745,
-                "listed_count": 3261,
-                "created_at": "Mon Sep 29 05:58:06 +0000 2014",
-                "favourites_count": 45321,
-                "utc_offset": null,
-                "time_zone": null,
-                "geo_enabled": true,
-                "verified": true,
-                "statuses_count": 16800,
-                "lang": null,
-                "contributors_enabled": false,
-                "is_translator": false,
-                "is_translation_enabled": false,
-                "profile_background_color": "EBEBEB",
-                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme7/bg.gif",
-                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme7/bg.gif",
-                "profile_background_tile": false,
-                "profile_image_url": "http://pbs.twimg.com/profile_images/1265070746931302401/2w71OcJP_normal.jpg",
-                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1265070746931302401/2w71OcJP_normal.jpg",
-                "profile_banner_url": "https://pbs.twimg.com/profile_banners/2835451658/1590863799",
-                "profile_link_color": "AF7D5D",
-                "profile_sidebar_border_color": "000000",
-                "profile_sidebar_fill_color": "000000",
-                "profile_text_color": "000000",
-                "profile_use_background_image": true,
-                "has_extended_profile": true,
-                "default_profile": false,
-                "default_profile_image": false,
-                "following": null,
-                "follow_request_sent": null,
-                "notifications": null,
-                "translator_type": "none"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": true,
-            "quoted_status_id": 1305390932448092160,
-            "quoted_status_id_str": "1305390932448092160",
-            "quoted_status": {
-                "created_at": "Mon Sep 14 06:20:25 +0000 2020",
-                "id": 1305390932448092160,
-                "id_str": "1305390932448092160",
-                "text": "BREAKING: Portland Police arrested a man today suspected of starting a brush fire using a Molotov cocktail. Firefig… https://t.co/56tOYMzwgY",
-                "truncated": true,
-                "entities": {
-                    "hashtags": [],
-                    "symbols": [],
-                    "user_mentions": [],
-                    "urls": [
-                        {
-                            "url": "https://t.co/56tOYMzwgY",
-                            "expanded_url": "https://twitter.com/i/web/status/1305390932448092160",
-                            "display_url": "twitter.com/i/web/status/1…",
-                            "indices": [117, 140]
-                        }
-                    ]
-                },
-                "metadata": {
-                    "iso_language_code": "und",
-                    "result_type": "popular"
-                },
-                "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
-                "in_reply_to_status_id": null,
-                "in_reply_to_status_id_str": null,
-                "in_reply_to_user_id": null,
-                "in_reply_to_user_id_str": null,
-                "in_reply_to_screen_name": null,
-                "user": {
-                    "id": 2835451658,
-                    "id_str": "2835451658",
-                    "name": "Andy Ngô",
-                    "screen_name": "MrAndyNgo",
-                    "location": "",
-                    "description": "Editor-at-large - @TPostMillennial. \"Unmasked\" now available for pre-order: https://t.co/nHDpgWNnvX",
-                    "url": "https://t.co/jPwMbP8CBz",
-                    "entities": {
-                        "url": {
-                            "urls": [
-                                {
-                                    "url": "https://t.co/jPwMbP8CBz",
-                                    "expanded_url": "https://ngo.locals.com/",
-                                    "display_url": "ngo.locals.com",
-                                    "indices": [0, 23]
-                                }
-                            ]
-                        },
-                        "description": {
-                            "urls": [
-                                {
-                                    "url": "https://t.co/nHDpgWNnvX",
-                                    "expanded_url": "https://www.amazon.com/Unmasked-Antifas-Radical-Destroy-Democracy/dp/154605958X",
-                                    "display_url": "amazon.com/Unmasked-Antif…",
-                                    "indices": [76, 99]
-                                }
-                            ]
-                        }
-                    },
-                    "protected": false,
-                    "followers_count": 724080,
-                    "friends_count": 745,
-                    "listed_count": 3261,
-                    "created_at": "Mon Sep 29 05:58:06 +0000 2014",
-                    "favourites_count": 45321,
-                    "utc_offset": null,
-                    "time_zone": null,
-                    "geo_enabled": true,
-                    "verified": true,
-                    "statuses_count": 16800,
-                    "lang": null,
-                    "contributors_enabled": false,
-                    "is_translator": false,
-                    "is_translation_enabled": false,
-                    "profile_background_color": "EBEBEB",
-                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme7/bg.gif",
-                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme7/bg.gif",
-                    "profile_background_tile": false,
-                    "profile_image_url": "http://pbs.twimg.com/profile_images/1265070746931302401/2w71OcJP_normal.jpg",
-                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1265070746931302401/2w71OcJP_normal.jpg",
-                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/2835451658/1590863799",
-                    "profile_link_color": "AF7D5D",
-                    "profile_sidebar_border_color": "000000",
-                    "profile_sidebar_fill_color": "000000",
-                    "profile_text_color": "000000",
-                    "profile_use_background_image": true,
-                    "has_extended_profile": true,
-                    "default_profile": false,
-                    "default_profile_image": false,
-                    "following": null,
-                    "follow_request_sent": null,
-                    "notifications": null,
-                    "translator_type": "none"
-                },
-                "geo": null,
-                "coordinates": null,
-                "place": null,
-                "contributors": null,
-                "is_quote_status": false,
-                "retweet_count": 10600,
-                "favorite_count": 16456,
-                "favorited": false,
-                "retweeted": false,
-                "possibly_sensitive": false,
-                "lang": "en"
-            },
-            "retweet_count": 2315,
-            "favorite_count": 11383,
-            "favorited": false,
-            "retweeted": false,
-            "possibly_sensitive": false,
-            "lang": "und"
-        },
-        {
-            "created_at": "Thu Sep 17 23:24:47 +0000 2020",
-            "id": 1306735883987685377,
-            "id_str": "1306735883987685377",
-            "text": "I thoroughly enjoyed my talk with the great and powerful Douglas Murray, author of the excellent “The Madness of Cr… https://t.co/jnNSZBTUnn",
-            "truncated": true,
-            "entities": {
-                "hashtags": [],
-                "symbols": [],
-                "user_mentions": [],
-                "urls": [
-                    {
-                        "url": "https://t.co/jnNSZBTUnn",
-                        "expanded_url": "https://twitter.com/i/web/status/1306735883987685377",
-                        "display_url": "twitter.com/i/web/status/1…",
-                        "indices": [117, 140]
-                    }
-                ]
-            },
-            "metadata": {
-                "result_type": "popular",
-                "iso_language_code": "en"
-            },
-            "source": "<a href=\"http://instagram.com\" rel=\"nofollow\">Instagram</a>",
             "in_reply_to_status_id": null,
             "in_reply_to_status_id_str": null,
             "in_reply_to_user_id": null,
@@ -1972,7 +385,10 @@
                                 "url": "https://t.co/UoPqZeUr22",
                                 "expanded_url": "http://www.joerogan.net",
                                 "display_url": "joerogan.net",
-                                "indices": [0, 23]
+                                "indices": [
+                                    0,
+                                    23
+                                ]
                             }
                         ]
                     },
@@ -1982,22 +398,25 @@
                                 "url": "https://t.co/caBUmcvqBY",
                                 "expanded_url": "http://www.facebook.com/JOEROGAN",
                                 "display_url": "facebook.com/JOEROGAN",
-                                "indices": [110, 133]
+                                "indices": [
+                                    110,
+                                    133
+                                ]
                             }
                         ]
                     }
                 },
                 "protected": false,
-                "followers_count": 6647261,
+                "followers_count": 6666082,
                 "friends_count": 3880,
-                "listed_count": 21167,
+                "listed_count": 21183,
                 "created_at": "Thu Dec 18 04:01:47 +0000 2008",
                 "favourites_count": 833,
                 "utc_offset": null,
                 "time_zone": null,
                 "geo_enabled": false,
                 "verified": true,
-                "statuses_count": 45599,
+                "statuses_count": 45606,
                 "lang": null,
                 "contributors_enabled": false,
                 "is_translator": false,
@@ -2027,11 +446,262 @@
             "place": null,
             "contributors": null,
             "is_quote_status": false,
-            "retweet_count": 710,
-            "favorite_count": 7978,
+            "retweet_count": 173,
+            "favorite_count": 4613,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Sun Sep 27 19:26:41 +0000 2020",
+            "id": 1310299841881403392,
+            "id_str": "1310299841881403392",
+            "text": "It finally happened, a health official discussed the importance of vitamin D instead of vaccines &amp; social distancin… https://t.co/VTMXdb6I5m",
+            "truncated": true,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/VTMXdb6I5m",
+                        "expanded_url": "https://twitter.com/i/web/status/1310299841881403392",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            121,
+                            144
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 99961254,
+                "id_str": "99961254",
+                "name": "Mike Hart, M.D",
+                "screen_name": "drmikehart",
+                "location": "London, Ontario",
+                "description": "Founder of @readytogoclinic. President @Rritual1. As seen on @joerogan. Advisory Board @Predictmedix. Not medical advice. Bookings:publicistjess@gmail.com",
+                "url": "https://t.co/twQnyLmzzf",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/twQnyLmzzf",
+                                "expanded_url": "https://www.youtube.com/watch?v=YHwSmwEwmV4",
+                                "display_url": "youtube.com/watch?v=YHwSmw…",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 16380,
+                "friends_count": 179,
+                "listed_count": 250,
+                "created_at": "Mon Dec 28 14:26:01 +0000 2009",
+                "favourites_count": 5758,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 8380,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "FF8A00",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme2/bg.gif",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme2/bg.gif",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1298319585691815936/I6fj8TLc_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1298319585691815936/I6fj8TLc_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/99961254/1565886116",
+                "profile_link_color": "1F98C7",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "DAECF4",
+                "profile_text_color": "663B12",
+                "profile_use_background_image": false,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 19,
+            "favorite_count": 97,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Sun Sep 27 01:58:55 +0000 2020",
+            "id": 1310036163072327680,
+            "id_str": "1310036163072327680",
+            "text": "Fresh elk tenderloin, olive oil, @meatchurch lemon pepper and kosher salt.  @traegergrills set to 275 degrees.  Per… https://t.co/cSTMRXhOrj",
+            "truncated": true,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "MeatChurch",
+                        "name": "Meat Church ™",
+                        "id": 1217090606,
+                        "id_str": "1217090606",
+                        "indices": [
+                            33,
+                            44
+                        ]
+                    },
+                    {
+                        "screen_name": "TraegerGrills",
+                        "name": "Traeger Grills",
+                        "id": 131014117,
+                        "id_str": "131014117",
+                        "indices": [
+                            76,
+                            90
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/cSTMRXhOrj",
+                        "expanded_url": "https://twitter.com/i/web/status/1310036163072327680",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"http://instagram.com\" rel=\"nofollow\">Instagram</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 18208354,
+                "id_str": "18208354",
+                "name": "Joe Rogan",
+                "screen_name": "joerogan",
+                "location": "",
+                "description": "Stand up comic/mixed martial arts fanatic/psychedelic adventurer Host of The Joe Rogan Experience #FreakParty https://t.co/caBUmcvqBY",
+                "url": "https://t.co/UoPqZeUr22",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/UoPqZeUr22",
+                                "expanded_url": "http://www.joerogan.net",
+                                "display_url": "joerogan.net",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/caBUmcvqBY",
+                                "expanded_url": "http://www.facebook.com/JOEROGAN",
+                                "display_url": "facebook.com/JOEROGAN",
+                                "indices": [
+                                    110,
+                                    133
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 6666082,
+                "friends_count": 3880,
+                "listed_count": 21183,
+                "created_at": "Thu Dec 18 04:01:47 +0000 2008",
+                "favourites_count": 833,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 45606,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": true,
+                "profile_background_color": "022330",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/552307347851210752/vrXDcTFC_normal.jpeg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/552307347851210752/vrXDcTFC_normal.jpeg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/18208354/1536958228",
+                "profile_link_color": "0084B4",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "C0DFEC",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 78,
+            "favorite_count": 1976,
             "favorited": false,
             "retweeted": false,
             "possibly_sensitive": false,
             "lang": "en"
         }
-    ]
+    ],
+    "search_metadata": {
+        "completed_in": 0.029,
+        "max_id": 0,
+        "max_id_str": "0",
+        "next_results": "?max_id=1310036163072327679&q=joerogan&count=5&include_entities=1&result_type=popular",
+        "query": "joerogan",
+        "count": 5,
+        "since_id": 0,
+        "since_id_str": "0"
+    }
+}

@@ -4,6 +4,7 @@ using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using System.Text.Json;
+using API.Models;
 using twitter_showcase;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
@@ -25,10 +26,10 @@ namespace API.Services
         {
             
             // Windows
-            // using var jsonFileReader = File.OpenText(@"C:\git\twitter-asp.net.core\API\Data\mockdata.json");
+            using var jsonFileReader = File.OpenText(@"C:\git\twitter-asp.net.core\API\Data\mockdataWOStatuses.json");
             
             // Linux
-            using var jsonFileReader = File.OpenText(@"/home/stanzu10/Development/git/twitter-showcase/API/Data/mockdata.json");
+            // using var jsonFileReader = File.OpenText(@"/home/stanzu10/Development/git/twitter-showcase/API/Data/mockdata.json");
             
             
             return JsonSerializer.Deserialize<List<Tweet>>(jsonFileReader.ReadToEnd(),

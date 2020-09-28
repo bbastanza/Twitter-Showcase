@@ -1,21 +1,23 @@
+using System.Collections.Generic;
 using System.Dynamic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace twitter_showcase
 {
+    
+    public class Rootobject
+    {
+        public List<Tweet> statuses { get; set; }
+    }
     public class Tweet
     {
         [JsonPropertyName("id")]
         public long Id { get; set; }
         [JsonPropertyName("source")]
         public string Source { get; set; }
-        [JsonPropertyName("user.profile_image_url_https")]
-        public string ProfileImageUrl { get; set; }
-        [JsonPropertyName("user.screen_name")]
-        public string UserName { get; set; }
-        [JsonPropertyName("user.name")]
-        public string DisplayName { get; set; }
+        [JsonPropertyName("user")]
+        public User user { get; set; }
         [JsonPropertyName("created_at")]
         public string Date { get; set; }
         [JsonPropertyName("text")]
@@ -27,5 +29,16 @@ namespace twitter_showcase
 
         public override string ToString() => JsonSerializer.Serialize<Tweet>(this);
         
+    }
+    public class User
+    {
+        public long id { get; set; }
+        public string name { get; set; }
+        public string screen_name { get; set; }
+        public string description { get; set; }
+        public bool verified { get; set; }
+        public string profile_image_url_https { get; set; }
+
+
     }
 }

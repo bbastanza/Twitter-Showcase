@@ -7,14 +7,10 @@ export default function Search() {
     const [banner, setBanner] = useState("");
     const [tweetData, setTweetData] = useState([]);
     const [tweetComponents, setTweetComponents] = useState([])
-//comment
+
     useEffect(()=>{
         createTweets()
     }, [tweetData])
-
-    function thiones(){
-        console.log("object")
-    }
 
     async function getTweets(){
         const tweetsRecieved = await axios.get("https://localhost:5001/tweets").then(response => response.data)
