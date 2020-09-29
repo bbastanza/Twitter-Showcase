@@ -8,9 +8,9 @@ using twitter_showcase;
 
 namespace API
 {
-    public class TweetProcessor
+    public static class TweetProcessor
     {
-        public async Task<Tweet> LoadTweet(string searchItem)
+        public static async Task<Object> FetchTweets(string searchItem)
         {
             string url = $"https://api.twitter.com/1.1/search/tweets.json?q={searchItem}&result_type=popular&count=5";
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))

@@ -6,9 +6,10 @@ using System.Text.Json.Serialization;
 namespace twitter_showcase
 {
     
-    public class Rootobject
+    public class Tweets
     {
-        public List<Tweet> statuses { get; set; }
+        [JsonPropertyName("statuses")]
+        public List<Tweet> Statuses { get; set; }
     }
     public class Tweet
     {
@@ -17,7 +18,7 @@ namespace twitter_showcase
         [JsonPropertyName("source")]
         public string Source { get; set; }
         [JsonPropertyName("user")]
-        public User user { get; set; }
+        public User User { get; set; }
         [JsonPropertyName("created_at")]
         public string Date { get; set; }
         [JsonPropertyName("text")]
@@ -32,12 +33,18 @@ namespace twitter_showcase
     }
     public class User
     {
-        public long id { get; set; }
-        public string name { get; set; }
-        public string screen_name { get; set; }
-        public string description { get; set; }
-        public bool verified { get; set; }
-        public string profile_image_url_https { get; set; }
+        [JsonPropertyName("id")]
+        public long Id { get; set; }
+        [JsonPropertyName("name")]
+        public string Name { get; set; }
+        [JsonPropertyName("screen_name")]
+        public string ScreenName { get; set; }
+        [JsonPropertyName("description")]
+        public string Description { get; set; }
+        [JsonPropertyName("verified")]
+        public bool Verified { get; set; }
+        [JsonPropertyName("profile_image_url_https")]
+        public string ProfileImageUrlHttps { get; set; }
 
 
     }

@@ -12,6 +12,7 @@ namespace API
         {
             ApiClient = new HttpClient();
             ApiClient.DefaultRequestHeaders.Accept.Clear();
+            ApiClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", "AAAAAAAAAAAAAAAAAAAAAEkGIAEAAAAAd48lpFF5oUBNm%2FiTE88EnzYspIs%3DnKMWsK5JsW5JkWIjh9amsXErAgEfJjfpwBvvwiu2QHLomTMXuS");
             ApiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
     }

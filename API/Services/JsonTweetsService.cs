@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Net.Http;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using System.Text.Json;
+using System.Threading.Tasks;
 using API.Models;
 using twitter_showcase;
 using JsonSerializer = System.Text.Json.JsonSerializer;
@@ -17,61 +19,36 @@ namespace API.Services
             WebHostEnvironment = (IWebHostEnvironment) webHostEnvironment;
         }
         
+
         public IWebHostEnvironment WebHostEnvironment { get; }
 
-
- 
-
-        public static List<Tweet> GetTweets()
+        
+        public static async Task<Tweets> GetTweets(string searchItem)
         {
-            
-            // Windows
-            using var jsonFileReader = File.OpenText(@"C:\git\twitter-asp.net.core\API\Data\mockdataWOStatuses.json");
-            
-            // Linux
-            // using var jsonFileReader = File.OpenText(@"/home/stanzu10/Development/git/twitter-showcase/API/Data/mockdata.json");
-            
-            
-            return JsonSerializer.Deserialize<List<Tweet>>(jsonFileReader.ReadToEnd(),
-                new JsonSerializerOptions
+            string url = $"https://api.twitter.com/1.1/search/tweets.json?q={searchItem}&result_type=popular&count=5";
+            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+            {
+
+                if (response.IsSuccessStatusCode)
                 {
-                    PropertyNameCaseInsensitive = true
-                });
+                    Console.WriteLine(await response.Content.ReadAsStringAsync());
+                    return  JsonSerializer.Deserialize<Tweets>(await response.Content.ReadAsStringAsync());
+                }
+                else
+                {
+
+                    throw new Exception(response.ReasonPhrase);
+                }
+            }
+            // // Windows
+            // using var jsonFile = File.OpenText(@"C:\git\twitter-asp.net.core\API\Data\mockdata.json");
+            //
+            // // Linux
+            // // using var jsonFileReader = File.OpenText(@"/home/stanzu10/Development/git/twitter-showcase/API/Data/mockdata.json");
+            // string jsonText = jsonFile.ReadToEnd();
+            //
+            // return  JsonSerializer.Deserialize<Tweets>(jsonText);
+           
         }
     }
 }
-
-// using System.Collections.Generic;
-// using System.IO;
-// using System.Linq;
-// using System.Text.Json;
-// using ContosoCrafts.WebSite.Models;
-// using Microsoft.AspNetCore.Hosting;
-//
-// namespace ContosoCrafts.WebSite.Services
-// {
-//     public class JsonFileProductService
-//     {
-//         public JsonFileProductService(IWebHostEnvironment webHostEnvironment)
-//         {
-//             WebHostEnvironment = webHostEnvironment;
-//         }
-//
-//         public IWebHostEnvironment WebHostEnvironment { get; }
-//
-//         private string JsonFileName
-//         {
-//             get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json"); }
-//         }
-//
-//         public IEnumerable<Product> GetProducts()
-//         {
-//             using(var jsonFileReader = File.OpenText(JsonFileName))
-//             {
-//                 return JsonSerializer.Deserialize<Product[]>(jsonFileReader.ReadToEnd(),
-//                     new JsonSerializerOptions
-//                     {
-//                         PropertyNameCaseInsensitive = true
-//                     });
-//             }
-//         }

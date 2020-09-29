@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using API.Models;
 using API.Services;
@@ -17,24 +18,18 @@ namespace API.Controllers
         // pattern: "{controller}/{action=Index}/{id?}");
 
 
-        private List<Tweet> _tweets;
+        private Object _tweets;
 
         public TweetsController()
         {
-        
-            _tweets = JsonTweetsService.GetTweets();
+            _tweets = JsonTweetsService.GetTweets("barackobama");
         }
         
         // GET
-        public List<Tweet> Get()
+        public Object Get()
         {
             return _tweets;
         }
-
-        // get/id
-        // public Tweet GetID(int id)
-        // {
-        //     return _tweets.FirstOrDefault(x => x.Id == id);
-        // }
+        
     }
 }

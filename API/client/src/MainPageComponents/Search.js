@@ -1,31 +1,36 @@
 import React, { useState, useEffect } from "react";
 import Tweet from "./../Tweets/Tweet";
-import axios from "axios"
+import axios from "axios";
 
 export default function Search() {
     const [textBoxValue, setTextBoxValue] = useState("");
     const [banner, setBanner] = useState("");
     const [tweetData, setTweetData] = useState([]);
-    const [tweetComponents, setTweetComponents] = useState([])
+    const [tweetComponents, setTweetComponents] = useState([]);
 
-    useEffect(()=>{
-        createTweets()
-    }, [tweetData])
+    useEffect(() => {
+        createTweets();
+    }, [tweetData]);
 
-    async function getTweets(){
-        const tweetsRecieved = await axios.get("https://localhost:5001/tweets").then(response => response.data)
-        setTweetData([...tweetsRecieved])
+    async function getTweets() {
+        try {
+            const tweetsRecieved = await axios.get("https://localhost:5001/tweets").then(response => response.data);
+            console.log(tweetsRecieved.statuses);
+            setTweetData([...tweetsRecieved.statuses]);
+        } catch {
+            console.log("there was an error fetching data");
+        }
     }
 
-    function createTweets(){
-        let newTweetComponents = tweetData.map(tweet =>{
-            return <Tweet tweetData={tweet} key={tweet.id}/>
-        })
-        setTweetComponents([...newTweetComponents])
+    function createTweets() {
+        let newTweetComponents = tweetData.map(tweet => {
+            return <Tweet tweetData={tweet} key={tweet.id} />;
+        });
+        setTweetComponents([...newTweetComponents]);
     }
 
     function pressedSubmit(e) {
-        getTweets()
+        getTweets();
         e.preventDefault();
         setBanner(textBoxValue);
         if (textBoxValue !== "") {
@@ -34,7 +39,6 @@ export default function Search() {
     }
 
     return (
-        
         <div style={{ textAlign: "center", justifyContent: "left", width: "100vw" }} className="row">
             <div className="col-lg-5 col-md-12 row" style={{ padding: "80px 0 0 100px ", justifyContent: "center" }}>
                 <form onSubmit={pressedSubmit}>
@@ -55,7 +59,7 @@ export default function Search() {
                 </form>
             </div>
             <div className="col-lg-7 col-md-12" style={{ marginTop: 60 }}>
-            {tweetComponents}
+                {tweetComponents}
             </div>
         </div>
     );
