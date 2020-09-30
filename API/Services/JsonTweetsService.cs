@@ -18,37 +18,39 @@ namespace API.Services
         {
             WebHostEnvironment = (IWebHostEnvironment) webHostEnvironment;
         }
-        
 
         public IWebHostEnvironment WebHostEnvironment { get; }
 
         
         public static async Task<Tweets> GetTweets(string searchItem)
         {
+            // using var jsonFile = File.OpenText(@"/home/stanzu10/Development/git/twitter-showcase/API/Data/mockdata.json");
+            // string jsonText = jsonFile.ReadToEnd();
+            //
+            // return  JsonSerializer.Deserialize<Tweets>(jsonText);
             string url = $"https://api.twitter.com/1.1/search/tweets.json?q={searchItem}&result_type=popular&count=5";
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
             {
 
                 if (response.IsSuccessStatusCode)
                 {
-                    Console.WriteLine(await response.Content.ReadAsStringAsync());
-                    return  JsonSerializer.Deserialize<Tweets>(await response.Content.ReadAsStringAsync());
+                    var tweetResponse = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine(tweetResponse);
+                    return  JsonSerializer.Deserialize<Tweets>(tweetResponse);
                 }
-                else
-                {
-
-                    throw new Exception(response.ReasonPhrase);
-                }
+                
+                throw new Exception(response.ReasonPhrase);
             }
-            // // Windows
-            // using var jsonFile = File.OpenText(@"C:\git\twitter-asp.net.core\API\Data\mockdata.json");
-            //
-            // // Linux
-            // // using var jsonFileReader = File.OpenText(@"/home/stanzu10/Development/git/twitter-showcase/API/Data/mockdata.json");
-            // string jsonText = jsonFile.ReadToEnd();
-            //
-            // return  JsonSerializer.Deserialize<Tweets>(jsonText);
-           
         }
     }
 }
+
+
+// // Windows
+// using var jsonFile = File.OpenText(@"C:\git\twitter-asp.net.core\API\Data\mockdata.json");
+//
+// // Linux
+// // using var jsonFileReader = File.OpenText(@"/home/stanzu10/Development/git/twitter-showcase/API/Data/mockdata.json");
+// string jsonText = jsonFile.ReadToEnd();
+//
+// return  JsonSerializer.Deserialize<Tweets>(jsonText);

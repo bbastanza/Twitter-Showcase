@@ -18,15 +18,17 @@ namespace API.Controllers
         // pattern: "{controller}/{action=Index}/{id?}");
 
 
-        private Object _tweets;
+        private object _tweets;
+         
 
         public TweetsController()
         {
+
             _tweets = JsonTweetsService.GetTweets("barackobama");
         }
         
         // GET
-        public Object Get()
+        public object Get()
         {
             return _tweets;
         }

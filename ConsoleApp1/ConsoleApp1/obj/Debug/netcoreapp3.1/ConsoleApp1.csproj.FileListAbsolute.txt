@@ -1,0 +1,13 @@
+/home/stanzu10/Development/git/twitter-showcase/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1
+/home/stanzu10/Development/git/twitter-showcase/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.deps.json
+/home/stanzu10/Development/git/twitter-showcase/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.runtimeconfig.json
+/home/stanzu10/Development/git/twitter-showcase/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.runtimeconfig.dev.json
+/home/stanzu10/Development/git/twitter-showcase/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.dll
+/home/stanzu10/Development/git/twitter-showcase/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.pdb
+/home/stanzu10/Development/git/twitter-showcase/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csprojAssemblyReference.cache
+/home/stanzu10/Development/git/twitter-showcase/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfoInputs.cache
+/home/stanzu10/Development/git/twitter-showcase/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfo.cs
+/home/stanzu10/Development/git/twitter-showcase/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.CoreCompileInputs.cache
+/home/stanzu10/Development/git/twitter-showcase/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.dll
+/home/stanzu10/Development/git/twitter-showcase/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.pdb
+/home/stanzu10/Development/git/twitter-showcase/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.genruntimeconfig.cache
