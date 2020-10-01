@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using API.Models;
+
 using API.Services;
 using Microsoft.AspNetCore.Mvc;
 using twitter_showcase;
@@ -18,20 +18,17 @@ namespace API.Controllers
         // pattern: "{controller}/{action=Index}/{id?}");
 
 
-        private object _tweets;
-         
+        private readonly IJsonTweetsService _jsonTweetsService;
 
-        public TweetsController()
+        public TweetsController(IJsonTweetsService jsonTweetsService)
         {
-
-            _tweets = JsonTweetsService.GetTweets("barackobama");
+            _jsonTweetsService = jsonTweetsService;
         }
-        
-        // GET
+
         public object Get()
         {
-            return _tweets;
+            return _jsonTweetsService.GetTweets("yankees").Result;
         }
-        
+
     }
 }

@@ -288,7 +288,7 @@
                 "utc_offset": null,
                 "time_zone": null,
                 "geo_enabled": true,
-                "verified": true,
+                "verified": false,
                 "statuses_count": 16232,
                 "lang": null,
                 "contributors_enabled": false,
