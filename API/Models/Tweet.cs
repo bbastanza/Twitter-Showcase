@@ -49,4 +49,9 @@ namespace twitter_showcase
 
 
     }
+
+    public class entities
+    {
+        
+    }
 }
