@@ -13,21 +13,23 @@ namespace API.Controllers
     public class TweetsController : Controller
     {
 
-        // endpoints.MapControllerRoute(
-        // name: "default",
-        // pattern: "{controller}/{action=Index}/{id?}");
-
-
         private readonly IJsonTweetsService _jsonTweetsService;
 
         public TweetsController(IJsonTweetsService jsonTweetsService)
         {
             _jsonTweetsService = jsonTweetsService;
         }
-
-        public object Get()
+        
+        [Route("content/{id}")]
+        public object GetContent(string id)
         {
-            return _jsonTweetsService.GetTweets("yankees").Result;
+            return _jsonTweetsService.GetTweets($"https://api.twitter.com/1.1/search/tweets.json?q={id}&result_type=popular&count=5").Result;
+        }
+        
+        [Route("user/{id}")]
+        public object GetUser(string id)
+        {
+            return _jsonTweetsService.GetTweets($"https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={id}&count=5", true).Result;
         }
 
     }

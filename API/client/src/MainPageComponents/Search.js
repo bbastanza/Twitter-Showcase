@@ -12,11 +12,25 @@ export default function Search() {
         createTweets();
     }, [tweetData]);
 
-    async function getTweets() {
+    async function getTweets(searchItem, type) {
         try {
-            const tweetsRecieved = await axios.get("https://localhost:5001/tweets").then(response => response.data);
-            console.log(tweetsRecieved.statuses);
-            setTweetData([...tweetsRecieved.statuses]);
+            let tweetsRecieved;
+            switch (type) {
+                case "user":
+                    console.log("user search");
+                    tweetsRecieved = await axios
+                        .get(`https://localhost:5001/tweets/user/${searchItem.split(" ").join("")}`)
+                        .then(response => response.data);
+                    setTweetData([...tweetsRecieved]);
+                    break;
+                default:
+                    console.log("content search");
+                    tweetsRecieved = await axios
+                        .get(`https://localhost:5001/tweets/content/${searchItem.split(" ").join("")}`)
+                        .then(response => response.data);
+                    setTweetData([...tweetsRecieved.statuses]);
+                    break;
+            }
         } catch {
             console.log("there was an error fetching data");
         }
@@ -29,19 +43,17 @@ export default function Search() {
         setTweetComponents([...newTweetComponents]);
     }
 
-    function pressedSubmit(e) {
-        getTweets();
+    function pressedSearch(e, type) {
         e.preventDefault();
         setBanner(textBoxValue);
-        if (textBoxValue !== "") {
-            setTextBoxValue("");
-        }
+        getTweets(textBoxValue, type);
+        setTextBoxValue("");
     }
 
     return (
         <div style={{ textAlign: "center", justifyContent: "left", width: "100vw" }} className="row">
             <div className="col-lg-5 col-md-12 row" style={{ padding: "80px 0 0 100px ", justifyContent: "center" }}>
-                <form onSubmit={pressedSubmit}>
+                <form className="justify-content-center">
                     <input
                         className="searchbar"
                         style={{ textAlign: "center", width: "30vw" }}
@@ -50,8 +62,19 @@ export default function Search() {
                         placeholder="Enter Person or Tweet"
                         value={textBoxValue}
                     />
-                    <button className="btn btn-info link searchbar" style={{ padding: "5px 20px", margin: 5 }}>
-                        Search
+                    <button
+                        onClick={e => pressedSearch(e, "user")}
+                        className="btn btn-info link searchbar"
+                        style={{ padding: "5px 20px", margin: 5 }}
+                    >
+                        Search by Screen Name
+                    </button>
+                    <button
+                        onClick={e => pressedSearch(e, "content")}
+                        className="btn btn-info link searchbar"
+                        style={{ padding: "5px 20px", margin: 5 }}
+                    >
+                        Search by Content
                     </button>
                     <h1 className="col-6 individual-h2" style={{ margin: "30px auto" }}>
                         {banner}

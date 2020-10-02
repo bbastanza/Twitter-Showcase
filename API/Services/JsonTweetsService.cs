@@ -14,23 +14,33 @@ namespace API.Services
 {        
     public interface IJsonTweetsService
     {
-        Task<Tweets> GetTweets(string searchItem);
+        Task<object> GetTweets(string url, bool individual = false);
     }
 
     public class JsonTweetsService : IJsonTweetsService
     {
-        public async Task<Tweets> GetTweets(string searchItem)
+        private IJsonTweetsService _jsonTweetsServiceImplementation;
+
+
+
+        public async Task<object> GetTweets(string url, bool individual = false)
         {
-            string url = $"https://api.twitter.com/1.1/search/tweets.json?q={searchItem}&result_type=popular&count=5";
+
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
             {
                 if (response.IsSuccessStatusCode)
                 {
                     var tweetResponse = await response.Content.ReadAsStringAsync();
-                    return  JsonSerializer.Deserialize<Tweets>(tweetResponse);
+                    if (!individual)
+                        return JsonSerializer.Deserialize<Tweets>(tweetResponse);
+                    
+                    return JsonSerializer.Deserialize<List<Tweet>>(tweetResponse);
                 }
                 throw new Exception(response.ReasonPhrase);
             }
         }
+        
     }
+    
+  
 }

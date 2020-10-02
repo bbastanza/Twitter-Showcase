@@ -39,6 +39,7 @@ namespace twitter_showcase
         public string Name { get; set; }
         [JsonPropertyName("screen_name")]
         public string ScreenName { get; set; }
+
         [JsonPropertyName("description")]
         public string Description { get; set; }
         [JsonPropertyName("verified")]
