@@ -4,10 +4,6 @@ import tweetBg from "./../Images/tweet-bg.png";
 import verifiedImage from "./../Images/verified.png";
 
 export default function Tweet({ tweetData }) {
-    const backgroundImage = {
-        backgroundImage: `url(${tweetBg})`,
-    };
-
     const verified = tweetData.user.verified ? (
         <img src={verifiedImage} alt="verified" style={{ height: 20, width: 20 }}></img>
     ) : (
@@ -27,8 +23,20 @@ export default function Tweet({ tweetData }) {
             break;
     }
 
+    if (tweetData.entities.urls[0]) {
+        if (tweetData.text.includes(tweetData.entities.urls[0].url))
+            tweetData.text = (
+                <p>
+                    {tweetData.text.replace(
+                        tweetData.entities.urls[0].url,
+                        <a href={tweetData.entities.urls[0].url}>"*Link*"</a>
+                    )}
+                </p>
+            );
+    }
+
     return (
-        <div className="tweet col-12" style={backgroundImage}>
+        <div className="tweet col-12" style={{ backgroundImage: `url(${tweetBg})` }}>
             <div className="row">
                 <img
                     src={tweetData.user.profileImageUrlHttps}
