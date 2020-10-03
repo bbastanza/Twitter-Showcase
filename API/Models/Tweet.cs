@@ -4,12 +4,10 @@ using System.Text.Json.Serialization;
 
 namespace API.Models
 {
-
     public class Tweets
     {
         [JsonPropertyName("statuses")] public List<Tweet> Statuses { get; set; }
     }
-
     public class Tweet
     {
         [JsonPropertyName("id")] public long Id { get; set; }
@@ -27,15 +25,13 @@ namespace API.Models
   
                 if (formattedText.Contains("http") && Entities.Urls.Count != 0)
                 {
-                    var textWithoutLink = formattedText.Substring(0, Text.IndexOf("http", StringComparison.Ordinal)) + " ";
-                        formattedText = textWithoutLink +
-                                        $"<a href={Entities.Urls[0].url} target='_blank'>Link</a>";
+                    formattedText = $"{formattedText.Substring(0, Text.IndexOf("http", StringComparison.Ordinal))} " +
+                                    $"<a href={Entities.Urls[0].url} target='_blank'>Link</a>";
                 }
                 else if (formattedText.Contains("http") && Entities.Media.Count != 0)
                 {
-                    var textWithoutLink = formattedText.Substring(0, Text.IndexOf("http", StringComparison.Ordinal)) + " ";
-                        formattedText = textWithoutLink +
-                                        $"<a href={Entities.Media[0].Media_url} target='_blank'>Link</a>";
+                    formattedText = $"{formattedText.Substring(0, Text.IndexOf("http", StringComparison.Ordinal))} " +
+                                    $"<a href={Entities.Media[0].Media_url} target='_blank'>Link</a>";
                 }
                 return formattedText;
             }

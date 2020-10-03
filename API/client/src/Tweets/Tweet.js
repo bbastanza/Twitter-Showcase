@@ -25,20 +25,6 @@ export default function Tweet({ tweetData }) {
 
     if (tweetData.text.includes("&amp;")) tweetData.text = tweetData.text.replace("&amp;", "&");
 
-    // if (tweetData.entities.urls[0]) {
-    //     if (tweetData.text.includes(tweetData.entities.urls[0].url))
-    //         tweetData.paragraph = (
-    //             <p className="tweet-text">
-    //                 {tweetData.text.substring(0, tweetData.text.indexOf(tweetData.entities.urls[0].url))}
-    //                 <a href={tweetData.entities.urls[0].url} target="_blank">
-    //                     -link
-    //                 </a>
-    //             </p>
-    //         );
-    // } else {
-    //     tweetData.paragraph = <p className="tweet-text">{tweetData.text}</p>;
-    // }
-
     return (
         <div className="tweet col-12" style={{ backgroundImage: `url(${tweetBg})` }}>
             <div className="row">
@@ -60,7 +46,10 @@ export default function Tweet({ tweetData }) {
                     alt="thumbnail"
                 ></img>
             </div>
-            <p style={{ padding: 10 }} dangerouslySetInnerHTML={{ __html: tweetData.formattedText }}></p>
+            <div className="tweet-text">
+                <p dangerouslySetInnerHTML={{ __html: tweetData.formattedText }}></p>
+            </div>
+
             <div>
                 <div className="row">
                     <div className="row col-8">
@@ -70,8 +59,10 @@ export default function Tweet({ tweetData }) {
                         <span role="img" aria-label="retweet" className="col-2">
                             🔄 {tweetData.retweetCount}
                         </span>
-                        <h6 className="username">{sentFrom}</h6>
-                        <div className="col-6"></div>
+                        <h6 className="username col-7" style={{ textAlign: "right" }}>
+                            {sentFrom}
+                        </h6>
+                        <div className="col-1"></div>
                     </div>
                 </div>
             </div>

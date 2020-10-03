@@ -118,7 +118,7 @@
 .tweet-text {
     font-weight: bold;
     color: #1a1d35;
-    padding-left: 80px;
+    padding: 10px 10px 10px 80px;
 }
 
 .username {
