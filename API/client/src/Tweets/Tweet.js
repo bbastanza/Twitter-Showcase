@@ -9,7 +9,7 @@ export default function Tweet({ tweetData }) {
     ) : (
         ""
     );
-
+    console.log(tweetData);
     let sentFrom;
     switch (tweetData.source) {
         case '<a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>':
@@ -23,17 +23,21 @@ export default function Tweet({ tweetData }) {
             break;
     }
 
-    if (tweetData.entities.urls[0]) {
-        if (tweetData.text.includes(tweetData.entities.urls[0].url))
-            tweetData.text = (
-                <p>
-                    {tweetData.text.replace(
-                        tweetData.entities.urls[0].url,
-                        <a href={tweetData.entities.urls[0].url}>"*Link*"</a>
-                    )}
-                </p>
-            );
-    }
+    if (tweetData.text.includes("&amp;")) tweetData.text = tweetData.text.replace("&amp;", "&");
+
+    // if (tweetData.entities.urls[0]) {
+    //     if (tweetData.text.includes(tweetData.entities.urls[0].url))
+    //         tweetData.paragraph = (
+    //             <p className="tweet-text">
+    //                 {tweetData.text.substring(0, tweetData.text.indexOf(tweetData.entities.urls[0].url))}
+    //                 <a href={tweetData.entities.urls[0].url} target="_blank">
+    //                     -link
+    //                 </a>
+    //             </p>
+    //         );
+    // } else {
+    //     tweetData.paragraph = <p className="tweet-text">{tweetData.text}</p>;
+    // }
 
     return (
         <div className="tweet col-12" style={{ backgroundImage: `url(${tweetBg})` }}>
@@ -56,13 +60,10 @@ export default function Tweet({ tweetData }) {
                     alt="thumbnail"
                 ></img>
             </div>
-            <div className="tweet-text" style={{ padding: 10 }}>
-                <blockquote style={{ marginLeft: 80 }}>{tweetData.text}</blockquote>
-            </div>
+            <p style={{ padding: 10 }} dangerouslySetInnerHTML={{ __html: tweetData.formattedText }}></p>
             <div>
                 <div className="row">
                     <div className="row col-8">
-                        {" "}
                         <span role="img" aria-label="like" className="col-2">
                             💗 {tweetData.likeCount}
                         </span>

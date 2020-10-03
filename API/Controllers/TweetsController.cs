@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using API.Services;
+﻿using API.Services;
 using Microsoft.AspNetCore.Mvc;
-using twitter_showcase;
 
 namespace API.Controllers
 {
@@ -23,13 +18,13 @@ namespace API.Controllers
         [Route("content/{id}")]
         public object GetContent(string id)
         {
-            return _jsonTweetsService.GetTweets($"https://api.twitter.com/1.1/search/tweets.json?q={id}&result_type=popular&count=5").Result;
+            return _jsonTweetsService.GetTweets($"https://api.twitter.com/1.1/search/tweets.json?q={id}&result_type=popular&count=5&tweet_mode=extended").Result;
         }
         
         [Route("user/{id}")]
         public object GetUser(string id)
         {
-            return _jsonTweetsService.GetTweets($"https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={id}&count=5", true).Result;
+            return _jsonTweetsService.GetTweets($"https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={id}&count=5&tweet_mode=extended", true).Result;
         }
 
     }

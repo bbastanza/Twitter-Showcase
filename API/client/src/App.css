@@ -115,13 +115,10 @@
     border-radius: 20px;
 }
 
-.tweet p {
-    color: #4e5f5d;
-}
-
 .tweet-text {
     font-weight: bold;
-    color:  #1a1d35;
+    color: #1a1d35;
+    padding-left: 80px;
 }
 
 .username {
