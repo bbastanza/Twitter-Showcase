@@ -48,7 +48,6 @@ C:/Users/Stanzu/RiderProjects/twitter-asp.net.core/API/bin/Debug/netcoreapp3.1/c
 C:/Users/Stanzu/RiderProjects/twitter-asp.net.core/API/bin/Debug/netcoreapp3.1/client/src/Tweets/mockdata.json
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/appsettings.json
-/home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/Data/mockdata.json
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/client/package-lock.json
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/client/package.json
@@ -92,7 +91,6 @@ C:/Users/Stanzu/RiderProjects/twitter-asp.net.core/API/bin/Debug/netcoreapp3.1/c
 /home/stanzu10/Development/git/twitter-showcase/API/obj/Debug/netcoreapp3.1/API.dll
 /home/stanzu10/Development/git/twitter-showcase/API/obj/Debug/netcoreapp3.1/API.pdb
 /home/stanzu10/Development/git/twitter-showcase/API/obj/Debug/netcoreapp3.1/API.genruntimeconfig.cache
-/home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/Data/mockdataWOStatuses.json
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/System.Net.Http.Formatting.dll
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll

@@ -38,7 +38,7 @@ export default function Search() {
 
     function createTweets() {
         let newTweetComponents = tweetData.map(tweet => {
-            return <Tweet tweetData={tweet} key={tweet.id} />;
+            return <Tweet search={getTweets} tweetData={tweet} key={tweet.id} />;
         });
         setTweetComponents([...newTweetComponents]);
     }

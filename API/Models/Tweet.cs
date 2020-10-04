@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.Json.Serialization;
+
 
 namespace API.Models
 {
@@ -22,7 +24,10 @@ namespace API.Models
             get
             {
                 var formattedText = Text;
-  
+                var mentions = Entities.UserMentions;
+
+
+
                 if (formattedText.Contains("http") && Entities.Urls.Count != 0)
                 {
                     formattedText = $"{formattedText.Substring(0, Text.IndexOf("http", StringComparison.Ordinal))} " +
@@ -33,6 +38,29 @@ namespace API.Models
                     formattedText = $"{formattedText.Substring(0, Text.IndexOf("http", StringComparison.Ordinal))} " +
                                     $"<a href={Entities.Media[0].Media_url} target='_blank'>Link</a>";
                 }
+
+                if (formattedText.Contains("@"))
+                {                
+                    var mentionIndex = 0;
+                    var words = formattedText.Split(" ");
+                    var updatedList = new List<string>();
+                    foreach (var word in words)
+                    {
+                        var mention = word;
+                        if (word.Contains("@"))
+                        {
+                            mention = @"<span onClick{handleSearch('"
+                                      + mentions[mentionIndex].MentionScreenName
+                                      + @"', 'user')} className='mention'>" + mention + @"</span>";
+                        }
+                        updatedList.Add(mention);
+            
+                    }
+
+                    
+                    formattedText = String.Join(' ', updatedList);
+                }
+                
                 return formattedText;
             }
         }
@@ -55,6 +83,14 @@ namespace API.Models
     {
         [JsonPropertyName("urls")] public List<Url> Urls { get; set; }
         [JsonPropertyName("media")] public List<Media> Media { get; set; }
+
+        [JsonPropertyName("user_mentions")]
+        public List<UserMention> UserMentions{ get; set; }
+    }
+    
+    public class UserMention
+    {
+        [JsonPropertyName("screen_name")] public string MentionScreenName { get; set; }
     }
 
     public class Media
