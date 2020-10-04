@@ -25,9 +25,7 @@ namespace API.Models
             {
                 var formattedText = Text;
                 var mentions = Entities.UserMentions;
-
-
-
+                
                 if (formattedText.Contains("http") && Entities.Urls.Count != 0)
                 {
                     formattedText = $"{formattedText.Substring(0, Text.IndexOf("http", StringComparison.Ordinal))} " +
@@ -49,14 +47,12 @@ namespace API.Models
                         var mention = word;
                         if (word.Contains("@"))
                         {
-                            mention = @"<span onClick{handleSearch('"
+                            mention = @"<span onClick{() => search('"
                                       + mentions[mentionIndex].MentionScreenName
                                       + @"', 'user')} className='mention'>" + mention + @"</span>";
                         }
                         updatedList.Add(mention);
-            
                     }
-
                     
                     formattedText = String.Join(' ', updatedList);
                 }

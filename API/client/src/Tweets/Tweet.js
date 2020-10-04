@@ -1,9 +1,9 @@
 import React from "react";
+import ReactHtmlParser from "react-html-parser";
 import TwitterThumbnail from "./../Images/twitter_thumbnail.png";
 import tweetBg from "./../Images/tweet-bg.png";
 import verifiedImage from "./../Images/verified.png";
 import getSource from "../helpers/GetSource";
-import Search from "../MainPageComponents/Search";
 
 export default function Tweet({ tweetData, search }) {
     const verified = tweetData.user.verified ? (
@@ -11,11 +11,9 @@ export default function Tweet({ tweetData, search }) {
     ) : (
         ""
     );
-    console.log(tweetData);
     const source = getSource(tweetData.source);
-    function handleSearch(name, type) {
-        search(name, type);
-    }
+
+    console.log(`FORMATTED TEXT: ${tweetData.formattedText}`);
 
     return (
         <div className="tweet col-12" style={{ backgroundImage: `url(${tweetBg})` }}>
@@ -45,7 +43,7 @@ export default function Tweet({ tweetData, search }) {
                 ></img>
             </div>
             <div className="tweet-text">
-                <div dangerouslySetInnerHTML={{ __html: tweetData.formattedText }}></div>
+                <p id="tweet-text-area">{ReactHtmlParser(tweetData.formattedText)}</p>
             </div>
 
             <div>
