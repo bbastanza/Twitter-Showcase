@@ -47,17 +47,18 @@ namespace API.Models
                         var mention = word;
                         if (word.Contains("@"))
                         {
-                            mention = @"<span onClick{() => search('"
-                                      + mentions[mentionIndex].MentionScreenName
-                                      + @"', 'user')} className='mention'>" + mention + @"</span>";
+                            mention = @"<span className='mention'>" + mention + @"</span>";
                         }
                         updatedList.Add(mention);
                     }
                     
+                    
                     formattedText = String.Join(' ', updatedList);
                 }
+
+             
+                return  $"<p>{formattedText}</p>";
                 
-                return formattedText;
             }
         }
         [JsonPropertyName("favorite_count")] public int LikeCount { get; set; }
@@ -100,3 +101,7 @@ namespace API.Models
         public string url { get; set; }            
     }
 }
+
+// onClick={mentionSearch('"
+//     + mentions[mentionIndex].MentionScreenName
+// + @"', 'user')} 

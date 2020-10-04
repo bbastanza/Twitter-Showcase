@@ -1,5 +1,6 @@
 import React from "react";
 import ReactHtmlParser from "react-html-parser";
+import JsxParser from "react-jsx-parser";
 import TwitterThumbnail from "./../Images/twitter_thumbnail.png";
 import tweetBg from "./../Images/tweet-bg.png";
 import verifiedImage from "./../Images/verified.png";
@@ -27,13 +28,9 @@ export default function Tweet({ tweetData, search }) {
                 <h4 className="col-lg-4">
                     {tweetData.user.name} {verified}
                 </h4>
-                <h5
-                    className="col-lg-4 username"
-                    style={{ cursor: "pointer" }}
-                    onClick={() => search(tweetData.user.screenName, "user")}
-                >
-                    @{tweetData.user.screenName}
-                </h5>
+                <div className="col-lg-4" onClick={() => search(tweetData.user.screenName, "user")}>
+                    <h5 className="screen-name">@{tweetData.user.screenName}</h5>
+                </div>
                 <h6 className="col-lg-2">{tweetData.date.substring(4, 16)}</h6>
 
                 <img
@@ -42,10 +39,7 @@ export default function Tweet({ tweetData, search }) {
                     alt="thumbnail"
                 ></img>
             </div>
-            <div className="tweet-text">
-                <p id="tweet-text-area">{ReactHtmlParser(tweetData.formattedText)}</p>
-            </div>
-
+            <div className="tweet-text">{ReactHtmlParser(tweetData.formattedText)}</div>
             <div>
                 <div className="row">
                     <div className="row col-8">
@@ -55,7 +49,7 @@ export default function Tweet({ tweetData, search }) {
                         <span role="img" aria-label="retweet" className="col-2">
                             🔄 {tweetData.retweetCount}
                         </span>
-                        <h6 className="username col-7" style={{ textAlign: "right" }}>
+                        <h6 className="source col-7" style={{ textAlign: "right" }}>
                             {source}
                         </h6>
                         <div className="col-1"></div>

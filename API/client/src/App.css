@@ -120,7 +120,14 @@
     padding: 10px 10px 10px 80px;
 }
 
-.username {
+.screen-name {
+    color: rgba(0, 84, 112, 1);
+    cursor: pointer;
+}
+.screen-name:hover {
+    color: rgba(0, 65, 204, 0.8);
+}
+.source {
     color: rgba(65, 74, 77, 0.8);
 }
 
