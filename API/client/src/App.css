@@ -140,3 +140,26 @@
     font-weight: bold;
     color: blue;
 }
+
+.showcase-card {
+    background-color: #262626;
+    border: 2px rgb(21, 161, 154) solid;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #ffe6bc;
+    box-shadow: 2px -2px 2px rgba(220, 247, 255, 0.1), 3px 3px 2px rgba(220, 247, 255, 0.2),
+        2px 3px 4px rgba(75, 155, 192, 0.5);
+}
+
+.showcase-card:hover {
+    color: #ffd181;
+}
+
+.showcase-card h4 {
+    color: rgb(0, 143, 179);
+}
+
+.showcase-card h4:hover {
+    color: rgb(0, 175, 219);
+}

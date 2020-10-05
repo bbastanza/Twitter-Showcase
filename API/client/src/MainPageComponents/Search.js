@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Tweet from "./../Tweets/Tweet";
+import Tweet from "../IndividualComponents/Tweet";
 import axios from "axios";
 
 export default function Search() {

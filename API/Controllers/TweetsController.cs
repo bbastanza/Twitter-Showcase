@@ -26,6 +26,12 @@ namespace API.Controllers
         {
             return _jsonTweetsService.GetTweets($"https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={id}&count=5&tweet_mode=extended", true).Result;
         }
+        
+        [Route("showcase/{id}")]
+        public object GetShowcase(string id)
+        {
+            return _jsonTweetsService.GetTweets($"https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={id}&count=30&tweet_mode=extended", true).Result;
+        }
 
     }
 }

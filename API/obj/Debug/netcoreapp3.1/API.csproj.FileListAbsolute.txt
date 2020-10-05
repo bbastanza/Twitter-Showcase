@@ -52,7 +52,6 @@ C:/Users/Stanzu/RiderProjects/twitter-asp.net.core/API/bin/Debug/netcoreapp3.1/c
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/client/package-lock.json
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/client/package.json
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/client/public/manifest.json
-/home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/client/src/Tweets/mockdata.json
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/API
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/API.deps.json
 /home/stanzu10/Development/git/twitter-showcase/API/bin/Debug/netcoreapp3.1/API.runtimeconfig.json

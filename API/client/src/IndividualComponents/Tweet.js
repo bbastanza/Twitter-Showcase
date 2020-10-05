@@ -1,6 +1,5 @@
 import React from "react";
 import ReactHtmlParser from "react-html-parser";
-import JsxParser from "react-jsx-parser";
 import TwitterThumbnail from "./../Images/twitter_thumbnail.png";
 import tweetBg from "./../Images/tweet-bg.png";
 import verifiedImage from "./../Images/verified.png";
