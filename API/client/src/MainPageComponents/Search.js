@@ -32,7 +32,7 @@ export default function Search() {
                     break;
             }
         } catch {
-            console.log("there was an error fetching data");
+            alert("there was an error fetching data");
         }
     }
 

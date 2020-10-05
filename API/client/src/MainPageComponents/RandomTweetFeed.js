@@ -12,7 +12,6 @@ export default function RandomTweetFeed() {
     const [tweetData, setTweetData] = useState([]);
     const [tweetComponent, setTweetComponent] = useState([]);
     const [currentUser, setCurrentUser] = useState("");
-    const [banner, setBanner] = useState("");
 
     async function getTweets(user) {
         try {
@@ -23,7 +22,7 @@ export default function RandomTweetFeed() {
             await setTweetData([...tweetsRecieved]);
             makeRandomTweet();
         } catch {
-            console.log("there was an error fetching data");
+            alert("there was an error fetching data");
         }
     }
 
@@ -73,7 +72,6 @@ export default function RandomTweetFeed() {
                 />
             </div>
             <div className="col-lg-6 col-md-12" style={{ marginTop: 60 }}>
-                <h1>{banner}</h1>
                 {tweetComponent}
             </div>
         </div>
