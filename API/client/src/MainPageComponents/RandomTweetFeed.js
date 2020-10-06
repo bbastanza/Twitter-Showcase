@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ShowcaseCard from "./../IndividualComponents/ShowcaseCard";
+import ErrorCard from "./../IndividualComponents/ErrorCard";
 import axios from "axios";
 import Tweet from "./../IndividualComponents/Tweet";
 import neilImage from "./../Images/neiltyson.jpg";
@@ -12,18 +13,32 @@ export default function RandomTweetFeed() {
     const [tweetData, setTweetData] = useState([]);
     const [tweetComponent, setTweetComponent] = useState([]);
     const [currentUser, setCurrentUser] = useState("");
+    const [errorCard, setErrorCard] = useState([]);
 
     async function getTweets(user) {
         try {
             console.log("showcase search");
-            const tweetsRecieved = await axios
+            const responseData = await axios
                 .get(`https://localhost:5001/tweets/showcase/${user}`)
                 .then(response => response.data);
-            await setTweetData([...tweetsRecieved]);
-            makeRandomTweet();
+            console.log(responseData);
+            evaluateResponse(responseData);
         } catch {
             alert("there was an error fetching data");
         }
+    }
+
+    function evaluateResponse(responseData) {
+        if ("error" in responseData) createErrorCard(responseData);
+        else {
+            setTweetData([...responseData]);
+            makeRandomTweet();
+        }
+    }
+
+    function createErrorCard(responseData) {
+        setTweetComponent([]);
+        setErrorCard([<ErrorCard key={Math.random()} error={responseData} />]);
     }
 
     function handleClick(user) {
@@ -37,6 +52,7 @@ export default function RandomTweetFeed() {
     }
 
     function makeRandomTweet() {
+        setErrorCard([]);
         const index = Math.floor(Math.random() * tweetData.length);
         const randomTweet = <Tweet search={makeRandomTweet} tweetData={tweetData[index]} key={tweetData[index].id} />;
         setTweetComponent([randomTweet]);
@@ -72,6 +88,7 @@ export default function RandomTweetFeed() {
                 />
             </div>
             <div className="col-lg-6 col-md-12" style={{ marginTop: 60 }}>
+                {errorCard}
                 {tweetComponent}
             </div>
         </div>

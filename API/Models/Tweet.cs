@@ -9,7 +9,11 @@ namespace API.Models
     public class Tweets
     {
         [JsonPropertyName("statuses")] public List<Tweet> Statuses { get; set; }
+
     }
+
+
+    
     public class Tweet
     {
         [JsonPropertyName("id")] public long Id { get; set; }
