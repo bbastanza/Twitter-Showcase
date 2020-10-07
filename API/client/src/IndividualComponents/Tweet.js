@@ -13,8 +13,6 @@ export default function Tweet({ tweetData, search }) {
     );
     const source = getSource(tweetData.source);
 
-    console.log(`FORMATTED TEXT: ${tweetData.formattedText}`);
-
     return (
         <div className="tweet col-12" style={{ backgroundImage: `url(${tweetBg})` }}>
             <div className="row">
@@ -24,13 +22,15 @@ export default function Tweet({ tweetData, search }) {
                     alt="thumbnail"
                 ></img>
 
-                <h4 className="col-lg-4">
+                <h4 className="col-4">
                     {tweetData.user.name} {verified}
                 </h4>
-                <div className="col-lg-4" onClick={() => search(tweetData.user.screenName, "user")}>
-                    <h5 className="screen-name">@{tweetData.user.screenName}</h5>
-                </div>
-                <h6 className="col-lg-2">{tweetData.date.substring(4, 16)}</h6>
+
+                <h5 className="screen-name col-4" onClick={() => search(tweetData.user.screenName, "user")}>
+                    @{tweetData.user.screenName}
+                </h5>
+
+                <h6 className="col-2">{tweetData.date.substring(4, 16)}</h6>
 
                 <img
                     src={TwitterThumbnail}
@@ -45,9 +45,11 @@ export default function Tweet({ tweetData, search }) {
                         <span role="img" aria-label="like" className="col-2">
                             💗 {tweetData.likeCount}
                         </span>
+
                         <span role="img" aria-label="retweet" className="col-2">
                             🔄 {tweetData.retweetCount}
                         </span>
+
                         <h6 className="source col-7" style={{ textAlign: "right" }}>
                             {source}
                         </h6>

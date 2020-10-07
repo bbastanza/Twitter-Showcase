@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Routing;
 
 
 namespace API.Models
@@ -28,41 +30,59 @@ namespace API.Models
             get
             {
                 var formattedText = Text;
-                var mentions = Entities.UserMentions;
-                
-                if (formattedText.Contains("http") && Entities.Urls.Count != 0)
-                {
-                    formattedText = $"{formattedText.Substring(0, Text.IndexOf("http", StringComparison.Ordinal))} " +
-                                    $"<a href={Entities.Urls[0].url} target='_blank'>Link</a>";
-                }
-                else if (formattedText.Contains("http") && Entities.Media.Count != 0)
-                {
-                    formattedText = $"{formattedText.Substring(0, Text.IndexOf("http", StringComparison.Ordinal))} " +
-                                    $"<a href={Entities.Media[0].Media_url} target='_blank'>Link</a>";
-                }
 
-                if (formattedText.Contains("@"))
-                {                
-                    var mentionIndex = 0;
-                    var words = formattedText.Split(" ");
-                    var updatedList = new List<string>();
-                    foreach (var word in words)
+                
+                if (formattedText.Contains("http"))
+                {
+                    try
                     {
-                        var mention = word;
-                        if (word.Contains("@"))
-                        {
-                            mention = @"<span className='mention'>" + mention + @"</span>";
-                        }
-                        updatedList.Add(mention);
+                        var linkUrl = Entities.Urls[0].url;
+                        formattedText =
+                            $"{formattedText.Substring(0, Text.IndexOf("http", StringComparison.Ordinal))} " +
+                            $"<a href={linkUrl} target='_blank'>Link</a>";
                     }
-                    
-                    
-                    formattedText = String.Join(' ', updatedList);
-                }
+                    catch 
+                    {
+                        try
+                        {
+                            var mediaUrl = Entities.Media[0].Media_url;
+                            formattedText = $"{formattedText.Substring(0, Text.IndexOf("http", StringComparison.Ordinal))} " +
+                                            $"<a href={mediaUrl} target='_blank'>Link</a>";
+                        }
+                        catch 
+                        {
+                            Console.WriteLine("Exception: Formatted Text => There was no link...");
+                        }
+                    }
 
-             
-                return  $"<p>{formattedText}</p>";
+                }
+  
                 
+                if (formattedText.Contains("@"))
+                {
+
+                    var words = formattedText.Split(" ");
+                    var updatedText = new List<string>();
+                    foreach (string word in words)
+                    {
+                        Console.WriteLine(word);
+                        if (word[0] == '@')
+                        {
+                            var wordWithoutAt = word.Remove(0, 1);
+                            var mention = new StringBuilder();
+                            mention.Append(wordWithoutAt);
+       
+                            mention.Insert(0, (@"<a href='/Search?searchTerm={" + wordWithoutAt + @"}'>@"));
+                            mention.Append("</a>");
+                            var link = mention.ToString();
+                            updatedText.Add(link);
+                        }else 
+                            updatedText.Add(word);
+
+                    }
+                    return $"<p>{String.Join(' ', updatedText)}</p>";
+                }
+                return  $"<p>{formattedText}</p>";
             }
         }
         [JsonPropertyName("favorite_count")] public int LikeCount { get; set; }

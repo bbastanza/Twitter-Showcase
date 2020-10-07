@@ -16,7 +16,7 @@ namespace API.Controllers
         {
             _jsonTweetsService = jsonTweetsService;
         }
-        
+
         [Route("user/{id}")]
         public object GetUser(string id)
         {
@@ -32,7 +32,7 @@ namespace API.Controllers
                 return new ErrorMessage(1);
             }
         }
-                
+
         [Route("content/{id}")]
         public object GetContent(string id)
         {
@@ -48,7 +48,7 @@ namespace API.Controllers
                 return new ErrorMessage(2);
             }
         }
-        
+
         [Route("showcase/{id}")]
         public object GetShowcase(string id)
         {
@@ -56,14 +56,13 @@ namespace API.Controllers
             {
                 return _jsonTweetsService
                     .GetTweets(
-                        $"https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={id}&count=30&tweet_mode=extended",
+                        $"https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={id}&count=20&tweet_mode=extended",
                         true).Result;
             }
             catch
             {
-                return new ErrorMessage(3);         
+                return new ErrorMessage(3);
             }
         }
-
     }
 }

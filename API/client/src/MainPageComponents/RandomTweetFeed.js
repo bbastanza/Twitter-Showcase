@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ShowcaseCard from "./../IndividualComponents/ShowcaseCard";
 import ErrorCard from "./../IndividualComponents/ErrorCard";
 import axios from "axios";
 import Tweet from "./../IndividualComponents/Tweet";
 import neilImage from "./../Images/neiltyson.jpg";
-import garyImage from "./../Images/garyvee.jpg";
+import linusTechImage from "./../Images/linustech.jpg";
 import yankeeImage from "./../Images/yankees.jpg";
 import traversyImage from "./../Images/traversymedia.jpg";
 import weirdAlImage from "./../Images/alyankovic.jpg";
@@ -14,6 +14,10 @@ export default function RandomTweetFeed() {
     const [tweetComponent, setTweetComponent] = useState([]);
     const [currentUser, setCurrentUser] = useState("");
     const [errorCard, setErrorCard] = useState([]);
+
+    useEffect(() => {
+        if (tweetData.length != 0) makeRandomTweet();
+    }, [tweetData]);
 
     async function getTweets(user) {
         try {
@@ -30,10 +34,7 @@ export default function RandomTweetFeed() {
 
     function evaluateResponse(responseData) {
         if ("error" in responseData) createErrorCard(responseData);
-        else {
-            setTweetData([...responseData]);
-            makeRandomTweet();
-        }
+        else setTweetData([...responseData]);
     }
 
     function createErrorCard(responseData) {
@@ -42,13 +43,9 @@ export default function RandomTweetFeed() {
     }
 
     function handleClick(user) {
-        if (user !== currentUser || tweetData === []) {
-            setCurrentUser(user);
-            getTweets(user);
-        } else {
-            setCurrentUser(user);
-            makeRandomTweet();
-        }
+        setCurrentUser(user);
+        if (user !== currentUser || tweetData === []) getTweets(user);
+        else makeRandomTweet();
     }
 
     function makeRandomTweet() {
@@ -67,7 +64,12 @@ export default function RandomTweetFeed() {
                     name="Neil deGrasse Tyson"
                     image={neilImage}
                 />
-                <ShowcaseCard handleClick={handleClick} screenName="garyvee" name="Gary Vaynerchuk" image={garyImage} />
+                <ShowcaseCard
+                    handleClick={handleClick}
+                    screenName="LinusTech"
+                    name="Linus Tech Tips"
+                    image={linusTechImage}
+                />
                 <ShowcaseCard
                     handleClick={handleClick}
                     screenName="Yankees"

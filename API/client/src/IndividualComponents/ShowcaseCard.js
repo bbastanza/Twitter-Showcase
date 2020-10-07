@@ -13,9 +13,11 @@ export default function ShowcaseCard({ screenName, name, image, handleClick }) {
                 className="col-3"
                 style={{ maxHeight: 100, maxWidth: 100, borderRadius: "50%" }}
             />
+
             <h3 className="col-5" style={{ fontWeight: "bold", fontFamily: "ubuntu" }}>
                 {name}
             </h3>
+
             <h4 className="col-4">@{screenName}</h4>
 
             <p className="col-12" style={{ fontStyle: "italic" }}>
