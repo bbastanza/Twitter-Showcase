@@ -2,13 +2,23 @@ import React, { useState, useEffect } from "react";
 import Tweet from "../IndividualComponents/Tweet";
 import ErrorCard from "./../IndividualComponents/ErrorCard";
 import axios from "axios";
+import qs from "qs";
 
-export default function Search() {
+export default function Search(props) {
     const [textBoxValue, setTextBoxValue] = useState("");
     const [banner, setBanner] = useState("");
     const [tweetData, setTweetData] = useState([]);
     const [tweetComponents, setTweetComponents] = useState([]);
     const [errorCard, setErrorCard] = useState([]);
+
+    useEffect(() => {
+        const searchTerm = qs.parse(props.location.search, { ignoreQueryPrefix: true });
+        console.log(searchTerm);
+        if (searchTerm.search) {
+            setBanner();
+            getTweets(searchTerm.search, "user");
+        }
+    });
 
     useEffect(() => {
         createTweets();

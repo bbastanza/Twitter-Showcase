@@ -26,7 +26,6 @@ namespace API.Models
     
     public class Url
     {
-        [JsonPropertyName("url")]
-        public string url { get; set; }            
+        [JsonPropertyName("url")] public string url { get; set; }            
     }
 }

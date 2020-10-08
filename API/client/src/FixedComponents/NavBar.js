@@ -40,6 +40,7 @@ export default function NavBar() {
             </div>
             <div className="content" style={{ width: "90vw" }}>
                 <Route exact path="/" component={SplashScreen} />
+                <Route exact path="/Search/:searchTerm" component={Search} />
                 <Route exact path="/Search" component={Search} />
                 <Route exact path="/Showcase" component={RandomTweetFeed} />
             </div>
