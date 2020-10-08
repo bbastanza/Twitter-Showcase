@@ -16,7 +16,7 @@ export default function RandomTweetFeed() {
     const [errorCard, setErrorCard] = useState([]);
 
     useEffect(() => {
-        if (tweetData.length != 0) makeRandomTweet();
+        if (tweetData.length !== 0) makeRandomTweet();
     }, [tweetData]);
 
     async function getTweets(user) {
