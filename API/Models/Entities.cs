@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
@@ -5,17 +6,18 @@ namespace API.Models
 {
     public class Entities
     {
-        [JsonPropertyName("urls")] public static List<Url> Urls { get; set; }
-        [JsonPropertyName("media")] public static List<Media> Media { get; set; }
         public string Link
         {
             get
             {
-                if (Entities.Urls != null && Entities.Urls.Count > 0) return Entities.Urls[0].url;
-                if (Entities.Media != null && Entities.Media.Count > 0) return Entities.Media[0].Media_url;
+                if (this.Media != null && this.Media.Count > 0) return this.Media[0].Media_url;
+                if (this.Urls != null && this.Urls.Count > 0) return this.Urls[0].url;
                 return null;
             }
         }
+        [JsonPropertyName("urls")] public List<Url> Urls { get; set; }
+        [JsonPropertyName("media")] public List<Media> Media { get; set; }
+
     }
     public class Media
     {
