@@ -38,7 +38,7 @@ export default function NavBar() {
                     </ul>
                 </div>
             </div>
-            <div className="content">
+            <div className="content" style={{ width: "90vw" }}>
                 <Route exact path="/" component={SplashScreen} />
                 <Route exact path="/Search" component={Search} />
                 <Route exact path="/Showcase" component={RandomTweetFeed} />

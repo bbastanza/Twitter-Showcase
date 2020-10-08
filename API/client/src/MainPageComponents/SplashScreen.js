@@ -31,7 +31,7 @@ export default function SplashScreen() {
                         Social media consumption may pose significant damage to your mental health. Use at your own
                         risk.{" "}
                         <span role="img" aria-label="warning">
-                            ⚠️
+                            ⚠️ 🙂
                         </span>
                     </h6>
                 </div>
