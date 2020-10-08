@@ -115,19 +115,61 @@
     border-radius: 20px;
 }
 
-.tweet p {
-    color: #4e5f5d;
-}
-
 .tweet-text {
-    font-weight: bold;
-    color:  #1a1d35;
+    color: #1a1d35;
+    padding: 10px 10px 10px 80px;
 }
 
-.username {
+.screen-name {
+    color: rgba(0, 84, 112, 1);
+    cursor: pointer;
+}
+.screen-name:hover {
+    color: rgba(0, 65, 204, 0.8);
+}
+.source {
     color: rgba(65, 74, 77, 0.8);
 }
 
 .searchbar {
     box-shadow: 3px 3px 2px rgba(0, 56, 78, 0.8), 2px 3px 4px rgb(40, 85, 105);
+}
+
+.mention {
+    cursor: pointer;
+    font-weight: bold;
+    color: blue;
+}
+
+.showcase-card {
+    background-color: #262626;
+    border: 2px rgb(21, 161, 154) solid;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #ffe6bc;
+    box-shadow: 2px -2px 2px rgba(220, 247, 255, 0.1), 3px 3px 2px rgba(220, 247, 255, 0.2),
+        2px 3px 4px rgba(75, 155, 192, 0.5);
+}
+
+.showcase-card:hover {
+    color: #ffd181;
+}
+
+.showcase-card h4 {
+    color: rgb(0, 143, 179);
+}
+
+.showcase-card h4:hover {
+    color: rgb(0, 175, 219);
+}
+
+.error-card {
+    background-color: #4b2f36;
+    color: rgb(255, 168, 183);
+    border: 2px solid #262626;
+    box-shadow: 2px -2px 2px rgba(220, 247, 255, 0.1), 3px 3px 2px rgba(220, 247, 255, 0.2),
+        2px 3px 2px rgba(192, 75, 75, 0.8);
+    border-radius: 10px;
+    font-family: ubuntu;
 }

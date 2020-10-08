@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Tweet from "./../Tweets/Tweet";
+import Tweet from "../IndividualComponents/Tweet";
+import ErrorCard from "./../IndividualComponents/ErrorCard";
 import axios from "axios";
 
 export default function Search() {
@@ -7,6 +8,7 @@ export default function Search() {
     const [banner, setBanner] = useState("");
     const [tweetData, setTweetData] = useState([]);
     const [tweetComponents, setTweetComponents] = useState([]);
+    const [errorCard, setErrorCard] = useState([]);
 
     useEffect(() => {
         createTweets();
@@ -14,31 +16,41 @@ export default function Search() {
 
     async function getTweets(searchItem, type) {
         try {
-            let tweetsRecieved;
+            let responseData;
             switch (type) {
                 case "user":
-                    console.log("user search");
-                    tweetsRecieved = await axios
+                    responseData = await axios
                         .get(`https://localhost:5001/tweets/user/${searchItem.split(" ").join("")}`)
                         .then(response => response.data);
-                    setTweetData([...tweetsRecieved]);
+                    evaluateResponse(responseData);
                     break;
                 default:
-                    console.log("content search");
-                    tweetsRecieved = await axios
+                    responseData = await axios
                         .get(`https://localhost:5001/tweets/content/${searchItem.split(" ").join("")}`)
                         .then(response => response.data);
-                    setTweetData([...tweetsRecieved.statuses]);
+                    evaluateResponse(responseData);
                     break;
             }
         } catch {
-            console.log("there was an error fetching data");
+            console.log("there was an error comunicating with the API");
         }
     }
 
+    function evaluateResponse(responseData) {
+        if ("error" in responseData) createErrorCard(responseData);
+        else if ("statuses" in responseData) setTweetData([...responseData.statuses]);
+        else setTweetData([...responseData]);
+    }
+
+    function createErrorCard(responseData) {
+        setTweetComponents([]);
+        setErrorCard([<ErrorCard key={Math.random()} error={responseData} />]);
+    }
+
     function createTweets() {
+        setErrorCard([]);
         let newTweetComponents = tweetData.map(tweet => {
-            return <Tweet tweetData={tweet} key={tweet.id} />;
+            return <Tweet search={getTweets} tweetData={tweet} key={tweet.id} />;
         });
         setTweetComponents([...newTweetComponents]);
     }
@@ -82,6 +94,7 @@ export default function Search() {
                 </form>
             </div>
             <div className="col-lg-7 col-md-12" style={{ marginTop: 60 }}>
+                {errorCard}
                 {tweetComponents}
             </div>
         </div>
