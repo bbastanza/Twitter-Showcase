@@ -64,7 +64,7 @@ namespace API
                 }
             });
             
-            ApiHelper.InitializeClient();
+            ApiHelper.InitializeClient(_configuration);
             
         }
     }
