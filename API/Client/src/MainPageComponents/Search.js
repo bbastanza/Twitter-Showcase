@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Tweet from "../IndividualComponents/Tweet";
+import TweetCard from "../IndividualComponents/TweetCard";
 import ErrorCard from "./../IndividualComponents/ErrorCard";
 import parseSearchTerm from "./../helpers/ParseSearchTerm";
 import axios from "axios";
@@ -65,7 +65,7 @@ export default function Search(props) {
     function createTweets() {
         setErrorCard([]);
         let newTweetComponents = tweetData.map(tweet => {
-            return <Tweet search={getTweets} tweetData={tweet} key={tweet.id} />;
+            return <TweetCard search={getTweets} tweetData={tweet} key={tweet.id} />;
         });
         setTweetComponents([...newTweetComponents]);
     }

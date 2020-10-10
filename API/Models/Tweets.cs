@@ -16,6 +16,7 @@ namespace API.Models
         [JsonPropertyName("source")] public string Source { get; set; }
         [JsonPropertyName("user")] public User User { get; set; }
         [JsonPropertyName("entities")] public Entities Entities { get; set; }
+        [JsonPropertyName("extended_entities")] public ExtendedEntities ExtendedEntities { get; set; }
         [JsonPropertyName("created_at")] public string Date { get; set; }
         [JsonPropertyName("full_text")] public string Text { get; set; }
         [JsonPropertyName("favorite_count")] public int LikeCount { get; set; }
@@ -60,5 +61,17 @@ namespace API.Models
 
             return String.Join(' ', updatedText);
         }
+    }
+
+    public class ExtendedEntities
+    {
+        [JsonPropertyName("media")]
+        public List<ExtendedMedia> ExtendedMedia { get; set; }
+    }
+
+    public class ExtendedMedia
+    {
+        [JsonPropertyName("media_url_https")]
+        public string ExtendedMediaUrl { get; set; }
     }
 }

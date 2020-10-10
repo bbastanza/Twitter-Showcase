@@ -9,9 +9,9 @@ export default function SplashScreen() {
         <div className="App-header">
             <div className="row" style={{ justifyContent: "center", textAlign: "center" }}>
                 <div className="col-lg-4 col-md-12">
-                    <img src={LargeLogo} alt="Twitter" />
+                    <img style={{ height: 400, width: 400 }} src={LargeLogo} alt="Twitter" />
                 </div>
-                <div className="col-lg-4 col-md-12" style={{ marginTop: 60, textAlign: "center" }}>
+                <div className="col-lg-4 col-md-12" style={{ marginTop: 20, textAlign: "center" }}>
                     <h2 className="splash-title">twitter</h2>
                     <h2 className="splash-title2">showcase</h2>
                     <p className="splash-p">An app built in React, C# and .NET</p>

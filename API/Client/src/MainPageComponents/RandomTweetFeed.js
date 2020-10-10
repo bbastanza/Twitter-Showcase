@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ShowcaseCard from "./../IndividualComponents/ShowcaseCard";
 import ErrorCard from "./../IndividualComponents/ErrorCard";
 import axios from "axios";
-import Tweet from "./../IndividualComponents/Tweet";
+import TweetCard from "../IndividualComponents/TweetCard";
 import neilImage from "./../Images/neiltyson.jpg";
 import linusTechImage from "./../Images/linustech.jpg";
 import yankeeImage from "./../Images/yankees.jpg";
@@ -21,11 +21,9 @@ export default function RandomTweetFeed() {
 
     async function getTweets(user) {
         try {
-            console.log("showcase search");
             const responseData = await axios
                 .get(`https://localhost:5001/tweets/showcase/${user}`)
                 .then(response => response.data);
-            console.log(responseData);
             evaluateResponse(responseData);
         } catch {
             alert("there was an error fetching data");
@@ -51,7 +49,9 @@ export default function RandomTweetFeed() {
     function makeRandomTweet() {
         setErrorCard([]);
         const index = Math.floor(Math.random() * tweetData.length);
-        const randomTweet = <Tweet search={makeRandomTweet} tweetData={tweetData[index]} key={tweetData[index].id} />;
+        const randomTweet = (
+            <TweetCard search={makeRandomTweet} tweetData={tweetData[index]} key={tweetData[index].id} />
+        );
         setTweetComponent([randomTweet]);
     }
 
