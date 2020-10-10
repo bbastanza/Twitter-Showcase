@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Tweet from "../IndividualComponents/Tweet";
 import ErrorCard from "./../IndividualComponents/ErrorCard";
+import parseSearchTerm from "./../helpers/ParseSearchTerm";
 import axios from "axios";
 import qs from "qs";
 
@@ -13,13 +14,14 @@ export default function Search(props) {
     const [searchMention, setSearchMention] = useState("");
 
     useEffect(() => {
-        const searchTerm = qs.parse(props.location.search, { ignoreQueryPrefix: true });
-        console.log(searchTerm.q);
-        if (searchTerm.q && searchMention === "") setSearchMention(searchTerm.q);
+        if (props.location.search) {
+            const searchTerm = qs.parse(props.location.search, { ignoreQueryPrefix: true });
+            searchTerm.q = parseSearchTerm(searchTerm.q);
+            setSearchMention(searchTerm.q);
+        }
     });
 
     useEffect(() => {
-        console.log(searchMention);
         if (searchMention !== "") getTweets(searchMention, "user");
     }, [searchMention]);
 
@@ -72,6 +74,7 @@ export default function Search(props) {
         e.preventDefault();
         setBanner(textBoxValue);
         getTweets(textBoxValue, type);
+        setSearchMention("");
         setTextBoxValue("");
     }
 

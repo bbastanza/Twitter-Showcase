@@ -1,12 +1,12 @@
 import React from "react";
 import Search from "../MainPageComponents/Search";
 import SplashScreen from "../MainPageComponents/SplashScreen";
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { Route, NavLink, BrowserRouter } from "react-router-dom";
 import RandomTweetFeed from "../MainPageComponents/RandomTweetFeed";
 
 export default function NavBar() {
     return (
-        <HashRouter>
+        <BrowserRouter>
             <div className="navbar navbar-expand-lg" style={{ backgroundColor: "#262626" }}>
                 <NavLink to="/" className="splash-title2 brand">
                     T
@@ -44,6 +44,6 @@ export default function NavBar() {
                 <Route exact path="/Search" component={Search} />
                 <Route exact path="/Showcase" component={RandomTweetFeed} />
             </div>
-        </HashRouter>
+        </BrowserRouter>
     );
 }

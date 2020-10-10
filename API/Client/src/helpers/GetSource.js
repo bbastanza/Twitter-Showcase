@@ -1,4 +1,4 @@
-function getSource(source) {
+export default function getSource(source) {
     switch (source) {
         case '<a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>':
             return "Sent from iPhone";
@@ -8,5 +8,3 @@ function getSource(source) {
             return "Sent from Android";
     }
 }
-
-export default getSource;
