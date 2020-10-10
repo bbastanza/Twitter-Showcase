@@ -9,7 +9,7 @@ namespace API.Models
     {
         [JsonPropertyName("statuses")] public List<Tweet> Statuses { get; set; }
     }
-    
+
     public class Tweet
     {
         [JsonPropertyName("id")] public long Id { get; set; }
@@ -27,10 +27,10 @@ namespace API.Models
                 var formattedText = Text;
                 if (formattedText.Contains("http")) formattedText = AddLink(formattedText);
                 if (formattedText.Contains("@")) formattedText = AddMentions(formattedText);
-                return  $"<p>{formattedText}</p>";
+                return $"<p>{formattedText}</p>";
             }
         }
-        
+
         private string AddLink(string text)
         {
             if (!String.IsNullOrEmpty(text) && Entities.Link != null)
@@ -38,25 +38,26 @@ namespace API.Models
                        $"<a href={Entities.Link} target='_blank'>Link</a>";
             return text;
         }
-        
+
         private string AddMentions(string text)
         {
             var words = text.Split(" ");
             var updatedText = new List<string>();
-            
+
             foreach (string word in words)
                 if (word.Length > 0 && word[0] == '@')
                 {
                     var searchTerm = word.Remove(0, 1);
                     var mention = new StringBuilder();
                     var link = mention.Append(searchTerm)
-                        .Insert(0, (@"<a href='/Search?searchTerm=" + searchTerm + @"'>@"))
+                        .Insert(0, (@"<a href='/Search?q=" + searchTerm + @"'>@"))
                         .Append("</a>")
                         .ToString();
                     updatedText.Add(link);
-                }else 
+                }
+                else
                     updatedText.Add(word);
-            
+
             return String.Join(' ', updatedText);
         }
     }

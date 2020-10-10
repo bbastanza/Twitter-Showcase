@@ -10,15 +10,18 @@ export default function Search(props) {
     const [tweetData, setTweetData] = useState([]);
     const [tweetComponents, setTweetComponents] = useState([]);
     const [errorCard, setErrorCard] = useState([]);
+    const [searchMention, setSearchMention] = useState("");
 
     useEffect(() => {
         const searchTerm = qs.parse(props.location.search, { ignoreQueryPrefix: true });
-        console.log(searchTerm);
-        if (searchTerm.search) {
-            setBanner();
-            getTweets(searchTerm.search, "user");
-        }
+        console.log(searchTerm.q);
+        if (searchTerm.q && searchMention === "") setSearchMention(searchTerm.q);
     });
+
+    useEffect(() => {
+        console.log(searchMention);
+        if (searchMention !== "") getTweets(searchMention, "user");
+    }, [searchMention]);
 
     useEffect(() => {
         createTweets();
