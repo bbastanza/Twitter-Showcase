@@ -62,16 +62,4 @@ namespace API.Models
             return String.Join(' ', updatedText);
         }
     }
-
-    public class ExtendedEntities
-    {
-        [JsonPropertyName("media")]
-        public List<ExtendedMedia> ExtendedMedia { get; set; }
-    }
-
-    public class ExtendedMedia
-    {
-        [JsonPropertyName("media_url_https")]
-        public string ExtendedMediaUrl { get; set; }
-    }
 }
