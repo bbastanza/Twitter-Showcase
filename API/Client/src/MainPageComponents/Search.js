@@ -22,7 +22,7 @@ export default function Search(props) {
     });
 
     useEffect(() => {
-        if (searchMention !== "") getTweets(searchMention, "user");
+        getTweets(searchMention, "user");
     }, [searchMention]);
 
     useEffect(() => {
@@ -59,7 +59,8 @@ export default function Search(props) {
 
     function createErrorCard(responseData) {
         setTweetComponents([]);
-        setErrorCard([<ErrorCard key={Math.random()} error={responseData} />]);
+        const key = Math.random();
+        setErrorCard([<ErrorCard key={key} error={responseData} />]);
     }
 
     function createTweets() {
@@ -74,7 +75,6 @@ export default function Search(props) {
         e.preventDefault();
         setBanner(textBoxValue);
         getTweets(textBoxValue, type);
-        setSearchMention("");
         setTextBoxValue("");
     }
 

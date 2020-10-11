@@ -26,7 +26,7 @@ export default function RandomTweetFeed() {
                 .then(response => response.data);
             evaluateResponse(responseData);
         } catch {
-            alert("there was an error fetching data");
+            console.log("there was an error fetching data");
         }
     }
 
