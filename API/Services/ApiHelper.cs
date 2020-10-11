@@ -8,9 +8,7 @@ namespace API.Services
     {
         public static HttpClient ApiClient { get; set; }
         private static IConfiguration _configuration;
-
-
-
+        
         public static void InitializeClient(IConfiguration configuration)
         {
             _configuration = configuration;

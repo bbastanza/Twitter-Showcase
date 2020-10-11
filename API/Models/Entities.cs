@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
@@ -17,7 +16,6 @@ namespace API.Models
         }
         [JsonPropertyName("urls")] public List<Url> Urls { get; set; }
         [JsonPropertyName("media")] public List<Media> Media { get; set; }
-
     }
     public class Media
     {

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using API.Models;
+﻿using API.Models;
 using API.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,7 +8,6 @@ namespace API.Controllers
     [Route("[controller]")]
     public class TweetsController : Controller
     {
-
         private readonly IJsonTweetsService _jsonTweetsService;
 
         public TweetsController(IJsonTweetsService jsonTweetsService)
