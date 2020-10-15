@@ -6,6 +6,7 @@
 ![csharp](ReadmeImages/c_sharp.png)
 ![html](ReadmeImages/react.png)
 ![css](ReadmeImages/bootstrap.png)
+![javsscript](ReadmeImages/bootstrap.png)
 
 Check out the app [HERE](https://twittershowcase1.azurewebsites.net/)!
 
@@ -57,6 +58,20 @@ To run this application locally you need to add a file called `appsetting.Develo
 ```
 
 You can get a Twitter bearer token from `https://developer.twitter.com/`, signing up for a developer account and creating a twitter web application.
+
+You can then go to the `API/Client/` directory and run
+
+```
+npm i
+```
+
+Move to the `API/` folder and run
+
+```
+dotnet watch run
+```
+
+to start the application locally.
 
 ## Author
 
