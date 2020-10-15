@@ -6,7 +6,6 @@
 ![csharp](ReadmeImages/c_sharp.png)
 ![html](ReadmeImages/react.png)
 ![css](ReadmeImages/bootstrap.png)
-![javsscript](ReadmeImages/bootstrap.png)
 
 Check out the app [HERE](https://twittershowcase1.azurewebsites.net/)!
 
