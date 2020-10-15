@@ -5,7 +5,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.4" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.4" />
   </ItemGroup>
-  
+	
+	<ItemGroup>
+		<None Update="client\build\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Data\mockdata.json" />
     <_ContentIncludedByDefault Remove="Data\mockdataWOStatuses.json" />
