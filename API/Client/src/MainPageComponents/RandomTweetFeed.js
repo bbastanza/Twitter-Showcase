@@ -6,7 +6,7 @@ import TweetCard from "../IndividualComponents/TweetCard";
 import neilImage from "./../Images/neiltyson.jpg";
 import linusTechImage from "./../Images/linustech.jpg";
 import yankeeImage from "./../Images/yankees.jpg";
-import traversyImage from "./../Images/traversymedia.jpg";
+import billGatesImage from "./../Images/billgates.jpg";
 import weirdAlImage from "./../Images/alyankovic.jpg";
 
 export default function RandomTweetFeed() {
@@ -21,9 +21,7 @@ export default function RandomTweetFeed() {
 
     async function getTweets(user) {
         try {
-            const responseData = await axios
-                .get(`tweets/showcase/${user}`)
-                .then(response => response.data);
+            const responseData = await axios.get(`tweets/showcase/${user}`).then(response => response.data);
             evaluateResponse(responseData);
         } catch {
             console.log("there was an error fetching data");
@@ -80,9 +78,9 @@ export default function RandomTweetFeed() {
                 />
                 <ShowcaseCard
                     handleClick={handleClick}
-                    screenName="traversymedia"
-                    name="Brad Traversy"
-                    image={traversyImage}
+                    screenName="billgates"
+                    name="Bill Gates"
+                    image={billGatesImage}
                 />
                 <ShowcaseCard
                     handleClick={handleClick}
