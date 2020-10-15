@@ -1,9 +1,46 @@
 # Twitter Showcase
 
-## *in development*
+> A full stack web app built in C# with ASP.Net Core, React JS and styled with Bootstrap4
 
-# 
+![dotnet](ReadmeImages/dotnetcore.png)
+![csharp](ReadmeImages/c_sharp.png)
+![html](ReadmeImages/react.png)
+![css](ReadmeImages/bootstrap.png)
+
+Check out the app [HERE](https://twittershowcase1.azurewebsites.net/)!
+
+![Screenshot](ReadmeImages/screenshot.png)
+
+![Screenshot3](ReadmeImages/screenshot3.png)
+
+![Screenshot2](ReadmeImages/screenshot2.png)
+
+## Summary
+
+This is my first full stack web application. I built this app to learn the complexities of building a web application from top to bottom and to further my knowledge of C#, .Net, React, Bootstrap and to learn how to seperate conserns between back end development and front end development.
+
+There was a lot of new experience to gain while building this application and there were many challenges to overcome while building this project. It is important for me to get comfortable with maintaining projects with more complexity and more moving parts. I am starting to see the value of using a high powered backend framwork, such as .net and specifically APS.Net. I, also, was very excited to continue to gain experience with React and I am starting to feel very comfortable navigating the React JS framework.
+
+Specific things I used and learned while building this application:
+
+> Create ASP.Net Core Application
+
+> Create services, controllers, and models to handle recieving API calls and make calls from a back end
+
+> Dependency injection for C# classes
+
+> Parsing data recieved from Twitter to return only what was needed to my front end application
+
+> Building an API from scratch
+
+> Styling React with Bootstrap 4
+
+> Deployment to Microsoft Azure
 
 ## Author
 
-### Brian Bastanza
+### Brian Bastanza- Full Stack Web Developer
+
+[Personal Website](www.brianbastanza.com)
+
+[LinkedIn](www.linkedin.com/in/brian-bastanza-9035397b)
