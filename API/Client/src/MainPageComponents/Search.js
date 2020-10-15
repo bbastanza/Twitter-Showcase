@@ -14,7 +14,7 @@ export default function Search(props) {
     const [searchMention, setSearchMention] = useState("");
 
     useEffect(() => {
-        if (props.location.search) {
+        if (props.location.search !== "") {
             const searchTerm = qs.parse(props.location.search, { ignoreQueryPrefix: true });
             searchTerm.q = parseSearchTerm(searchTerm.q);
             setSearchMention(searchTerm.q);
@@ -22,7 +22,7 @@ export default function Search(props) {
     });
 
     useEffect(() => {
-        getTweets(searchMention, "user");
+        if (searchMention !== "") getTweets(searchMention, "user");
     }, [searchMention]);
 
     useEffect(() => {
@@ -47,14 +47,23 @@ export default function Search(props) {
                     break;
             }
         } catch {
-            console.log("there was an error comunicating with the API");
+            emptyDataErrorCard();
         }
     }
 
     function evaluateResponse(responseData) {
         if ("error" in responseData) createErrorCard(responseData);
+        else if ("statuses" in responseData && responseData.statuses.length === 0) emptyDataErrorCard();
         else if ("statuses" in responseData) setTweetData([...responseData.statuses]);
         else setTweetData([...responseData]);
+    }
+
+    function emptyDataErrorCard() {
+        const emptyData = {
+            error: "There was a problem recieving tweets",
+            hint: "Hint: You may be searching for something that doesn't exit or has a funny character :)",
+        };
+        createErrorCard(emptyData);
     }
 
     function createErrorCard(responseData) {
@@ -65,10 +74,12 @@ export default function Search(props) {
 
     function createTweets() {
         setErrorCard([]);
-        let newTweetComponents = tweetData.map(tweet => {
-            return <TweetCard search={getTweets} tweetData={tweet} key={tweet.id} />;
-        });
-        setTweetComponents([...newTweetComponents]);
+        if (tweetData.length !== 0) {
+            let newTweetComponents = tweetData.map(tweet => {
+                return <TweetCard search={getTweets} tweetData={tweet} key={tweet.id} />;
+            });
+            setTweetComponents([...newTweetComponents]);
+        }
     }
 
     function pressedSearch(e, type) {
@@ -87,16 +98,9 @@ export default function Search(props) {
                         style={{ textAlign: "center", width: "30vw" }}
                         onChange={e => setTextBoxValue(e.target.value)}
                         type="text"
-                        placeholder="Enter Person or Tweet"
+                        placeholder="Search Twitter"
                         value={textBoxValue}
                     />
-                    <button
-                        onClick={e => pressedSearch(e, "user")}
-                        className="btn btn-info link searchbar"
-                        style={{ padding: "5px 20px", margin: 5 }}
-                    >
-                        Search by Screen Name
-                    </button>
                     <button
                         onClick={e => pressedSearch(e, "content")}
                         className="btn btn-info link searchbar"
@@ -104,6 +108,14 @@ export default function Search(props) {
                     >
                         Search by Content
                     </button>
+                    <button
+                        onClick={e => pressedSearch(e, "user")}
+                        className="btn btn-info link searchbar"
+                        style={{ padding: "5px 20px", margin: 5 }}
+                    >
+                        Search by Screen Name
+                    </button>
+
                     <h1 className="col-6 individual-h2" style={{ margin: "30px auto" }}>
                         {banner}
                     </h1>

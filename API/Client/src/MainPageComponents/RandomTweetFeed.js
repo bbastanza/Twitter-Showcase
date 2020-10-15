@@ -49,10 +49,12 @@ export default function RandomTweetFeed() {
     function makeRandomTweet() {
         setErrorCard([]);
         const index = Math.floor(Math.random() * tweetData.length);
-        const randomTweet = (
-            <TweetCard search={makeRandomTweet} tweetData={tweetData[index]} key={tweetData[index].id} />
-        );
-        setTweetComponent([randomTweet]);
+        if (tweetData.length !== 0) {
+            const randomTweet = (
+                <TweetCard search={makeRandomTweet} tweetData={tweetData[index]} key={tweetData[index].id} />
+            );
+            setTweetComponent([randomTweet]);
+        }
     }
 
     return (

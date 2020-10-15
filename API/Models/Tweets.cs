@@ -46,7 +46,7 @@ namespace API.Models
             var updatedText = new List<string>();
 
             foreach (string word in words)
-                if (word.Length > 0 && word[0] == '@')
+                if (word.Length > 1 && word[0] == '@')
                 {
                     var searchTerm = word.Remove(0, 1);
                     var mention = new StringBuilder();

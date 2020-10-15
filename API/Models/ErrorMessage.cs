@@ -11,7 +11,7 @@ namespace API.Models
             else if (errorNumber == 2) this.Hint = "Hint: You may be searching for something that doesn't exit.";
             else
                 this.Hint =
-                    "Hint: There is a possibility that the account you are looking for has changed their screen name. Also, The account may be locked.";
+                    "Hint: There is a possibility that the account you are looking for has changed their screen name or the account may be locked.";
         }
     }
 }
