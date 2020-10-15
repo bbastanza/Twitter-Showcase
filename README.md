@@ -37,6 +37,27 @@ Specific things I used and learned while building this application:
 
 > Deployment to Microsoft Azure
 
+## Installation
+
+To run this application locally you need to add a file called `appsetting.Development.json` in the `API/` directory. The contents of the file should be the following:
+
+```
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "Twitter_Key": {
+    "BearerToken": "<Insert Twitter Bearer Token Here>"
+}
+}
+```
+
+You can get a Twitter bearer token from `https://developer.twitter.com/`, signing up for a developer account and creating a twitter web application.
+
 ## Author
 
 ### Brian Bastanza- Full Stack Web Developer
