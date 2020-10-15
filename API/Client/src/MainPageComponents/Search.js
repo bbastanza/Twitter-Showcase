@@ -35,13 +35,13 @@ export default function Search(props) {
             switch (type) {
                 case "user":
                     responseData = await axios
-                        .get(`https://localhost:5001/tweets/user/${searchItem.split(" ").join("")}`)
+                        .get(`tweets/user/${searchItem.split(" ").join("")}`)
                         .then(response => response.data);
                     evaluateResponse(responseData);
                     break;
                 default:
                     responseData = await axios
-                        .get(`https://localhost:5001/tweets/content/${searchItem.split(" ").join("")}`)
+                        .get(`tweets/content/${searchItem.split(" ").join("")}`)
                         .then(response => response.data);
                     evaluateResponse(responseData);
                     break;

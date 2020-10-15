@@ -22,7 +22,7 @@ export default function RandomTweetFeed() {
     async function getTweets(user) {
         try {
             const responseData = await axios
-                .get(`https://localhost:5001/tweets/showcase/${user}`)
+                .get(`tweets/showcase/${user}`)
                 .then(response => response.data);
             evaluateResponse(responseData);
         } catch {
