@@ -66,9 +66,9 @@ export default function RandomTweetFeed() {
                 />
                 <ShowcaseCard
                     handleClick={handleClick}
-                    screenName="LinusTech"
-                    name="Linus Tech Tips"
-                    image={linusTechImage}
+                    screenName="billgates"
+                    name="Bill Gates"
+                    image={billGatesImage}
                 />
                 <ShowcaseCard
                     handleClick={handleClick}
@@ -78,9 +78,9 @@ export default function RandomTweetFeed() {
                 />
                 <ShowcaseCard
                     handleClick={handleClick}
-                    screenName="billgates"
-                    name="Bill Gates"
-                    image={billGatesImage}
+                    screenName="LinusTech"
+                    name="Linus Tech Tips"
+                    image={linusTechImage}
                 />
                 <ShowcaseCard
                     handleClick={handleClick}
