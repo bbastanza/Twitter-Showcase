@@ -7,7 +7,7 @@
 ![html](ReadmeImages/react.png)
 ![css](ReadmeImages/bootstrap.png)
 
-Check out the app [HERE](https://twittershowcase1.azurewebsites.net/)!
+Check out the app [HERE](https://twittershowcase.azurewebsites.net/)!
 
 ![Screenshot](ReadmeImages/screenshot.png)
 
