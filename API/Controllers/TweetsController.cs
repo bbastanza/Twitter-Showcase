@@ -15,15 +15,13 @@ namespace API.Controllers
             _jsonTweetsService = jsonTweetsService;
         }
 
-        [Route("user/{id}")]
-        public object GetUser(string id)
+        [Route("user/{searchTerm}")]
+        public object GetUser(string searchTerm)
         {
             try
             {
                 return _jsonTweetsService
-                    .GetTweets(
-                        $"https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={id}&count=5&tweet_mode=extended",
-                        true).Result;
+                    .SearchUserTimelineTweets(searchTerm, 15);
             }
             catch
             {
@@ -31,15 +29,14 @@ namespace API.Controllers
             }
         }
 
-        [Route("content/{id}")]
-        public object GetContent(string id)
+        [Route("content/{searchTerm}")]
+        public object GetContent(string searchTerm)
         {
             try
             {
                 return _jsonTweetsService
-                    .GetTweets(
-                        $"https://api.twitter.com/1.1/search/tweets.json?q={id}&result_type=popular&count=5&tweet_mode=extended")
-                    .Result;
+                    .SearchTweetsByContent(searchTerm)
+                  ;
             }
             catch
             {
@@ -47,15 +44,13 @@ namespace API.Controllers
             }
         }
 
-        [Route("showcase/{id}")]
-        public object GetShowcase(string id)
+        [Route("showcase/{searchTerm}")]
+        public object GetShowcase(string searchTerm)
         {
             try
             {
                 return _jsonTweetsService
-                    .GetTweets(
-                        $"https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={id}&count=20&tweet_mode=extended",
-                        true).Result;
+                    .SearchUserTimelineTweets(searchTerm, 15);
             }
             catch
             {

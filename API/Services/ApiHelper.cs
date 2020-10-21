@@ -4,19 +4,24 @@ using Microsoft.Extensions.Configuration;
 
 namespace API.Services
 {
-    public static class ApiHelper
+    public interface IApiHelper
     {
-        public static HttpClient ApiClient { get; set; }
-        private static IConfiguration _configuration;
-        
-        public static void InitializeClient(IConfiguration configuration)
+        HttpClient ApiClient { get; }
+    }
+    
+    
+    public class ApiHelper: IApiHelper
+    {
+        public HttpClient ApiClient { get; }
+
+        public ApiHelper(IConfiguration configuration)
         {
-            _configuration = configuration;
-            var bearerToken = _configuration["Twitter_Key:BearerToken"];
+   
+            var bearerToken = configuration["Twitter_Key:BearerToken"];
             ApiClient = new HttpClient();
             ApiClient.DefaultRequestHeaders.Accept.Clear();
             ApiClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", bearerToken);
-            ApiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            ApiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")); 
         }
     }
 }

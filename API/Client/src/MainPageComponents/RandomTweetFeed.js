@@ -21,7 +21,8 @@ export default function RandomTweetFeed() {
 
     async function getTweets(user) {
         try {
-            const responseData = await axios.get(`tweets/showcase/${user}`).then(response => response.data);
+            const response = await axios.get(`tweets/showcase/${user}`);
+            const responseData = response.data;
             evaluateResponse(responseData);
         } catch {
             console.log("there was an error fetching data");

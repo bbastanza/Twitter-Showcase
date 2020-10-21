@@ -9,22 +9,46 @@ namespace API.Services
 {        
     public interface IJsonTweetsService
     {
-        Task<object> GetTweets(string url, bool individual = false);
+        Tweets SearchTweetsByContent(string searchTerm);
+        List<Tweet> SearchUserTimelineTweets(string searchTerm, int count);
     }
 
     public class JsonTweetsService : IJsonTweetsService
     {
-        public async Task<object> GetTweets(string url, bool individual = false)
+        private readonly HttpClient _client;
+
+        public JsonTweetsService(IApiHelper apiHelper)
         {
-            using HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url);
+            _client = apiHelper.ApiClient;
+        }
+
+        public Tweets SearchTweetsByContent(string searchTerm)
+        {
+            var url =
+                $"https://api.twitter.com/1.1/search/tweets.json?q={searchTerm}&result_type=popular&count=5&tweet_mode=extended";
+            
+            var tweetResponse = GetTweets(url);
+            
+            return JsonSerializer.Deserialize<Tweets>(tweetResponse.Result);
+        }
+
+        public List<Tweet> SearchUserTimelineTweets(string searchTerm, int count)
+        {
+            var url =
+                $"https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={searchTerm}&count={count}&tweet_mode=extended";
+            
+            var tweetResponse = GetTweets(url);
+            
+            return JsonSerializer.Deserialize<List<Tweet>>(tweetResponse.Result);
+        }
+
+        private async Task<string> GetTweets(string url)
+        {
+            using var response = await _client.GetAsync(url);
+            
             if (response.IsSuccessStatusCode)
-            {
-                var tweetResponse = await response.Content.ReadAsStringAsync();
-                if (!individual)
-                    return JsonSerializer.Deserialize<Tweets>(tweetResponse);
-                    
-                return JsonSerializer.Deserialize<List<Tweet>>(tweetResponse);
-            }
+                return await response.Content.ReadAsStringAsync();
+            
             throw new Exception("error in JsonTweetService");
         }
     }

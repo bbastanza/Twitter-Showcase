@@ -21,14 +21,12 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSpaStaticFiles(config =>
-            {
-                config.RootPath = "client/build";
-            });
+            services.AddSpaStaticFiles(config => config.RootPath = "client/build");
             services.AddControllersWithViews().AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddTransient<JsonTweetsService>();
             services.AddScoped<IJsonTweetsService, JsonTweetsService>();
+            services.AddScoped<IApiHelper, ApiHelper>();
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -60,8 +58,6 @@ namespace API
                     spa.UseReactDevelopmentServer("start");
                 }
             });
-            
-            ApiHelper.InitializeClient(_configuration);
             
         }
     }

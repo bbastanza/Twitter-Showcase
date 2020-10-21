@@ -5,10 +5,12 @@ namespace API.Models
 {
     public class ExtendedEntities
     {
-        [JsonPropertyName("media")] public List<ExtendedMedia> ExtendedMedia { get; set; }
+        [JsonPropertyName("media")] 
+        public List<ExtendedMedia> ExtendedMedia { get; set; }
     }
     public class ExtendedMedia
     {
-        [JsonPropertyName("media_url_https")] public string ExtendedMediaUrl { get; set; }
+        [JsonPropertyName("media_url_https")]
+        public string ExtendedMediaUrl { get; set; }
     }
 }

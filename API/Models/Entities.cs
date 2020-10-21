@@ -14,16 +14,20 @@ namespace API.Models
                 return null;
             }
         }
-        [JsonPropertyName("urls")] public List<Url> Urls { get; set; }
-        [JsonPropertyName("media")] public List<Media> Media { get; set; }
+        [JsonPropertyName("urls")]
+        public List<Url> Urls { get; set; }
+        [JsonPropertyName("media")]
+        public List<Media> Media { get; set; }
     }
     public class Media
     {
-        [JsonPropertyName("url")] public string Media_url { get; set; }
+        [JsonPropertyName("url")] 
+        public string Media_url { get; set; }
     }
     
     public class Url
     {
-        [JsonPropertyName("url")] public string url { get; set; }            
+        [JsonPropertyName("url")]
+        public string url { get; set; }            
     }
 }
