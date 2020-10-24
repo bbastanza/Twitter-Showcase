@@ -19,13 +19,11 @@ export default function RandomTweetFeed() {
     async function getTweets(user) {
         try {
             const response = await axios.get(`tweets/showcase/${user}`);
-            if (response.status < 399) {
-                setIsError(false);
-                setTweetData([...response.data]);
-            }
+            setIsError(false);
+            setTweetData([...response.data]);
         } catch (error) {
             setTweetData([]);
-            setErrorData(error.response.status === 500 ? error.response.data : "");
+            setErrorData(error.response.data ? error.response.data : "");
             setIsError(true);
         }
     }
