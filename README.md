@@ -76,6 +76,6 @@ to start the application locally.
 
 ### Brian Bastanza- Full Stack Web Developer
 
-[Personal Website](www.brianbastanza.me)
+[Personal Website](https://www.brianbastanza.me/)
 
 [LinkedIn](www.linkedin.com/in/brian-bastanza-9035397b)
