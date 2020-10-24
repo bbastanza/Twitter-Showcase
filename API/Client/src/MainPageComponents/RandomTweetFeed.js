@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ShowcaseCard from "./../IndividualComponents/ShowcaseCard";
 import ErrorCard from "./../IndividualComponents/ErrorCard";
 import axios from "axios";
@@ -11,49 +11,34 @@ import weirdAlImage from "./../Images/alyankovic.jpg";
 
 export default function RandomTweetFeed() {
     const [tweetData, setTweetData] = useState([]);
-    const [tweetComponent, setTweetComponent] = useState([]);
     const [currentUser, setCurrentUser] = useState("");
-    const [errorCard, setErrorCard] = useState([]);
-
-    useEffect(() => {
-        if (tweetData.length !== 0) makeRandomTweet();
-    }, [tweetData]);
+    const [tweetIndex, setTweetIndex] = useState(0);
+    const [isError, setIsError] = useState(false);
+    const [errorData, setErrorData] = useState("");
 
     async function getTweets(user) {
         try {
             const response = await axios.get(`tweets/showcase/${user}`);
-            const responseData = response.data;
-            evaluateResponse(responseData);
-        } catch {
-            console.log("there was an error fetching data");
+            if (response.status < 399) {
+                setIsError(false);
+                setTweetData([...response.data]);
+            }
+        } catch (error) {
+            setTweetData([]);
+            setErrorData(error.response.status === 500 ? error.response.data : "");
+            setIsError(true);
         }
-    }
-
-    function evaluateResponse(responseData) {
-        if ("error" in responseData) createErrorCard(responseData);
-        else setTweetData([...responseData]);
-    }
-
-    function createErrorCard(responseData) {
-        setTweetComponent([]);
-        setErrorCard([<ErrorCard key={Math.random()} error={responseData} />]);
     }
 
     function handleClick(user) {
-        setCurrentUser(user);
-        if (user !== currentUser || tweetData === []) getTweets(user);
-        else makeRandomTweet();
+        if (user !== currentUser || tweetData === []) {
+            setCurrentUser(user);
+            getTweets(user);
+        } else randomTweetIndex();
     }
 
-    function makeRandomTweet() {
-        setErrorCard([]);
-        const index = Math.floor(Math.random() * tweetData.length);
-        if (tweetData.length !== 0) {
-            const randomTweet = (
-                <TweetCard search={makeRandomTweet} tweetData={tweetData[index]} key={tweetData[index].id} />
-            );
-            setTweetComponent([randomTweet]);
-        }
+    function randomTweetIndex() {
+        setTweetIndex(Math.floor(Math.random() * tweetData.length));
     }
 
     return (
@@ -91,8 +76,8 @@ export default function RandomTweetFeed() {
                 />
             </div>
             <div className="col-lg-6 col-md-12" style={{ marginTop: 60 }}>
-                {errorCard}
-                {tweetComponent}
+                {isError ? <ErrorCard error={errorData} /> : null}
+                {tweetData.length > 0 ? <TweetCard search={handleClick} tweetData={tweetData[tweetIndex]} /> : null}
             </div>
         </div>
     );

@@ -16,45 +16,45 @@ namespace API.Controllers
         }
 
         [Route("user/{searchTerm}")]
-        public object GetUser(string searchTerm)
+        public IActionResult GetUser(string searchTerm)
         {
             try
             {
-                return _jsonTweetsService
-                    .SearchUserTimelineTweets(searchTerm, 15);
+                return Ok(_jsonTweetsService
+                    .SearchUserTimelineTweets(searchTerm, 15));
             }
             catch
             {
-                return new ErrorMessage(1);
+                return StatusCode(500, new ErrorMessage(1));
             }
         }
 
         [Route("content/{searchTerm}")]
-        public object GetContent(string searchTerm)
+        public IActionResult GetContent(string searchTerm)
         {
             try
             {
-                return _jsonTweetsService
-                    .SearchTweetsByContent(searchTerm)
-                  ;
+                return Ok(_jsonTweetsService
+                    .SearchTweetsByContent(searchTerm));
+
             }
             catch
             {
-                return new ErrorMessage(2);
+                return StatusCode(500, new ErrorMessage(2));
             }
         }
 
         [Route("showcase/{searchTerm}")]
-        public object GetShowcase(string searchTerm)
+        public IActionResult GetShowcase(string searchTerm)
         {
             try
             {
-                return _jsonTweetsService
-                    .SearchUserTimelineTweets(searchTerm, 15);
+                return Ok(_jsonTweetsService
+                    .SearchUserTimelineTweets(searchTerm, 15));
             }
             catch
             {
-                return new ErrorMessage(3);
+                return StatusCode(500, new ErrorMessage(3));
             }
         }
     }
