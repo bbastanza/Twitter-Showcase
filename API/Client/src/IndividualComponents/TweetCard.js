@@ -18,7 +18,10 @@ export default function TweetCard({ tweetData, search }) {
     return (
         <div
             className="tweet col-12"
-            style={{ backgroundImage: `url(${tweetBg})`, maxWidth: "90%" }}
+            style={{
+                backgroundImage: `url(${tweetBg})`,
+                textAlign: "left",
+            }}
         >
             <div className="row">
                 <img
@@ -31,16 +34,16 @@ export default function TweetCard({ tweetData, search }) {
                     }}
                     alt="thumbnail"
                 ></img>
-                <h4 className="col-4">
+                <h4 className="col-3">
                     {tweetData.user.name} {verified}
                 </h4>
                 <h5
-                    className="screen-name col-2"
+                    className="screen-name col-4 offset-1"
                     onClick={() => search(tweetData.user.screenName, "user")}
                 >
                     @{tweetData.user.screenName}
                 </h5>
-                <h6 className="col-4" style={{ textAlign: "center" }}>
+                <h6 className="col-2" style={{ textAlign: "center" }}>
                     {tweetData.date.substring(4, 16)}
                 </h6>
             </div>
@@ -72,21 +75,20 @@ export default function TweetCard({ tweetData, search }) {
                 alt=""
             />
             <div>
-                <div className="row">
-                    <div className="row col-8">
-                        <span role="img" aria-label="like" className="col-3">
+                <div className="row" style={{ textAlign: "center" }}>
+                    <div className="row col-12">
+                        <span role="img" aria-label="like" className="col-4">
                             💗 {tweetData.likeCount}
                         </span>
-                        <span role="img" aria-label="retweet" className="col-3">
+                        <span role="img" aria-label="retweet" className="col-4">
                             🔄 {tweetData.retweetCount}
                         </span>
                         <h6
-                            className="source col-5"
+                            className="source col-4"
                             style={{ textAlign: "right" }}
                         >
                             {source}
                         </h6>
-                        <div className="col-1"></div>
                     </div>
                 </div>
             </div>

@@ -94,13 +94,13 @@ export default function Search(props) {
             className="row"
         >
             <div
-                className="col-lg-5 col-md-12 row"
-                style={{ padding: "80px 0 0 100px ", justifyContent: "center" }}
+                className="col-lg-6 col-md-12 row"
+                style={{ padding: "80px 0 0 40px ", justifyContent: "center" }}
             >
                 <form className="justify-content-center">
                     <input
                         className="searchbar"
-                        style={{ textAlign: "center", width: "30vw" }}
+                        style={{ textAlign: "center", width: 300 }}
                         onChange={e => setTextBoxValue(e.target.value)}
                         type="text"
                         placeholder="Search Twitter"
@@ -129,7 +129,15 @@ export default function Search(props) {
                     </h1>
                 </form>
             </div>
-            <div className="col-lg-7 col-md-12" style={{ marginTop: 60 }}>
+            <div
+                className="col-lg-5 col-md-12"
+                style={{
+                    marginTop: 60,
+                    minWidth: 370,
+                    textAlign: "center",
+                    maxWidth: "95%",
+                }}
+            >
                 {errorData !== "" ? <ErrorCard error={errorData} /> : null}
                 {tweetData.length !== 0
                     ? tweetData.map(tweet => {

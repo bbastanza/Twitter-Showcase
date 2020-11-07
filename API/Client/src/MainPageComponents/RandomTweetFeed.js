@@ -45,13 +45,13 @@ export default function RandomTweetFeed() {
             style={{
                 textAlign: "center",
                 justifyContent: "left",
-                width: "90vw",
+                width: "100vw",
             }}
         >
             <div
                 className="col-lg-6 col-md-12"
                 style={{
-                    margin: "0 0 0 100px",
+                    margin: "0 0 0 40px",
                     justifyContent: "space-around",
                 }}
             >
@@ -86,7 +86,15 @@ export default function RandomTweetFeed() {
                     image={weirdAlImage}
                 />
             </div>
-            <div className="col-lg-5 col-md-12" style={{ marginTop: 60 }}>
+            <div
+                className="col-lg-5 col-md-12"
+                style={{
+                    marginTop: 60,
+                    minWidth: 370,
+                    textAlign: "center",
+                    maxWidth: "95%",
+                }}
+            >
                 {isError ? <ErrorCard error={errorData} /> : null}
                 {tweetData.length > 0 ? (
                     <TweetCard

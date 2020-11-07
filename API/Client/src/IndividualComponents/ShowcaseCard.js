@@ -21,7 +21,11 @@ export default function ShowcaseCard({ screenName, name, image, handleClick }) {
 
             <h3
                 className="col-4"
-                style={{ fontWeight: "bold", fontFamily: "ubuntu" }}
+                style={{
+                    fontWeight: "bold",
+                    fontFamily: "ubuntu",
+                    // wordWrap: "break-word",
+                }}
             >
                 {name}
             </h3>
