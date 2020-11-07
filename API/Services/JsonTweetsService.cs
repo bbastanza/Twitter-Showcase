@@ -6,7 +6,7 @@ using API.Models;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace API.Services
-{        
+{
     public interface IJsonTweetsService
     {
         Tweets SearchTweetsByContent(string searchTerm);
@@ -26,9 +26,9 @@ namespace API.Services
         {
             var url =
                 $"https://api.twitter.com/1.1/search/tweets.json?q={searchTerm}&result_type=popular&count=5&tweet_mode=extended";
-            
+
             var tweetResponse = GetTweets(url);
-            
+
             return JsonSerializer.Deserialize<Tweets>(tweetResponse.Result);
         }
 
@@ -36,19 +36,19 @@ namespace API.Services
         {
             var url =
                 $"https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={searchTerm}&count={count}&tweet_mode=extended";
-            
+
             var tweetResponse = GetTweets(url);
-            
+
             return JsonSerializer.Deserialize<List<Tweet>>(tweetResponse.Result);
         }
 
         private async Task<string> GetTweets(string url)
         {
             using var response = await _client.GetAsync(url);
-            
+
             if (response.IsSuccessStatusCode)
                 return await response.Content.ReadAsStringAsync();
-            
+
             throw new Exception("error in JsonTweetService");
         }
     }

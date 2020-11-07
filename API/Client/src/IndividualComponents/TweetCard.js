@@ -18,7 +18,7 @@ export default function TweetCard({ tweetData, search }) {
     return (
         <div
             className="tweet col-12"
-            style={{ backgroundImage: `url(${tweetBg})` }}
+            style={{ backgroundImage: `url(${tweetBg})`, maxWidth: "90%" }}
         >
             <div className="row">
                 <img
@@ -31,16 +31,21 @@ export default function TweetCard({ tweetData, search }) {
                     }}
                     alt="thumbnail"
                 ></img>
-                <h4 className="col-5">
+                <h4 className="col-4">
                     {tweetData.user.name} {verified}
                 </h4>
                 <h5
-                    className="screen-name col-3"
+                    className="screen-name col-2"
                     onClick={() => search(tweetData.user.screenName, "user")}
                 >
                     @{tweetData.user.screenName}
                 </h5>
-                <h6 className="col-2">{tweetData.date.substring(4, 16)}</h6>
+                <h6 className="col-4" style={{ textAlign: "center" }}>
+                    {tweetData.date.substring(4, 16)}
+                </h6>
+            </div>
+
+            <div className="tweet-text">
                 <img
                     src={TwitterThumbnail}
                     style={{
@@ -52,9 +57,6 @@ export default function TweetCard({ tweetData, search }) {
                     }}
                     alt="thumbnail"
                 ></img>
-            </div>
-
-            <div className="tweet-text">
                 {ReactHtmlParser(tweetData.formattedText)}
             </div>
             <img

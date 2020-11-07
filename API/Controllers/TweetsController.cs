@@ -21,7 +21,7 @@ namespace API.Controllers
             try
             {
                 return Ok(_jsonTweetsService
-                    .SearchUserTimelineTweets(searchTerm, 15));
+                    .SearchUserTimelineTweets(searchTerm, 5));
             }
             catch
             {

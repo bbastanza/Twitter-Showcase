@@ -9,13 +9,19 @@ export default function Search(props) {
     const [textBoxValue, setTextBoxValue] = useState("");
     const [banner, setBanner] = useState("");
     const [tweetData, setTweetData] = useState([]);
-    const [tweetComponents, setTweetComponents] = useState([]);
-    const [errorCard, setErrorCard] = useState([]);
+    const [errorData, setErrorData] = useState("");
     const [searchMention, setSearchMention] = useState("");
+    const emptyData = {
+        error: "There was a problem recieving tweets",
+        hint:
+            "Hint: You may be searching for something that doesn't exit or has a funny character :)",
+    };
 
     useEffect(() => {
         if (props.location.search !== "") {
-            const searchTerm = qs.parse(props.location.search, { ignoreQueryPrefix: true });
+            const searchTerm = qs.parse(props.location.search, {
+                ignoreQueryPrefix: true,
+            });
             searchTerm.q = parseSearchTerm(searchTerm.q);
             setSearchMention(searchTerm.q);
         }
@@ -25,60 +31,49 @@ export default function Search(props) {
         if (searchMention !== "") getTweets(searchMention, "user");
     }, [searchMention]);
 
-    useEffect(() => {
-        createTweets();
-    }, [tweetData]);
-
     async function getTweets(searchItem, type) {
+        setTweetData([]);
         try {
+            let response;
             let responseData;
             switch (type) {
                 case "user":
-                    responseData = await axios
-                        .get(`tweets/user/${searchItem.split(" ").join("")}`)
-                        .then(response => response.data);
+                    response = await axios.get(
+                        `tweets/user/${searchItem.split(" ").join("")}`
+                    );
+                    responseData = response.data;
                     evaluateResponse(responseData);
                     break;
                 default:
-                    responseData = await axios
-                        .get(`tweets/content/${searchItem.split(" ").join("")}`)
-                        .then(response => response.data);
+                    response = await axios.get(
+                        `tweets/content/${searchItem.split(" ").join("")}`
+                    );
+                    responseData = response.data;
                     evaluateResponse(responseData);
                     break;
             }
         } catch {
-            emptyDataErrorCard();
+            setErrorData(emptyData);
         }
     }
 
     function evaluateResponse(responseData) {
-        if ("error" in responseData) createErrorCard(responseData);
-        else if ("statuses" in responseData && responseData.statuses.length === 0) emptyDataErrorCard();
-        else if ("statuses" in responseData) setTweetData([...responseData.statuses]);
-        else setTweetData([...responseData]);
-    }
-
-    function emptyDataErrorCard() {
-        const emptyData = {
-            error: "There was a problem recieving tweets",
-            hint: "Hint: You may be searching for something that doesn't exit or has a funny character :)",
-        };
-        createErrorCard(emptyData);
-    }
-
-    function createErrorCard(responseData) {
-        setTweetComponents([]);
-        const key = Math.random();
-        setErrorCard([<ErrorCard key={key} error={responseData} />]);
-    }
-
-    function createTweets() {
-        setErrorCard([]);
-        if (tweetData.length !== 0) {
-            let newTweetComponents = tweetData.map(tweet => {
-                return <TweetCard search={getTweets} tweetData={tweet} key={tweet.id} />;
-            });
-            setTweetComponents([...newTweetComponents]);
+        if ("error" in responseData) {
+            setTweetData([]);
+            setErrorData(responseData);
+        } else if (
+            "statuses" in responseData &&
+            responseData.statuses.length === 0
+        ) {
+            setTweetData([]);
+            setErrorData(emptyData);
+        } else if ("statuses" in responseData) {
+            setErrorData("");
+            setTweetData([...responseData.statuses]);
+        } else {
+            setErrorData("");
+            setTweetData([]);
+            setTweetData([...responseData]);
         }
     }
 
@@ -90,8 +85,18 @@ export default function Search(props) {
     }
 
     return (
-        <div style={{ textAlign: "center", justifyContent: "left", width: "100vw" }} className="row">
-            <div className="col-lg-5 col-md-12 row" style={{ padding: "80px 0 0 100px ", justifyContent: "center" }}>
+        <div
+            style={{
+                textAlign: "center",
+                justifyContent: "left",
+                width: "100vw",
+            }}
+            className="row"
+        >
+            <div
+                className="col-lg-5 col-md-12 row"
+                style={{ padding: "80px 0 0 100px ", justifyContent: "center" }}
+            >
                 <form className="justify-content-center">
                     <input
                         className="searchbar"
@@ -116,14 +121,27 @@ export default function Search(props) {
                         Search by Screen Name
                     </button>
 
-                    <h1 className="col-6 individual-h2" style={{ margin: "30px auto" }}>
+                    <h1
+                        className="col-6 individual-h2"
+                        style={{ margin: "30px auto" }}
+                    >
                         {banner}
                     </h1>
                 </form>
             </div>
             <div className="col-lg-7 col-md-12" style={{ marginTop: 60 }}>
-                {errorCard}
-                {tweetComponents}
+                {errorData !== "" ? <ErrorCard error={errorData} /> : null}
+                {tweetData.length !== 0
+                    ? tweetData.map(tweet => {
+                          return (
+                              <TweetCard
+                                  search={getTweets}
+                                  tweetData={tweet}
+                                  key={tweet.id}
+                              />
+                          );
+                      })
+                    : null}
             </div>
         </div>
     );
