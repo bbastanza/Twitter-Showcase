@@ -8,7 +8,7 @@ export default function Footer() {
         >
             <div className="footer-copyright text-center py-3 ">
                 © 2020 Copyright:
-                <a href="https://brianbastanza.com"> brianbastanza.com</a>
+                <a href="https://www.brianbastanza.me"> brianbastanza.me</a>
             </div>
         </footer>
     );
