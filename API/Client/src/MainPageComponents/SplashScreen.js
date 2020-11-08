@@ -38,7 +38,7 @@ export default function SplashScreen() {
                     </Button>
                 </div>
                 <div
-                    className="col-6"
+                    className="col-8"
                     style={{ margin: 60, fontFamily: "ubuntu" }}
                 >
                     <h3>

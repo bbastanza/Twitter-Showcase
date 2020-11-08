@@ -95,7 +95,11 @@ export default function Search(props) {
         >
             <div
                 className="col-lg-6 col-md-12 row"
-                style={{ padding: "80px 0 0 40px ", justifyContent: "center" }}
+                style={{
+                    padding: "80px 0 0 40px ",
+                    justifyContent: "center",
+                    width: "auto",
+                }}
             >
                 <form className="justify-content-center">
                     <input
@@ -121,12 +125,7 @@ export default function Search(props) {
                         Search by Screen Name
                     </button>
 
-                    <h1
-                        className="col-6 individual-h2"
-                        style={{ margin: "30px auto" }}
-                    >
-                        {banner}
-                    </h1>
+                    <h1 className="individual-h2">{banner}</h1>
                 </form>
             </div>
             <div

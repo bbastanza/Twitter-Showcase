@@ -15,6 +15,11 @@ export default function TweetCard({ tweetData, search }) {
         profileImageRaw.substring(0, profileImageRaw.indexOf("normal")) +
         "400x400.jpg";
 
+    function handleImageError(e) {
+        e.target.src =
+            e.target.src !== profileImageRaw ? profileImageRaw : null;
+    }
+
     return (
         <div
             className="tweet col-12"
@@ -26,26 +31,26 @@ export default function TweetCard({ tweetData, search }) {
             <div className="row">
                 <img
                     src={profileImageFormatted}
+                    onError={e => handleImageError(e)}
                     style={{
                         paddingLeft: 10,
                         borderRadius: "50%",
-                        minWidth: 60,
-                        maxWidth: 100,
+                        width: 80,
                     }}
                     alt="thumbnail"
                 ></img>
-                <h4 className="col-3">
+                <h5 className="col-4">
                     {tweetData.user.name} {verified}
-                </h4>
-                <h5
-                    className="screen-name col-4 offset-1"
+                </h5>
+                <p
+                    className="screen-name col-4"
                     onClick={() => search(tweetData.user.screenName, "user")}
                 >
                     @{tweetData.user.screenName}
-                </h5>
-                <h6 className="col-2" style={{ textAlign: "center" }}>
+                </p>
+                <p className="col-2" style={{ textAlign: "center" }}>
                     {tweetData.date.substring(4, 16)}
-                </h6>
+                </p>
             </div>
 
             <div className="tweet-text">

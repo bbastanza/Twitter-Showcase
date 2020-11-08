@@ -19,7 +19,7 @@
     justify-content: center;
     color: #ffe6bc;
     width: 90vw;
-    margin: 40px 0 0 0;
+    margin: 40px auto 0;
 }
 
 .splash-title {
@@ -113,6 +113,8 @@
     font-family: ubuntu;
     background-color: rgba(65, 74, 77, 0.8);
     border-radius: 20px;
+    max-width: 85%;
+    margin: 30px auto;
 }
 
 .tweet-text {
@@ -135,7 +137,6 @@
 .screen-name {
     color: rgba(0, 65, 204, 0.8);
     cursor: pointer;
-    word-wrap: break-word;
 }
 .screen-name:hover {
     color: rgba(0, 84, 112, 1);
