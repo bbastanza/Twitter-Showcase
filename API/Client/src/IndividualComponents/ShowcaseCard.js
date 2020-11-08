@@ -13,11 +13,7 @@ export default function ShowcaseCard({ screenName, name, image, handleClick }) {
                 padding: "15px 20px 0 20px",
             }}
         >
-            <img
-                src={image}
-                alt={name}
-                style={{ height: "100px", width: "100px", borderRadius: "50%" }}
-            />
+            <img src={image} alt={name} style={{ height: "100px", width: "100px", borderRadius: "50%" }} />
 
             <h3
                 className="col-4"

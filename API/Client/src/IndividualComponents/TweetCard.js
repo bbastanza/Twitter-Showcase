@@ -11,13 +11,10 @@ export default function TweetCard({ tweetData, search }) {
     const verified = checkVerified(tweetData.user.verified);
     const source = getSource(tweetData.source);
     const profileImageRaw = tweetData.user.profileImageUrlHttps;
-    const profileImageFormatted =
-        profileImageRaw.substring(0, profileImageRaw.indexOf("normal")) +
-        "400x400.jpg";
+    const profileImageFormatted = profileImageRaw.substring(0, profileImageRaw.indexOf("normal")) + "400x400.jpg";
 
     function handleImageError(e) {
-        e.target.src =
-            e.target.src !== profileImageRaw ? profileImageRaw : null;
+        e.target.src = e.target.src !== profileImageRaw ? profileImageRaw : null;
     }
 
     return (
@@ -42,10 +39,7 @@ export default function TweetCard({ tweetData, search }) {
                 <h5 className="col-4">
                     {tweetData.user.name} {verified}
                 </h5>
-                <p
-                    className="screen-name col-4"
-                    onClick={() => search(tweetData.user.screenName, "user")}
-                >
+                <p className="screen-name col-4" onClick={() => search(tweetData.user.screenName, "user")}>
                     @{tweetData.user.screenName}
                 </p>
                 <p className="col-2" style={{ textAlign: "center" }}>
@@ -88,10 +82,7 @@ export default function TweetCard({ tweetData, search }) {
                         <span role="img" aria-label="retweet" className="col-4">
                             🔄 {tweetData.retweetCount}
                         </span>
-                        <h6
-                            className="source col-4"
-                            style={{ textAlign: "right" }}
-                        >
+                        <h6 className="source col-4" style={{ textAlign: "right" }}>
                             {source}
                         </h6>
                     </div>

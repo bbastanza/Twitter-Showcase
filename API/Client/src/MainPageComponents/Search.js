@@ -13,8 +13,7 @@ export default function Search(props) {
     const [searchMention, setSearchMention] = useState("");
     const emptyData = {
         error: "There was a problem recieving tweets",
-        hint:
-            "Hint: You may be searching for something that doesn't exit or has a funny character :)",
+        hint: "Hint: You may be searching for something that doesn't exit or has a funny character :)",
     };
 
     useEffect(() => {
@@ -32,47 +31,37 @@ export default function Search(props) {
     }, [searchMention]);
 
     async function getTweets(searchItem, type) {
-        setTweetData([]);
         try {
             let response;
             let responseData;
             switch (type) {
                 case "user":
-                    response = await axios.get(
-                        `tweets/user/${searchItem.split(" ").join("")}`
-                    );
+                    response = await axios.get(`tweets/user/${searchItem.split(" ").join("")}`);
                     responseData = response.data;
                     evaluateResponse(responseData);
                     break;
                 default:
-                    response = await axios.get(
-                        `tweets/content/${searchItem.split(" ").join("")}`
-                    );
+                    response = await axios.get(`tweets/content/${searchItem.split(" ").join("")}`);
                     responseData = response.data;
                     evaluateResponse(responseData);
                     break;
             }
         } catch {
+            setTweetData([]);
             setErrorData(emptyData);
         }
     }
 
     function evaluateResponse(responseData) {
+        setErrorData("");
+        setTweetData([]);
         if ("error" in responseData) {
-            setTweetData([]);
             setErrorData(responseData);
-        } else if (
-            "statuses" in responseData &&
-            responseData.statuses.length === 0
-        ) {
-            setTweetData([]);
+        } else if ("statuses" in responseData && responseData.statuses.length === 0) {
             setErrorData(emptyData);
         } else if ("statuses" in responseData) {
-            setErrorData("");
             setTweetData([...responseData.statuses]);
         } else {
-            setErrorData("");
-            setTweetData([]);
             setTweetData([...responseData]);
         }
     }
@@ -140,13 +129,7 @@ export default function Search(props) {
                 {errorData !== "" ? <ErrorCard error={errorData} /> : null}
                 {tweetData.length !== 0
                     ? tweetData.map(tweet => {
-                          return (
-                              <TweetCard
-                                  search={getTweets}
-                                  tweetData={tweet}
-                                  key={tweet.id}
-                              />
-                          );
+                          return <TweetCard search={getTweets} tweetData={tweet} key={tweet.id} />;
                       })
                     : null}
             </div>

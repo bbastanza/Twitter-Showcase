@@ -96,12 +96,7 @@ export default function RandomTweetFeed() {
                 }}
             >
                 {isError ? <ErrorCard error={errorData} /> : null}
-                {tweetData.length > 0 ? (
-                    <TweetCard
-                        search={handleClick}
-                        tweetData={tweetData[tweetIndex]}
-                    />
-                ) : null}
+                {tweetData.length > 0 ? <TweetCard search={handleClick} tweetData={tweetData[tweetIndex]} /> : null}
             </div>
         </div>
     );
