@@ -39,7 +39,7 @@ Specific things I used and learned while building this application:
 
 ## Installation
 
-To run this application locally you need to add a file called `appsetting.Development.json` in the `API/` directory. The contents of the file should be the following:
+To run this application locally you need to add a file called `appsettings.Development.json` in the `API/` directory. The contents of the file should be the following:
 
 ```
 {

@@ -1,7 +1,7 @@
 export default function parseSearchTerm(searchTerm) {
     let parsedTerm = searchTerm;
 
-    const regex = /[^A-Za-z0-9]+/g;
+    const regex = /[^A-Za-z0-9_]+/g;
 
     if (searchTerm > 15) parsedTerm = searchTerm.substring(0, 15);
 

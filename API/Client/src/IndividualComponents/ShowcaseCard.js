@@ -11,8 +11,7 @@ export default function ShowcaseCard({ screenName, name, image, handleClick }) {
                 minWidth: 320,
 
                 padding: "15px 20px 0 20px",
-            }}
-        >
+            }}>
             <img src={image} alt={name} style={{ height: "100px", width: "100px", borderRadius: "50%" }} />
 
             <h3
@@ -21,8 +20,7 @@ export default function ShowcaseCard({ screenName, name, image, handleClick }) {
                     fontWeight: "bold",
                     fontFamily: "ubuntu",
                     // wordWrap: "break-word",
-                }}
-            >
+                }}>
                 {name}
             </h3>
 

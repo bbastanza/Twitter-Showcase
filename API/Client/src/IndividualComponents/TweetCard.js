@@ -11,7 +11,7 @@ export default function TweetCard({ tweetData, search }) {
     const verified = checkVerified(tweetData.user.verified);
     const source = getSource(tweetData.source);
     const profileImageRaw = tweetData.user.profileImageUrlHttps;
-    const profileImageFormatted = profileImageRaw.substring(0, profileImageRaw.indexOf("normal")) + "400x400.jpg";
+    const profileImageFormatted = profileImageRaw.replace(/normal/, "400x400");
 
     function handleImageError(e) {
         e.target.src = e.target.src !== profileImageRaw ? profileImageRaw : null;
@@ -23,8 +23,7 @@ export default function TweetCard({ tweetData, search }) {
             style={{
                 backgroundImage: `url(${tweetBg})`,
                 textAlign: "left",
-            }}
-        >
+            }}>
             <div className="row">
                 <img
                     src={profileImageFormatted}
@@ -34,8 +33,7 @@ export default function TweetCard({ tweetData, search }) {
                         borderRadius: "50%",
                         width: 80,
                     }}
-                    alt="thumbnail"
-                ></img>
+                    alt="thumbnail"></img>
                 <h5 className="col-4">
                     {tweetData.user.name} {verified}
                 </h5>
@@ -57,8 +55,7 @@ export default function TweetCard({ tweetData, search }) {
                         paddingBottom: 10,
                         float: "right",
                     }}
-                    alt="thumbnail"
-                ></img>
+                    alt="thumbnail"></img>
                 {ReactHtmlParser(tweetData.formattedText)}
             </div>
             <img
