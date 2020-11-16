@@ -51,7 +51,7 @@ export default function RandomTweetFeed() {
             <div
                 className="col-lg-6 col-md-12"
                 style={{
-                    margin: "0 0 0 40px",
+                    margin: "0 0 0 20px",
                     justifyContent: "space-around",
                 }}
             >

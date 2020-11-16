@@ -8,7 +8,7 @@ export default function ShowcaseCard({ screenName, name, image, handleClick }) {
             style={{
                 justifyContent: "space-between",
                 width: "80%",
-                minWidth: 320,
+                minWidth: 300,
 
                 padding: "15px 20px 0 20px",
             }}

@@ -24,7 +24,6 @@ export default function TweetCard({ tweetData, search }) {
         fontFamily: "Arial, Helvetica, sans-serif",
         color: "#313130",
         backgroundImage: `url(${tweetBg})`,
-        textAlign: "left",
     };
 
     function handleImageError(e) {

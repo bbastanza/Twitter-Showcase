@@ -1,7 +1,7 @@
 import React from "react";
 import Search from "../MainPageComponents/Search";
 import SplashScreen from "../MainPageComponents/SplashScreen";
-import { Route, NavLink, BrowserRouter } from "react-router-dom";
+import { Route, BrowserRouter } from "react-router-dom";
 import RandomTweetFeed from "../MainPageComponents/RandomTweetFeed";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
