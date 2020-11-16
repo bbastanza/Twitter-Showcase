@@ -1,8 +1,8 @@
 import React from "react";
 import NavBar from "./FixedComponents/NavBar";
 import Footer from "./FixedComponents/Footer";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
     return (

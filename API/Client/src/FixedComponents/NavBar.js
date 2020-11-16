@@ -3,41 +3,32 @@ import Search from "../MainPageComponents/Search";
 import SplashScreen from "../MainPageComponents/SplashScreen";
 import { Route, NavLink, BrowserRouter } from "react-router-dom";
 import RandomTweetFeed from "../MainPageComponents/RandomTweetFeed";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 export default function NavBar() {
+    const brandStyle = {
+        fontSize: 40,
+        color: "rgb(0, 255, 242)",
+        textDecoration: "none",
+    };
+
     return (
         <BrowserRouter>
-            <div className="navbar navbar-expand-lg" style={{ backgroundColor: "#262626" }}>
-                <NavLink to="/" className="splash-title2 brand">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Navbar.Brand style={brandStyle} className="splash-title2" href="/">
                     T
-                </NavLink>
-                <button
-                    className="navbar-toggler navbar-dark link"
-                    data-toggle="collapse"
-                    data-target="#nav-bar-collapse"
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div id="nav-bar-collapse" className="collapse navbar-collapse">
-                    <ul className="navbar-nav ml-auto">
-                        <li name="welcome" className="navbar-item">
-                            <NavLink to="/" className="link nav-link">
-                                Welcome
-                            </NavLink>
-                        </li>
-                        <li name="search" className="navbar-item">
-                            <NavLink to="/Search" className="link nav-link">
-                                Search
-                            </NavLink>
-                        </li>
-                        <li name="showcase" className="navbar-item">
-                            <NavLink to="/Showcase" className="link nav-link">
-                                Showcase
-                            </NavLink>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto" />
+                    <Nav>
+                        <Nav.Link href="/">Welcome</Nav.Link>
+                        <Nav.Link href="/Search">Search</Nav.Link>
+                        <Nav.Link href="/Showcase">Showcase</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
             <div className="content" style={{ width: "90vw" }}>
                 <Route exact path="/" component={SplashScreen} />
                 <Route exact path="/Search/:searchTerm" component={Search} />
