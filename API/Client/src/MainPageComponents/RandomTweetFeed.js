@@ -7,7 +7,7 @@ import neilImage from "./../Images/neiltyson.jpg";
 import linusTechImage from "./../Images/linustech.jpg";
 import yankeeImage from "./../Images/yankees.jpg";
 import billGatesImage from "./../Images/billgates.jpg";
-import weirdAlImage from "./../Images/alyankovic.jpg";
+import spacexImage from "./../Images/spacex.jpg";
 
 export default function RandomTweetFeed() {
     const [tweetData, setTweetData] = useState([]);
@@ -81,9 +81,9 @@ export default function RandomTweetFeed() {
                 />
                 <ShowcaseCard
                     handleClick={handleClick}
-                    screenName="alyankovic"
-                    name='"Weird Al" Yankovic'
-                    image={weirdAlImage}
+                    screenName="spacex"
+                    name="SpaceX"
+                    image={spacexImage}
                 />
             </div>
             <div

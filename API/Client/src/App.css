@@ -148,11 +148,11 @@
     color: #ffd181;
 }
 
-.showcase-card h4 {
+.showcase-card h5 {
     color: rgb(0, 143, 179);
 }
 
-.showcase-card h4:hover {
+.showcase-card h5:hover {
     color: rgb(0, 175, 219);
 }
 
