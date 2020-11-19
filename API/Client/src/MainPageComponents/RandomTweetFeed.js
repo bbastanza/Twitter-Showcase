@@ -57,6 +57,12 @@ export default function RandomTweetFeed() {
             >
                 <ShowcaseCard
                     handleClick={handleClick}
+                    screenName="spacex"
+                    name="SpaceX"
+                    image={spacexImage}
+                />
+                <ShowcaseCard
+                    handleClick={handleClick}
                     screenName="neiltyson"
                     name="Neil deGrasse Tyson"
                     image={neilImage}
@@ -79,12 +85,7 @@ export default function RandomTweetFeed() {
                     name="Linus Tech Tips"
                     image={linusTechImage}
                 />
-                <ShowcaseCard
-                    handleClick={handleClick}
-                    screenName="spacex"
-                    name="SpaceX"
-                    image={spacexImage}
-                />
+
             </div>
             <div
                 className="col-lg-5 col-md-12"
