@@ -1,8 +1,5 @@
 export default function parseSearchTerm(searchTerm) {
-    let parsedTerm = searchTerm;
 
-    // const regex = /[^A-Za-z0-9_]+/g;
-    
     const valid = {
         a: true,
         b: true,
@@ -43,14 +40,14 @@ export default function parseSearchTerm(searchTerm) {
         "_": true
     }
 
-    if (searchTerm > 15) parsedTerm = searchTerm.substring(0, 15);
+    if (searchTerm > 15) searchTerm = searchTerm.substring(0, 15);
 
-    for (const character of parsedTerm) {
+    for (const character of searchTerm) {
         if (!valid[character.toLowerCase()]) {
-            parsedTerm = parsedTerm.substring(0, parsedTerm.indexOf(character));
+            searchTerm = searchTerm.substring(0, searchTerm.indexOf(character));
             break;
         }
     }
-    console.log(parsedTerm)
-    return parsedTerm;
+
+    return searchTerm;
 }
