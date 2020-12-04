@@ -78,4 +78,4 @@ to start the application locally.
 
 <a href="https://www.brianbastanza.me/" target="_blank" rel="noopener">Personal Website</a>
 
-[LinkedIn](www.linkedin.com/in/bbastanza)
+[LinkedIn](https://www.linkedin.com/in/bbastanza)
