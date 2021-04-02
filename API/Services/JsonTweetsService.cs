@@ -19,7 +19,7 @@ namespace API.Services
 
         public JsonTweetsService(IApiHelper apiHelper)
         {
-            _client = apiHelper.ApiClient;
+            _client = apiHelper.InitializeClient();
         }
 
         public Tweets SearchTweetsByContent(string searchTerm)

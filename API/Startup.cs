@@ -24,6 +24,7 @@ namespace API
             services.AddSpaStaticFiles(config => config.RootPath = "client/build");
             services.AddControllersWithViews().AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            
             services.AddTransient<JsonTweetsService>();
             services.AddScoped<IJsonTweetsService, JsonTweetsService>();
             services.AddScoped<IApiHelper, ApiHelper>();

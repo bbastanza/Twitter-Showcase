@@ -15,22 +15,31 @@ namespace API.Models
     {
         [JsonPropertyName("id")] 
         public long Id { get; set; }
+        
         [JsonPropertyName("source")]
         public string Source { get; set; }
+        
         [JsonPropertyName("user")] 
         public User User { get; set; }
+        
         [JsonPropertyName("entities")] 
         public Entities Entities { get; set; }
+        
         [JsonPropertyName("extended_entities")] 
         public ExtendedEntities ExtendedEntities { get; set; }
+        
         [JsonPropertyName("created_at")] 
         public string Date { get; set; }
+        
         [JsonPropertyName("full_text")] 
         public string Text { get; set; }
+        
         [JsonPropertyName("favorite_count")] 
         public int LikeCount { get; set; }
+        
         [JsonPropertyName("retweet_count")] 
         public int RetweetCount { get; set; }
+        
         public string FormattedText
         {
             get

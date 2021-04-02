@@ -6,22 +6,28 @@ namespace API.Services
 {
     public interface IApiHelper
     {
-        HttpClient ApiClient { get; }
+        HttpClient InitializeClient();
     }
-    
     
     public class ApiHelper: IApiHelper
     {
-        public HttpClient ApiClient { get; }
+        private readonly IConfiguration _configuration;
 
         public ApiHelper(IConfiguration configuration)
         {
-   
-            var bearerToken = configuration["Twitter_Key:BearerToken"];
-            ApiClient = new HttpClient();
-            ApiClient.DefaultRequestHeaders.Accept.Clear();
-            ApiClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", bearerToken);
-            ApiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")); 
+            _configuration = configuration;
+        }
+
+        public HttpClient InitializeClient()
+        {
+            var bearerToken = _configuration["Twitter_Key:BearerToken"];
+
+            var apiClient = new HttpClient();
+            apiClient.DefaultRequestHeaders.Accept.Clear();
+            apiClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", bearerToken);
+            apiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")); 
+
+            return apiClient;
         }
     }
 }
